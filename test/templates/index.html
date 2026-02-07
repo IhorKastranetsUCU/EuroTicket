@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Map Tiles</title>
+</head>
+<body>
+    <h1>Select Map Tile</h1>
+    {% for tile_name in tiles.keys() %}
+    <form action="{{ url_for('set_tiles', tiles=tile_name) }}" method="get" style="display:inline;">
+        <button type="submit">{{ tile_name }}</button>
+    </form>
+    {% endfor %}
+    <div>
+        {{ map_html | safe }}
+    </div>
+</body>
+</html>
