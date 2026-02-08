@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пошук залізничних станцій - Польща</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🚂 Пошук залізничних маршрутів</h1>
+        </header>
+        
+        <div class="search-panel">
+            <div class="input-group">
+                <label for="departure">Станція відправлення:</label>
+                <input type="text" id="departure" placeholder="Введіть станцію відправлення...">
+            </div>
+            
+            <div class="input-group">
+                <label for="arrival">Станція прибуття:</label>
+                <input type="text" id="arrival" placeholder="Введіть станцію прибуття...">
+            </div>
+            
+            <button id="searchBtn" class="search-btn">Знайти маршрут</button>
+        </div>
+        
+        <div class="map-container">
+            {{ map_html|safe }}
+        </div>
+        
+        <div id="result" class="result-panel" style="display: none;">
+            <h3>Результат пошуку:</h3>
+            <p id="resultText"></p>
+        </div>
+    </div>
+    
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

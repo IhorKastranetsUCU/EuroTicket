@@ -1,17 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
-    <title>Map Tiles</title>
+    <title>Залізнична мапа</title>
+    <style>
+        body { font-family: sans-serif; margin: 20px; }
+        .controls { margin-bottom: 20px; }
+        .map-container { height: 80vh; width: 100%; border: 1px solid #333; }
+        button { padding: 10px; cursor: pointer; margin-right: 5px; }
+    </style>
 </head>
 <body>
-    <h1>Select Map Tile</h1>
-    {% for tile_name in tiles.keys() %}
-    <form action="{{ url_for('set_tiles', tiles=tile_name) }}" method="get" style="display:inline;">
-        <button type="submit">{{ tile_name }}</button>
-    </form>
-    {% endfor %}
-    <div>
+    <h1>Залізничні шляхи</h1>
+
+    <div class="controls">
+        {% for key, name in tiles.items() %}
+            <a href="{{ url_for('set_tiles', tiles=key) }}">
+                <button>{{ key | upper }}</button>
+            </a>
+        {% endfor %}
+    </div>
+
+    <div class="map-container">
         {{ map_html | safe }}
     </div>
 </body>
