@@ -3,7 +3,7 @@ import folium
 import json
 
 # Завантажуємо дані
-with open("export_2.json", encoding="utf-8") as f:
+with open("poland.json", encoding="utf-8") as f:
     osm_data = json.load(f)
 
 # Витягуємо лінії (geometry) для залізничних колій
