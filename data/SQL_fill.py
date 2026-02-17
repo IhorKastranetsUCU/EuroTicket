@@ -76,22 +76,35 @@ class Graph(Base):
     path = Column(JSON)
 
 
-engine = create_engine("sqlite:///EuroTicket.db")
-Session = sessionmaker(bind=engine)
-session = Session()
 
-Base.metadata.create_all(engine)
+class DBFill:
+    def __init__(self, session):
+        self.session = session
 
-with open("railway_stations.json", "r", encoding="utf-8") as f:
-    data = json.load(f)
+    def commit(self):
+        self.session.commit()
 
-for station in data:
-    lat = data[station].get("lat")
-    lon = data[station].get("lon")
-    platforms = data[station].get("platforms", 1)
 
-    session.add(Station(name = station, platform = platforms, latitude = lat, longitude = lon))
+class StationFill(DBFill):
+    def fill_from_json(self, filepath):
+        with open(filepath, "r", encoding="utf-8") as f:
+            data = json.load(f)
 
-session.commit()
-print(session.query(Station).count())
-session.close()
+        for name, coords in data.items():
+            station = Station(
+                name=name,
+                platform=coords.get("platforms", 1),
+                latitude=coords["lat"],
+                longitude=coords["lon"]
+            )
+            self.session.add(station)
+
+        self.commit()
+
+if __name__ == "__main__":
+    engine = create_engine("sqlite:///EuroTicket.db")
+    Session = sessionmaker(bind=engine)
+    session = Session()
+    Base.metadata.create_all(engine)
+    StationFill(session).fill_from_json("railway_stations.json")
+    session.close()
