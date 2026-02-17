@@ -1,5 +1,6 @@
-from sqlalchemy import Column, Integer, String, JSON, Float, ForeignKey, Time, Date, Boolean, CheckConstraint
-from sqlalchemy.orm import relationship, declarative_base
+from sqlalchemy import Column, Integer, String, JSON, Float, ForeignKey, Time, Date, Boolean, create_engine
+from sqlalchemy.orm import relationship, declarative_base, sessionmaker
+import json
 
 Base = declarative_base()
 
@@ -7,11 +8,12 @@ Base = declarative_base()
 class Station(Base):
     __tablename__ = 'stations'
 
-    id = Column(Integer, primary_key=True)
+    id = Column(Integer,  primary_key=True)
     name = Column(String, nullable=False, index=True)
     platform = Column(Integer)
     latitude = Column(Float)
     longitude = Column(Float)
+    stops = relationship("RouteStop", back_populates="station")
 
 
 class Train(Base):
@@ -69,6 +71,27 @@ class Graph(Base):
     __tablename__ = "graph"
 
     id = Column(Integer, primary_key=True)
-    departure = Column(String, ForeignKey("stations.name"))
-    arrival = Column(String, ForeignKey("stations.name"))
+    departure = Column(Integer, ForeignKey("stations.id"))
+    arrival = Column(Integer, ForeignKey("stations.id"))
     path = Column(JSON)
+
+
+engine = create_engine("sqlite:///EuroTicket.db")
+Session = sessionmaker(bind=engine)
+session = Session()
+
+Base.metadata.create_all(engine)
+
+with open("railway_stations.json", "r", encoding="utf-8") as f:
+    data = json.load(f)
+
+for station in data:
+    lat = data[station].get("lat")
+    lon = data[station].get("lon")
+    platforms = data[station].get("platforms", 1)
+
+    session.add(Station(name = station, platform = platforms, latitude = lat, longitude = lon))
+
+session.commit()
+print(session.query(Station).count())
+session.close()
