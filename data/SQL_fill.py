@@ -26,7 +26,7 @@ class Train(Base):
     has_wifi = Column(Boolean, default=False)
     has_air_con = Column(Boolean, default=False)
     has_restaurant = Column(Boolean, default=False)
-    has_bycycle_holder = Column(Boolean, default=False)
+    has_bicycle_holder = Column(Boolean, default=False)
     is_accessible = Column(Boolean, default=False)
     trips = relationship("Trip", back_populates="train")
 
@@ -111,7 +111,7 @@ class TrainFill(DBFill):
                 has_wifi=train_info.get("has_wifi", False),
                 has_air_con=train_info.get("has_AC", False),
                 has_restaurant=train_info.get("has_restaurant", False),
-                has_bycycle_holder=train_info.get("has_bicycle", False),
+                has_bicycle_holder=train_info.get("has_bicycle", False),
                 is_accessible=train_info.get("accessible", False),
             )
             self.session.add(train)
@@ -163,7 +163,6 @@ class RouteStopFill(DBFill):
                 if not station:
                     continue
 
-                # Перша зупинка має лише departure, остання лише arrival
                 arrival = None
                 departure = None
 

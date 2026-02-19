@@ -1,10 +1,9 @@
 import json
 
-def parse_osm_stations(input_data):
-    if isinstance(input_data, str):
-        data = json.loads(input_data)
-    else:
-        data = input_data
+def stations(input_data):
+    with open(input_data, 'r', encoding='utf-8') as f:
+        data = json.load(f)
+
     result = {}
     for element in data.get('elements', []):
         tags = element.get('tags', {})
@@ -17,10 +16,11 @@ def parse_osm_stations(input_data):
             }
             if 'platforms' in tags:
                 station_info['platforms'] = tags['platforms']
-
             result[name] = station_info
-
     return result
 
 
-if main
+if __name__ == "__main__":
+    data = stations("stations.json")
+    with open("railway_stations.json", 'w', encoding='utf-8') as f:
+        json.dump(data, f, ensure_ascii=False, indent=4)

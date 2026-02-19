@@ -38,7 +38,6 @@ def get_adjacent_pairs_named(session) -> list[tuple[str, str]]:
 
 
 if __name__ == "__main__":
-    print(get_adjacent_pairs(session))
-    print(get_adjacent_pairs_named(session))
+    print(len(get_adjacent_pairs_named(session)))
 
     session.close()
