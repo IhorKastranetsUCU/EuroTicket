@@ -189,14 +189,14 @@ class RouteStopFill(DBFill):
 
 
 if __name__ == "__main__":
-    engine = create_engine("sqlite:///EuroTicket1.db")
+    engine = create_engine("sqlite:///EuroTicket.db")
     Session = sessionmaker(bind=engine)
     session = Session()
     Base.metadata.create_all(engine)
 
     StationFill(session).fill_from_json("railway_stations.json")
-    TrainFill(session).fill_from_json("structure.json")
-    TripFill(session).fill_from_json("structure.json")
-    RouteStopFill(session).fill_from_json("structure.json")
+    TrainFill(session).fill_from_json("../data/structure.json")
+    TripFill(session).fill_from_json("../data/structure.json")
+    RouteStopFill(session).fill_from_json("../data/structure.json")
 
     session.close()

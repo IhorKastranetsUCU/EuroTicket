@@ -38,7 +38,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // Додаємо обробку натискання Enter
     departureInput.addEventListener('keypress', function(e) {
         if (e.key === 'Enter') {
             arrivalInput.focus();
