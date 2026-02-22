@@ -15,7 +15,7 @@
 │   ├── css/
 │   │   └── style.css      # Стилі CSS
 │   └── js/
-│       └── script.js      # JavaScript для інтерактивності
+│       └── main.js      # JavaScript для інтерактивності
 ```
 
 ## Встановлення

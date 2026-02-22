@@ -1,143 +1,147 @@
+import os
+import json
+import folium
 from flask import Flask, render_template, jsonify, request
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
-import json
-import os
+
+# Імпортуємо твій сервіс та моделі
+# Переконайся, що файли db_interface.py та SQL_fill.py лежать поруч
+from db_interface import RouteService
+from SQL_fill import Station, Trip, RouteStop
 
 app = Flask(__name__)
 
-engine = create_engine("sqlite:///EuroTicket.db")
+# ─── НАЛАШТУВАННЯ БАЗИ ДАНИХ ──────────────────────────────────────────
+basedir = os.path.abspath(os.path.dirname(__file__))
+# Вказуємо шлях до EuroTicket.db (можна змінити на EuroTicket1.db якщо потрібно)
+db_path = os.path.join(basedir, 'EuroTicket.db')
+engine = create_engine(f"sqlite:///{db_path}", connect_args={'check_same_thread': False})
 Session = sessionmaker(bind=engine)
 
 
-def get_session():
-    return Session()
+# ─── МАРШРУТИ FLASK ──────────────────────────────────────────────────
 
-
-# Load station data from JSON
-with open("railway_stations.json", "r", encoding="utf-8") as f:
-    STATIONS_JSON = json.load(f)
-
-
-@app.route("/")
+@app.route('/')
 def index():
-    return render_template("index.html")
+    return render_template('index.html')
 
 
-@app.route("/api/stations")
-def get_stations():
-    """Return all stations with their coordinates and platform info"""
-    session = get_session()
+@app.route('/api/map')
+def get_map():
+    session = Session()
     try:
-        from SQL_fill import Station
         stations = session.query(Station).all()
-        result = []
-        for s in stations:
-            if s.name in STATIONS_JSON:
-                coords = STATIONS_JSON[s.name]
-                result.append({
-                    "id": s.id,
-                    "name": s.name,
-                    "lat": s.latitude or coords["lat"],
-                    "lon": s.longitude or coords["lon"],
-                    "platforms": s.platform or 1
-                })
-            elif s.latitude and s.longitude:
-                result.append({
-                    "id": s.id,
-                    "name": s.name,
-                    "lat": s.latitude,
-                    "lon": s.longitude,
-                    "platforms": s.platform or 1
-                })
-        return jsonify(result)
-    finally:
-        session.close()
 
+        # Створюємо карту з темною темою
+        m = folium.Map(
+            location=[52.2, 19.2],
+            zoom_start=6,
+            tiles="CartoDB dark_matter",
+            zoom_control=False
+        )
 
-@app.route("/api/reachable")
-def get_reachable():
-    """Get all reachable stations from a given station"""
-    station_name = request.args.get("from", "")
-    if not station_name:
-        return jsonify([])
+        # JS скрипт для маніпуляцій з маркерами без перезавантаження карти
+        custom_js = """
+        window.addEventListener('message', function(event) {
+            if (event.data.type === 'HIGHLIGHT_STATIONS') {
+                const selected = event.data.selected;
+                const reachable = event.data.reachable;
 
-    session = get_session()
-    try:
-        from SQL_fill import Station, RouteStop
-        start_station = session.query(Station).filter_by(name=station_name).first()
-        if not start_station:
-            return jsonify([])
+                window.Object.keys(window).forEach(key => {
+                    let obj = window[key];
+                    if (obj && obj.options && obj.options.tooltip) {
+                        let stationName = obj.options.tooltip.split(' (')[0];
 
-        reachable = set()
-        stops = session.query(RouteStop).filter_by(station_id=start_station.id).all()
-
-        for stop in stops:
-            next_stops = (session.query(RouteStop).filter(
-                RouteStop.trip_id == stop.trip_id,
-                RouteStop.stop_order > stop.stop_order
-            ).all())
-            for ns in next_stops:
-                reachable.add(ns.station.name)
-
-        return jsonify(list(reachable))
-    finally:
-        session.close()
-
-
-@app.route("/api/routes")
-def get_routes():
-    """Get all routes between two stations"""
-    departure_name = request.args.get("from", "")
-    arrival_name = request.args.get("to", "")
-
-    if not departure_name or not arrival_name:
-        return jsonify([])
-
-    session = get_session()
-    try:
-        from SQL_fill import Station, Trip, RouteStop
-
-        departure = session.query(Station).filter_by(name=departure_name).first()
-        arrival = session.query(Station).filter_by(name=arrival_name).first()
-
-        if not departure or not arrival:
-            return jsonify([])
-
-        trips = session.query(Trip).all()
-        results = []
-
-        for trip in trips:
-            stops = trip.stops
-            dep_stop = next((s for s in stops if s.station_id == departure.id), None)
-            arr_stop = next((s for s in stops if s.station_id == arrival.id), None)
-
-            if dep_stop and arr_stop and dep_stop.stop_order < arr_stop.stop_order:
-                route_segment = [
-                    {
-                        "station": s.station.name,
-                        "arrival": s.arrival_time.strftime("%H:%M") if s.arrival_time else None,
-                        "departure": s.departure_time.strftime("%H:%M") if s.departure_time else None
+                        if (stationName === selected) {
+                            // Обрана станція: збільшуємо x1.2 та робимо білою
+                            obj.setRadius(obj.options.originalRadius * 1.2);
+                            obj.setStyle({opacity: 1, fillOpacity: 1, color: '#FFFFFF', weight: 3});
+                        } else if (reachable.includes(stationName)) {
+                            // Доступні станції: залишаємо помаранчевими
+                            obj.setRadius(obj.options.originalRadius);
+                            obj.setStyle({opacity: 1, fillOpacity: 0.8, color: '#E8722A', weight: 1});
+                        } else {
+                            // Решта: стають прозорими
+                            obj.setRadius(obj.options.originalRadius);
+                            obj.setStyle({opacity: 0.1, fillOpacity: 0.05, color: '#E8722A'});
+                        }
                     }
-                    for s in stops
-                    if dep_stop.stop_order <= s.stop_order <= arr_stop.stop_order
-                ]
+                });
+            }
+        });
+        """
+        m.get_root().script.add_child(folium.Element(custom_js))
 
-                results.append({
-                    "train_number": trip.train.number,
-                    "train_name": trip.train.name,
-                    "has_wifi": trip.train.has_wifi,
-                    "has_air_con": trip.train.has_air_con,
-                    "has_restaurant": trip.train.has_restaurant,
-                    "has_bicycle_holder": trip.train.has_bicycle_holder,
-                    "is_accessible": trip.train.is_accessible,
-                    "route": route_segment
-                })
+        for s in stations:
+            if s.latitude and s.longitude:
+                # Парсимо платформи (захист від помилок у БД)
+                try:
+                    p_count = int(s.platform) if s.platform else 1
+                except (ValueError, TypeError):
+                    p_count = 1
 
-        return jsonify(results)
+                radius = 3 + (p_count * 1.5)
+
+                folium.CircleMarker(
+                    location=[s.latitude, s.longitude],
+                    radius=radius,
+                    originalRadius=radius,  # Зберігаємо для JS скейлінгу
+                    color="#E8722A",
+                    fill=True,
+                    fill_color="#E8722A",
+                    fill_opacity=0.8,
+                    weight=1,
+                    tooltip=f"{s.name} (Платформ: {p_count})",
+                    # Виклик функції selectStation у батьківському вікні
+                    popup=folium.Popup(
+                        f'<button onclick="parent.selectStation(\'{s.name}\')" style="cursor:pointer; padding:5px; background:#E8722A; color:white; border:none; border-radius:4px;">Вибрати</button>')
+                ).add_to(m)
+
+        return m._repr_html_()
+    except Exception as e:
+        return f"Database error: {str(e)}"
     finally:
         session.close()
 
 
-if __name__ == "__main__":
-    app.run(debug=True)
+@app.route('/api/stations')
+def get_stations():
+    session = Session()
+    stations = session.query(Station).all()
+    data = [{"name": s.name, "lat": s.latitude, "lon": s.longitude} for s in stations]
+    session.close()
+    return jsonify(data)
+
+
+@app.route('/api/reachable')
+def get_reachable():
+    name = request.args.get('name')
+    if not name: return jsonify([])
+
+    session = Session()
+    service = RouteService(session)
+    reachable_list = service.get_reachable_stations(name)
+    session.close()
+    return jsonify(reachable_list)
+
+
+@app.route('/api/search')
+def search():
+    from_st = request.args.get('from')
+    to_st = request.args.get('to')
+    date = request.args.get('date')
+
+    if not from_st or not to_st:
+        return jsonify([])
+
+    session = Session()
+    service = RouteService(session)
+    routes = service.get_route_between(from_st, to_st)
+    session.close()
+    return jsonify(routes)
+
+
+if __name__ == '__main__':
+    # Перевіряємо наявність папок, якщо потрібно
+    app.run(debug=True, port=5001)

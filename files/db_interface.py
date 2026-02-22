@@ -11,12 +11,12 @@ class RouteService:
         """Function to receive all the station that possible to reach from the given station
         :param station_name: Name of the station you look paths from
 
-        >>> engine = create_engine("sqlite:///EuroTicket1.db")
+        >>> engine = create_engine("sqlite:///EuroTicket.db")
         >>> Session = sessionmaker(bind=engine)
         >>> session = Session()
         >>> db = RouteService(session)
         >>> db.get_reachable_stations("Zlochiv")
-        ['Lviv', 'Przemyśl Główny']
+        ['Przemyśl Główny', 'Lviv']
         """
         start_station = self.session.query(Station).filter_by(name=station_name).first()
         if not start_station:
@@ -41,7 +41,7 @@ class RouteService:
         :param departure_name: Name of the departure station
         :param arrival_name: Name of the arrival station
 
-        >>> engine = create_engine("sqlite:///EuroTicket1.db")
+        >>> engine = create_engine("sqlite:///EuroTicket.db")
         >>> Session = sessionmaker(bind=engine)
         >>> session = Session()
         >>> db = RouteService(session)
@@ -77,21 +77,25 @@ class RouteService:
                 ]
 
                 results.append({
+                    "trip_id": trip.id,
                     "train_number": trip.train.number,
                     "train_name": trip.train.name,
                     "has_wifi": trip.train.has_wifi,
                     "has_air_con": trip.train.has_air_con,
+                    "has_restaurant": trip.train.has_restaurant,
+                    "has_bicycle": trip.train.has_bicycle_holder,
+                    "accessible": trip.train.is_accessible,
                     "route": route_segment
                 })
 
         return results
 
 """ part of the code to set up the session with DB
-engine = create_engine("sqlite:///EuroTicket1.db")
-Session = sessionmaker(bind=engine)
-session = Session()
-
-db = RouteService(session)
 """
 
-
+if __name__ == "__main__":
+    engine = create_engine("sqlite:///data/EuroTicket.db")
+    Session = sessionmaker(bind=engine)
+    session = Session()
+    db = RouteService(session)
+    print(db.get_reachable_stations("Wrocław Główny"))

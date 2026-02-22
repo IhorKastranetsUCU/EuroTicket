@@ -1,8 +1,8 @@
-from SQL_fill import Base, Station, Train, Trip, RouteStop, Graph
+from SQL_fill import Trip
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 
-engine = create_engine("sqlite:///EuroTicket1.db")
+engine = create_engine("sqlite:///EuroTicket.db")
 Session = sessionmaker(bind=engine)
 session = Session()
 

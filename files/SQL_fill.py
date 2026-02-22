@@ -142,12 +142,10 @@ class RouteStopFill(DBFill):
     def fill_from_json(self, filepath):
         with open(filepath, "r", encoding="utf-8") as f:
             data = json.load(f)
-
         for number, train_info in data.items():
             train = self.session.query(Train).filter_by(number=number).first()
             if not train:
                 continue
-
             trip = self.session.query(Trip).filter_by(train_id=train.id).first()
             if not trip:
                 continue
@@ -194,9 +192,9 @@ if __name__ == "__main__":
     session = Session()
     Base.metadata.create_all(engine)
 
-    StationFill(session).fill_from_json("railway_stations.json")
-    TrainFill(session).fill_from_json("../data/structure.json")
-    TripFill(session).fill_from_json("../data/structure.json")
-    RouteStopFill(session).fill_from_json("../data/structure.json")
+    StationFill(session).fill_from_json("data/railway_stations.json")
+    TrainFill(session).fill_from_json("data/old_files/structure.json")
+    TripFill(session).fill_from_json("data/old_files/structure.json")
+    RouteStopFill(session).fill_from_json("data/old_files/structure.json")
 
     session.close()
