@@ -1,119 +1,851 @@
 :root {
-    --orange: #E8722A;
-    --orange-hover: #ff853c;
-    --bg-dark: #0E0D0C;
-    --bg-panel: rgba(22, 21, 20, 0.9);
-    --text: #F0EDE8;
-    --border: rgba(255, 255, 255, 0.1);
-    --panel-w: 400px;
+    --bg-header: #0e1015;
+    --bg-sidebar: #14171c;
+    --bg-input: #1d2128;
+    --border-color: #2b2f36;
+    --text-primary: #ffffff;
+    --text-secondary: #8c96a8;
+    --brand-orange: #f27b21;
+    --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
-* { box-sizing: border-box; margin: 0; padding: 0; }
+[data-theme="light"] {
+    --bg-header: #ffffff;
+    --bg-sidebar: #f8f9fa;
+    --bg-input: #ffffff;
+    --border-color: #e2e8f0;
+    --text-primary: #1e293b;
+    --text-secondary: #64748b;
+    --brand-orange: #f97316;
+}
 
-body {
-    background-color: var(--bg-dark);
-    color: var(--text);
-    font-family: 'Syne', sans-serif;
-    height: 100vh;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+    font-family: var(--font-family);
+    background-color: var(--bg-header);
+    color: var(--text-primary);
     overflow: hidden;
 }
 
-/* Карта як підкладка */
-#map-wrapper {
-    position: absolute;
-    top: 0; left: 0;
-    width: 100vw;
+.app-container {
+    display: flex;
+    flex-direction: column;
     height: 100vh;
-    z-index: 1;
 }
 
-#map-frame { width: 100%; height: 100%; border: none; }
-
-/* Годинник */
-#top-clock {
-    position: fixed; top: 20px; left: 50%; transform: translateX(-50%);
-    z-index: 1000; background: var(--bg-panel);
-    padding: 8px 24px; border-radius: 50px;
-    border: 1px solid var(--border);
-    font-family: 'DM Mono', monospace; color: var(--orange);
-    backdrop-filter: blur(10px);
+/* Header Styles */
+.topbar {
+    height: 60px;
+    background-color: var(--bg-header);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    border-bottom: 1px solid var(--border-color);
+    z-index: 10;
 }
 
-/* Пошукова панель знизу */
-.search-container-bottom {
-    position: fixed; bottom: 30px; left: 50%;
-    transform: translateX(-50%); z-index: 1100;
+.brand-section {
+    display: flex;
+    align-items: center;
+    gap: 30px;
 }
 
-.search-box {
-    background: var(--bg-panel);
-    padding: 12px; border-radius: 24px;
-    display: flex; gap: 10px;
-    border: 1px solid var(--border);
-    backdrop-filter: blur(15px);
-    box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+.controls-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* Space out the theme buttons horizontally */
 }
 
-.input-group { position: relative; }
-
-input {
-    background: #1e1d1b; border: 1px solid var(--border);
-    color: white; padding: 12px 16px; border-radius: 14px;
-    font-family: 'DM Mono'; outline: none; transition: 0.3s;
-    width: 180px;
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
 }
 
-input:focus { border-color: var(--orange); }
-
-/* Автокомпліт (випадає вгору) */
-.ac-dropdown {
-    position: absolute; bottom: calc(100% + 10px);
-    left: 0; width: 100%; background: #1e1d1b;
-    border: 1px solid var(--border); border-radius: 12px;
-    display: none; max-height: 200px; overflow-y: auto;
-    z-index: 1200;
+.logo-icon {
+    height: 60px;
+    width: auto;
 }
 
-.ac-dropdown.show { display: block; }
-
-.ac-item {
-    padding: 10px 15px; cursor: pointer; border-bottom: 1px solid var(--border);
+.logo-text {
+    font-size: 1.1rem;
+    font-weight: 600;
 }
 
-.ac-item:hover { background: var(--orange); color: white; }
-
-/* Панелі */
-.panel {
-    position: fixed; top: 0; width: var(--panel-w); height: 100%;
-    background: var(--bg-panel); backdrop-filter: blur(20px);
-    z-index: 900; transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
-    padding: 100px 30px; border-right: 1px solid var(--border);
+/* Digital Clock */
+.digital-clock {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    font-family: 'Courier New', Courier, monospace;
+    background: var(--bg-input);
+    padding: 4px 16px;
+    border-radius: 20px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+    letter-spacing: 2px;
 }
 
-#left-panel { left: 0; transform: translateX(-100%); }
-#right-panel { right: 0; transform: translateX(100%); border-left: 1px solid var(--border); }
-
-.panel.active { transform: translateX(0); }
-
-/* Кнопки */
-.main-action-btn {
-    background: var(--orange); color: white; border: none;
-    padding: 0 25px; border-radius: 14px; cursor: pointer;
-    font-weight: 800; font-family: 'Syne'; transition: 0.3s;
+.nav-links a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: 0.9rem;
+    margin-right: 20px;
+    transition: color 0.2s;
 }
 
-.main-action-btn:hover { background: var(--orange-hover); transform: scale(1.05); }
-
-.clear-btn {
-    background: transparent; color: var(--text); border: 1px solid var(--border);
-    width: 45px; border-radius: 14px; cursor: pointer;
+.nav-links a:hover {
+    color: var(--text-primary);
 }
 
-/* Картки маршрутів */
-.route-card {
-    background: rgba(255,255,255,0.03); border: 1px solid var(--border);
-    padding: 20px; border-radius: 18px; margin-bottom: 15px;
-    cursor: pointer; transition: 0.3s;
+.icon-btn {
+    background: var(--bg-input);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background 0.2s;
 }
 
-.route-card:hover { border-color: var(--orange); background: rgba(232, 114, 42, 0.05); }
+.icon-btn svg {
+    width: 18px;
+    height: 18px;
+}
+
+.icon-btn:hover {
+    background: #282d36;
+}
+
+/* Main Content Area */
+.main-content {
+    display: flex;
+    flex: 1;
+    height: calc(100vh - 60px);
+    position: relative;
+    /* Core for map overlays */
+}
+
+/* Sidebar Styles (Now Overlays) */
+.sidebar {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 340px;
+    /* Restored original width */
+    background-color: var(--bg-sidebar);
+    border-right: 1px solid var(--border-color);
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    z-index: 500;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--border-color);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--text-secondary);
+}
+
+.search-container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    /* Horizontal layout */
+    align-items: center;
+    background: var(--bg-input);
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.input-wrapper {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    min-width: 230px;
+    flex: 1;
+    width: 50%;
+    /* Force perfectly equal widths so center is absolute center */
+    /* Slightly narrower inputs */
+}
+
+.bottom-input {
+    padding-left: 30px;
+    /* Push the 'To' icon away from the central swap button */
+}
+
+.top-input {
+    border-right: 1px solid var(--border-color);
+    /* Vertical border now */
+    border-bottom: none;
+}
+
+.input-icon {
+    color: var(--text-secondary);
+    margin-right: 12px;
+    font-size: 1.2rem;
+}
+
+input[type="text"] {
+    background: transparent;
+    border: none;
+    color: var(--text-primary);
+    font-size: 0.95rem;
+    width: 100%;
+    outline: none;
+    padding-right: 25px;
+    /* Space for the clear button */
+}
+
+input[type="text"]::placeholder {
+    color: var(--text-secondary);
+}
+
+/* Inline Clear Buttons */
+.clear-inline-btn {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    color: var(--text-secondary);
+    font-size: 1.5rem;
+    line-height: 1;
+    cursor: pointer;
+    display: none;
+    /* Shown via JS when input has text */
+    z-index: 5;
+}
+
+.clear-inline-btn:hover {
+    color: #ff4b4b;
+}
+
+/* Autocomplete Styles */
+.autocomplete-list {
+    position: absolute;
+    bottom: 100%;
+    /* Open upwards from the input */
+    left: 0;
+    right: 0;
+    background: var(--bg-input);
+    border: 1px solid var(--border-color);
+    border-radius: 8px 8px 0 0;
+    /* Rounded on top instead of bottom */
+    max-height: 250px;
+    overflow-y: auto;
+    z-index: 1000;
+    display: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+}
+
+.autocomplete-list.active {
+    display: block;
+}
+
+.autocomplete-item {
+    padding: 12px 15px;
+    cursor: pointer;
+    border-bottom: 1px solid var(--border-color);
+    color: var(--text-primary);
+    transition: background 0.2s;
+}
+
+.autocomplete-item:last-child {
+    border-bottom: none;
+}
+
+.autocomplete-item:hover {
+    background: #282d36;
+}
+
+/* Swap Button */
+.swap-btn {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    /* Centers perfectly over the border line */
+    background: var(--bg-sidebar);
+    border: 1px solid var(--border-color);
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 10;
+    transition: background 0.2s, transform 0.2s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.swap-btn svg {
+    width: 14px;
+    height: 14px;
+    transform: rotate(90deg);
+    /* Horizontal arrow direction */
+}
+
+/* Bottom Floating Panel */
+.bottom-floating-panel {
+    position: absolute;
+    bottom: 15px;
+    /* Extremely low to the bottom */
+    left: 50%;
+    /* Centered rigidly relative to screen */
+    transform: translateX(-50%);
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    /* Stack search bar on top of date/time */
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    pointer-events: auto;
+    transition: transform 0.3s ease;
+    white-space: nowrap;
+}
+
+/* No longer shifting layout based on sidebars, it remains centered always */
+
+@media (max-width: 1200px) {
+
+    /* If window is small, wrap the elements so they fit */
+    .bottom-floating-panel {
+        flex-wrap: wrap;
+        width: 80%;
+    }
+}
+
+/* Map Container */
+#map-container {
+    flex: 1;
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+#map {
+    width: 100%;
+    height: 100%;
+    background-color: #0b0b0b;
+}
+
+/* Leaflet Controls Customization */
+.leaflet-bar {
+    border: none !important;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3) !important;
+}
+
+.leaflet-bar a {
+    background-color: #1d2128 !important;
+    color: #fff !important;
+    border-bottom: 1px solid #2b2f36 !important;
+}
+
+.leaflet-bar a:hover {
+    background-color: #282d36 !important;
+}
+
+/* Date/Time and Actions */
+.datetime-container {
+    display: flex;
+    gap: 10px;
+    background: var(--bg-input);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    /* Remove top margin as it's inline now */
+}
+
+.datetime-input {
+    background: transparent;
+    border: none;
+    color: var(--text-primary);
+    padding: 12px 10px;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-family: inherit;
+    outline: none;
+    cursor: pointer;
+}
+
+.date-field {
+    border-right: 1px solid var(--border-color);
+    border-radius: 8px 0 0 8px;
+}
+
+.time-field {
+    border-radius: 0 8px 8px 0;
+}
+
+.datetime-input::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+/* Train Results Section */
+.train-results-container {
+    /* Removed padding/margin since it starts at top of sidebar now */
+    flex: 1;
+    overflow-y: auto;
+}
+
+.results-header {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 15px;
+}
+
+.train-card {
+    background: var(--bg-input);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 12px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.train-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    border-color: #3b4048;
+}
+
+.train-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.train-number {
+    font-weight: 700;
+    color: var(--brand-orange);
+    font-size: 1.1rem;
+}
+
+.train-name {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+.train-route-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.route-point {
+    display: flex;
+    flex-direction: column;
+}
+
+.route-time {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+.route-station {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    max-width: 120px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.route-arrow {
+    color: var(--border-color);
+    font-weight: bold;
+}
+
+/* Scrollbar styling for sidebar */
+.sidebar::-webkit-scrollbar,
+.train-results-container::-webkit-scrollbar {
+    width: 6px;
+}
+
+.sidebar::-webkit-scrollbar-track,
+.train-results-container::-webkit-scrollbar-track {
+    background: var(--bg-sidebar);
+}
+
+.sidebar::-webkit-scrollbar-thumb,
+.train-results-container::-webkit-scrollbar-thumb,
+.right-sidebar::-webkit-scrollbar-thumb {
+    background-color: var(--border-color);
+    border-radius: 6px;
+}
+
+/* Right Sidebar Details */
+.right-sidebar {
+    width: 300px;
+    background-color: var(--bg-sidebar);
+    border-left: 1px solid var(--border-color);
+    padding: 20px;
+    z-index: 501;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: -360px;
+    top: 0;
+    /* Align perfectly to the top of main-content */
+    bottom: 0;
+    /* Stretch full height alongside the map */
+    transition: right 0.3s ease;
+    overflow-y: auto;
+    box-shadow: -4px 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.right-sidebar.open {
+    right: 0;
+}
+
+.sidebar-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: transparent;
+    border: none;
+    color: var(--text-secondary);
+    font-size: 1.8rem;
+    line-height: 1;
+    cursor: pointer;
+    transition: color 0.2s;
+    z-index: 10;
+}
+
+.sidebar-close:hover {
+    color: var(--text-primary);
+}
+
+.details-header {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--brand-orange);
+    margin-top: 25px;
+    /* Give space below absolute the close button */
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding-right: 30px;
+    /* Prevent text going under close button */
+    word-break: break-word;
+    /* Handle extremely long train names gracefully */
+}
+
+.details-subheader {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.amenities-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 25px;
+}
+
+.amenity-badge {
+    background: var(--bg-input);
+    border: 1px solid var(--border-color);
+    padding: 6px 12px;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+}
+
+.amenity-badge.active {
+    color: #4ade80;
+    border-color: #4ade80;
+    background: rgba(74, 222, 128, 0.1);
+}
+
+.stops-timeline {
+    position: relative;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.stops-timeline::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    bottom: 15px;
+    left: 7px;
+    width: 2px;
+    background: var(--border-color);
+}
+
+.stop-item {
+    position: relative;
+    margin-bottom: 20px;
+    opacity: 0.4;
+    /* Inactive stops are faded by default */
+    transition: opacity 0.2s;
+}
+
+.stop-item.active-segment {
+    opacity: 1.0;
+}
+
+.stop-item::before {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background: var(--border-color);
+    /* Inactive color */
+    border-radius: 50%;
+    left: -18px;
+    top: 4px;
+    box-shadow: 0 0 0 4px var(--bg-sidebar);
+}
+
+.stop-item.active-segment::before {
+    background: var(--brand-orange);
+}
+
+.stop-item.terminal::before {
+    background: #00ff00;
+}
+
+.stop-time {
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-right: 10px;
+    display: inline-block;
+    width: 45px;
+}
+
+.stop-name {
+    color: var(--text-primary);
+    font-size: 0.95rem;
+}
+
+/* Modal Overlay Styles */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(4px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-content {
+    background-color: var(--bg-sidebar);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 30px;
+    width: 90%;
+    max-width: 600px;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    transform: translateY(-20px);
+    transition: transform 0.3s ease;
+}
+
+.modal-overlay.active .modal-content {
+    transform: translateY(0);
+}
+
+.modal-close {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    background: transparent;
+    border: none;
+    color: var(--text-secondary);
+    font-size: 2rem;
+    cursor: pointer;
+    line-height: 1;
+    transition: color 0.2s;
+}
+
+.modal-close:hover {
+    color: var(--text-primary);
+}
+
+.modal-title {
+    color: var(--brand-orange);
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 10px;
+}
+
+.modal-body {
+    color: var(--text-primary);
+    line-height: 1.6;
+}
+
+.modal-body p {
+    margin-bottom: 15px;
+}
+
+.modal-section-title {
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.credits-section {
+    background: var(--bg-input);
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px dashed var(--border-color);
+}
+
+.credits-placeholder {
+    color: var(--text-secondary);
+    font-style: italic;
+    margin: 0 !important;
+}
+
+/* --- Responsive Media Queries --- */
+
+/* Tablet & Smaller Laptops (Max Width 900px) */
+@media (max-width: 900px) {
+
+    /* Left Sidebar slightly narrowed */
+    .sidebar {
+        width: 300px;
+    }
+
+    /* Right Sidebar adjusts to cover most of screen if needed */
+    .right-sidebar {
+        width: 300px;
+        right: -300px;
+    }
+
+    /* Floating Panel strict centering on smaller screens */
+    .bottom-floating-panel {
+        bottom: 20px;
+        gap: 10px;
+    }
+
+    .input-wrapper {
+        min-width: 200px;
+    }
+}
+
+/* Mobile Phones (Max Width 600px) */
+@media (max-width: 600px) {
+    .brand-section {
+        gap: 15px;
+    }
+
+    .digital-clock {
+        display: none;
+        /* Hide clock on very small screens to save header space */
+    }
+
+    /* Full width sidebars on mobile */
+    .sidebar,
+    .right-sidebar {
+        width: 100%;
+        max-width: none;
+    }
+
+    .right-sidebar {
+        right: -100%;
+    }
+
+    /* Stack the search controls vertically */
+    .search-container {
+        flex-direction: column;
+        width: 90vw;
+        /* Take most of screen width */
+    }
+
+    .top-input {
+        border-right: none;
+        border-bottom: 1px solid var(--border-color);
+    }
+
+    /* Swap button rotated back for vertical stacking */
+    .swap-btn svg {
+        transform: rotate(0deg);
+    }
+
+    .swap-btn {
+        /* Move swap btn to right edge between inputs */
+        left: auto;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .input-wrapper {
+        min-width: 0;
+        width: 100%;
+    }
+
+    .datetime-container {
+        width: 90vw;
+    }
+
+    .datetime-input {
+        flex: 1;
+        width: 50%;
+    }
+}
