@@ -260,7 +260,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <span class="amenity-badge ${trip.has_air_con ? 'active' : ''}">Кондиціонер</span>
             <span class="amenity-badge ${trip.has_restaurant ? 'active' : ''}">Ресторан</span>
             <span class="amenity-badge ${trip.has_bicycle ? 'active' : ''}">Велосипед</span>
-            <span class="amenity-badge ${trip.accessible ? 'active' : ''}">Для інвалідів</span>
+            <span class="amenity-badge ${trip.accessible ? 'active' : ''}">Інклюзивність</span>
         </div>`;
 
         html += `<div class="stops-timeline">`;
