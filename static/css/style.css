@@ -794,40 +794,36 @@ input[type="text"]::placeholder {
     }
 }
 
-/* Mobile Phones (Max Width 600px) */
-@media (max-width: 600px) {
+/* Mobile Phones (Max Width 768px) */
+@media (max-width: 768px) {
     .digital-clock {
-        display: none;
+        display: block;
+        font-size: 0.9rem;
+        padding: 2px 8px;
+        z-index: 4500;
     }
 
-    /* Пошукова панель — bottom sheet знизу */
+    /* Пошукова панель — зверху (#map-container) */
     .bottom-floating-panel {
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        top: auto;
-        transform: none;
-        width: 100%;
+        position: absolute;
+        top: 10px;
+        bottom: auto;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
         background: var(--bg-sidebar);
-        border-radius: 16px 16px 0 0;
-        border-top: 1px solid var(--border-color);
-        box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.4);
-        z-index: 1000;
-        padding: 8px 16px 24px;
+        border-radius: 16px;
+        border: 1px solid var(--border-color);
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+        z-index: 4000;
+        padding: 8px 16px;
         gap: 10px;
         align-items: stretch;
         white-space: normal;
     }
 
     .bottom-floating-panel::before {
-        content: '';
-        display: block;
-        width: 36px;
-        height: 4px;
-        background: var(--border-color);
-        border-radius: 2px;
-        margin: 0 auto 10px;
+        display: none;
     }
 
     .search-container {
@@ -865,39 +861,52 @@ input[type="text"]::placeholder {
         flex: 1;
     }
 
-    /* Ліва панель — над bottom sheet, height: auto */
+    /* Ліва панель — bottom-anchored panel */
     .sidebar {
-        position: fixed;
+        position: absolute;
         left: 0;
         right: 0;
         bottom: 0;
         top: auto;
         width: 100%;
-        max-height: 60vh;
+        height: 30vh;
+        max-height: 90vh;
         overflow-y: auto;
+        resize: vertical;
+        border-top: 1px solid var(--border-color);
         border-right: none;
-        border-radius: 0;
-        box-shadow: none;
-        z-index: 999;
-        /* Відступ знизу = висота bottom-floating-panel */
-        padding-bottom: 185px;
+        border-radius: 16px 16px 0 0;
+        box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.3);
+        z-index: 5000;
+        padding-bottom: 20px;
     }
 
-    /* Правий sidebar — повний екран */
+    /* Правий sidebar — повний екран під Selection Bar */
     .right-sidebar {
-        position: fixed;
+        position: absolute;
         top: 0;
-        left: 0;
+        left: auto;
         right: -100%;
         bottom: 0;
         width: 100%;
         border-left: none;
         border-radius: 0;
-        z-index: 2000;
+        background-color: var(--bg-sidebar);
+        z-index: 5000;
+        visibility: hidden;
+        transition: right 0.3s ease, visibility 0.3s ease;
     }
 
     .right-sidebar.open {
         right: 0;
+        visibility: visible;
+    }
+
+    .sidebar-close {
+        top: 15px;
+        right: 15px;
+        z-index: 10;
+        color: var(--text-primary);
     }
 }
 
@@ -914,4 +923,11 @@ input[type="text"]::placeholder {
     transition: color 0.2s;
     display: flex;
     align-items: center;
+}
+
+/* Fix for desktop left sidebar shrinking */
+@media (min-width: 769px) {
+    .sidebar {
+        height: 100% !important;
+    }
 }
