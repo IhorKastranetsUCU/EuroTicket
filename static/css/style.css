@@ -761,23 +761,29 @@ input[type="text"]::placeholder {
     margin: 0 !important;
 }
 
+/* Mobile Bottom Sheet */
+.mobile-routes-sheet {
+    display: none;
+}
+
+/* Mobile Fullscreen Train Detail */
+.mobile-train-detail {
+    display: none;
+}
+
 /* --- Responsive Media Queries --- */
 
 /* Tablet & Smaller Laptops (Max Width 900px) */
 @media (max-width: 900px) {
-
-    /* Left Sidebar slightly narrowed */
     .sidebar {
         width: 300px;
     }
 
-    /* Right Sidebar adjusts to cover most of screen if needed */
     .right-sidebar {
         width: 300px;
         right: -300px;
     }
 
-    /* Floating Panel strict centering on smaller screens */
     .bottom-floating-panel {
         bottom: 20px;
         gap: 10px;
@@ -790,31 +796,44 @@ input[type="text"]::placeholder {
 
 /* Mobile Phones (Max Width 600px) */
 @media (max-width: 600px) {
-    .brand-section {
-        gap: 15px;
-    }
-
     .digital-clock {
         display: none;
-        /* Hide clock on very small screens to save header space */
     }
 
-    /* Full width sidebars on mobile */
-    .sidebar,
-    .right-sidebar {
+    /* Пошукова панель — bottom sheet знизу */
+    .bottom-floating-panel {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: auto;
+        transform: none;
         width: 100%;
-        max-width: none;
+        background: var(--bg-sidebar);
+        border-radius: 16px 16px 0 0;
+        border-top: 1px solid var(--border-color);
+        box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.4);
+        z-index: 1000;
+        padding: 8px 16px 24px;
+        gap: 10px;
+        align-items: stretch;
+        white-space: normal;
     }
 
-    .right-sidebar {
-        right: -100%;
+    .bottom-floating-panel::before {
+        content: '';
+        display: block;
+        width: 36px;
+        height: 4px;
+        background: var(--border-color);
+        border-radius: 2px;
+        margin: 0 auto 10px;
     }
 
-    /* Stack the search controls vertically */
     .search-container {
         flex-direction: column;
-        width: 90vw;
-        /* Take most of screen width */
+        width: 100%;
+        box-shadow: none;
     }
 
     .top-input {
@@ -822,17 +841,15 @@ input[type="text"]::placeholder {
         border-bottom: 1px solid var(--border-color);
     }
 
-    /* Swap button rotated back for vertical stacking */
-    .swap-btn svg {
-        transform: rotate(0deg);
-    }
-
     .swap-btn {
-        /* Move swap btn to right edge between inputs */
         left: auto;
-        right: 20px;
+        right: 16px;
         top: 50%;
         transform: translateY(-50%);
+    }
+
+    .swap-btn svg {
+        transform: rotate(0deg);
     }
 
     .input-wrapper {
@@ -841,11 +858,45 @@ input[type="text"]::placeholder {
     }
 
     .datetime-container {
-        width: 90vw;
+        width: 100%;
     }
 
     .datetime-input {
         flex: 1;
-        width: 50%;
+    }
+
+    /* Ліва панель — над bottom sheet, height: auto */
+    .sidebar {
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: auto;
+        width: 100%;
+        max-height: 60vh;
+        overflow-y: auto;
+        border-right: none;
+        border-radius: 0;
+        box-shadow: none;
+        z-index: 999;
+        /* Відступ знизу = висота bottom-floating-panel */
+        padding-bottom: 185px;
+    }
+
+    /* Правий sidebar — повний екран */
+    .right-sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: -100%;
+        bottom: 0;
+        width: 100%;
+        border-left: none;
+        border-radius: 0;
+        z-index: 2000;
+    }
+
+    .right-sidebar.open {
+        right: 0;
     }
 }

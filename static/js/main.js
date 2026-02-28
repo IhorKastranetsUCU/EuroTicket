@@ -93,7 +93,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
     window.isLiveMode = true;
 
-    if (dateInput) dateInput.addEventListener('change', () => { window.isLiveMode = false; });
+    if (dateInput) dateInput.addEventListener('change', () => {
+        window.isLiveMode = false;
+        const selected = new Date(dateInput.value);
+        const cutoff = new Date('2026-03-08');
+        const warning = document.getElementById('date-warning');
+        if (selected > cutoff) {
+            warning.style.display = 'block';
+        } else {
+            warning.style.display = 'none';
+        }
+    });
     if (timeInput) timeInput.addEventListener('change', () => { window.isLiveMode = false; });
 
     function setupAutocomplete(inputElement, listElement, isFromInput) {
@@ -188,7 +198,11 @@ document.addEventListener('DOMContentLoaded', () => {
         const resultsList = document.getElementById('train-results-list');
         const leftSidebar = document.getElementById('left-sidebar');
 
-        if (fromVal && toVal && resultsContainer && resultsList) {
+        const selectedDate = new Date(document.getElementById('date-input').value);
+        const cutoff = new Date('2026-03-08');
+        const dateExceeded = selectedDate > cutoff;
+
+        if (fromVal && toVal && resultsContainer && resultsList && !dateExceeded) {
             if (leftSidebar) leftSidebar.style.display = 'flex';
             resultsContainer.style.display = 'block';
             resultsList.innerHTML = '<div style="color:var(--text-secondary); padding: 10px;">Завантаження...</div>';

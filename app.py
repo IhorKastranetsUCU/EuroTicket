@@ -1,6 +1,7 @@
 import os
 
 from flask import Flask, g
+from dotenv import load_dotenv
 from sqlalchemy import create_engine, pool
 from sqlalchemy.orm import sessionmaker
 
@@ -8,10 +9,13 @@ from routes.station_routes import station_bp
 from routes.map_routes import map_bp
 from routes.train_routes import train_bp
 
-DB_PATH = os.path.join(os.path.abspath(os.path.dirname(__file__)), 'EuroTicket_2.db')
+load_dotenv()
+
+DATABASE_URL = os.getenv("DATABASE_URL")
+
 
 engine = create_engine(
-    f'sqlite:///{DB_PATH}',
+    DATABASE_URL,
     poolclass=pool.QueuePool,
     pool_size=10,
     max_overflow=20
