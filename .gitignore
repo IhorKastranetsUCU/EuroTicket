@@ -221,3 +221,11 @@ __marimo__/
 
 
 old_files/test/export_2.json
+
+# =========================
+# EuroTicket Custom Files
+# =========================
+
+# Ignore the SQLite database so the live server data is never overwritten!
+EuroTicket_2.db
+*.db

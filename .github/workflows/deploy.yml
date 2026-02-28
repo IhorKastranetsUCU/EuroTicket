@@ -1,0 +1,33 @@
+name: Auto Deploy to Server
+
+on:
+  push:
+    branches:
+      - main  # (If your default branch is called 'master', change this word to master)
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 1. Get the latest code from GitHub
+        uses: actions/checkout@v3
+
+      - name: 2. Upload new files to the Droplet securely
+        uses: appleboy/scp-action@master
+        with:
+          host: ${{ secrets.SERVER_IP }}
+          username: ${{ secrets.SERVER_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          source: "."
+          target: "/var/www/euroticket"
+
+      - name: 3. Set Permissions and Restart App
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.SERVER_IP }}
+          username: ${{ secrets.SERVER_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          script: |
+            sudo chown -R root:www-data /var/www/euroticket
+            sudo chmod -R 775 /var/www/euroticket
+            sudo systemctl restart euroticket
