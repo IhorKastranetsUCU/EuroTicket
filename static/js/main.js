@@ -114,6 +114,7 @@ document.addEventListener('DOMContentLoaded', () => {
         } else {
             warning.style.display = 'none';
         }
+        updateMap();
     });
     if (timeInput) timeInput.addEventListener('change', () => { window.isLiveMode = false; });
 
@@ -219,6 +220,8 @@ document.addEventListener('DOMContentLoaded', () => {
             resultsList.innerHTML = '<div style="color:var(--text-secondary); padding: 10px;">Завантаження...</div>';
 
             let fetchUrl = `/api/route_trains?from_station=${encodeURIComponent(fromVal)}&to_station=${encodeURIComponent(toVal)}`;
+            const dateVal = document.getElementById('date-input').value;
+            if (dateVal) fetchUrl += `&date=${encodeURIComponent(dateVal)}`;
             if (timeVal) fetchUrl += `&time=${encodeURIComponent(timeVal)}`;
 
             fetch(fetchUrl)

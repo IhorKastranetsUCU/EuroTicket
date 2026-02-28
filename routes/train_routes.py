@@ -12,12 +12,13 @@ train_bp = Blueprint('trains', __name__)
 def get_route_trains():
     from_station = request.args.get('from_station')
     to_station = request.args.get('to_station')
+    date_str = request.args.get('date')
 
     if not from_station or not to_station:
         return jsonify([])
 
     service = get_route_service()
-    return jsonify(service.get_route_between(from_station, to_station))
+    return jsonify(service.get_route_between(from_station, to_station, date_str))
 
 
 @train_bp.route('/api/train_positions')

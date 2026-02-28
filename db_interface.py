@@ -73,8 +73,7 @@ class RouteService:
 
         return paths
 
-    def get_route_between(self, departure_name: str, arrival_name: str) -> list:
-        # Get IDs
+    def get_route_between(self, departure_name: str, arrival_name: str, date_str: str = None) -> list:
         dep_query = text("SELECT id FROM stations WHERE name = :name")
         arr_query = text("SELECT id FROM stations WHERE name = :name")
 
@@ -87,9 +86,18 @@ class RouteService:
         dep_id = dep_row['id']
         arr_id = arr_row['id']
 
-        # Find valid trips
+        # Визначаємо біт дня тижня: пн=0, вт=1, ..., нд=6
+        day_bit = None
+        if date_str:
+            from datetime import date as _date
+            try:
+                d = _date.fromisoformat(date_str)
+                day_bit = d.weekday()  # 0=пн, 6=нд
+            except ValueError:
+                pass
+
         trip_query = text("""
-            SELECT t.id AS trip_id, tr.number AS train_number, tr.name AS train_name,
+            SELECT t.id AS trip_id, t.days_mask, tr.number AS train_number, tr.name AS train_name,
                    tr.has_wifi, tr.has_air_con, tr.has_restaurant, tr.has_bicycle_holder, tr.is_accessible,
                    rs_dep.stop_order AS dep_order, rs_arr.stop_order AS arr_order
             FROM trips t
@@ -100,6 +108,11 @@ class RouteService:
         """)
 
         trips = self.session.execute(trip_query, {"dep_id": dep_id, "arr_id": arr_id}).mappings().all()
+
+        # Фільтруємо по дню тижня якщо дата передана
+        if day_bit is not None:
+            trips = [t for t in trips if (t['days_mask'] >> day_bit) & 1]
+
         results = []
 
         segment_query = text("""
