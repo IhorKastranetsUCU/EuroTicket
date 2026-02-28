@@ -40,3 +40,4 @@ def create_app() -> Flask:
 if __name__ == '__main__':
     app = create_app()
     app.run(debug=True)
+    #dummy comment for testing purposes of auto update
