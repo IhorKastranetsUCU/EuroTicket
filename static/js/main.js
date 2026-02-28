@@ -90,6 +90,17 @@ document.addEventListener('DOMContentLoaded', () => {
     const now = new Date();
     if (dateInput) dateInput.value = now.toISOString().split('T')[0];
     if (timeInput) timeInput.value = String(now.getHours()).padStart(2, '0') + ':' + String(now.getMinutes()).padStart(2, '0');
+    const resetBtn = document.getElementById('reset-datetime-btn');
+    if (resetBtn) {
+        resetBtn.addEventListener('click', () => {
+            const now = new Date();
+            dateInput.value = now.toISOString().split('T')[0];
+            timeInput.value = String(now.getHours()).padStart(2, '0') + ':' + String(now.getMinutes()).padStart(2, '0');
+            window.isLiveMode = true;
+            document.getElementById('date-warning').style.display = 'none';
+            updateMap();
+        });
+    }
 
     window.isLiveMode = true;
 

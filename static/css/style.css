@@ -900,3 +900,18 @@ input[type="text"]::placeholder {
         right: 0;
     }
 }
+
+.reset-datetime-btn {
+    background: transparent;
+    border: none;
+    border-left: 1px solid var(--border-color);
+    border-radius: 0 8px 8px 0;
+    color: var(--text-secondary);
+    font-size: 1.5rem;
+    padding: 12px 12px;
+    align-self: stretch;
+    cursor: pointer;
+    transition: color 0.2s;
+    display: flex;
+    align-items: center;
+}
