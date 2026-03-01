@@ -78,7 +78,8 @@ class GraphLoader:
             dist, index = tree.query([st["lat"], st["lon"]])
 
             if dist > 0.1:
-                pass
+                print(f"Station {st['name']} (ID {st['id']}) is too far from graph ({dist:.4f}). Left unsnapped.")
+                continue
 
             nearest_node = tuple(graph_nodes[index])
             self.station_node_map[st["id"]] = nearest_node
@@ -86,13 +87,22 @@ class GraphLoader:
 
 
     def find_path(self, start_station_id, end_station_id):
-        start_node = self.station_node_map[start_station_id]
-        end_node = self.station_node_map[end_station_id]
+        start_node = self.station_node_map.get(start_station_id)
+        end_node = self.station_node_map.get(end_station_id)
+
+        if not start_node or not end_node:
+            s_raw = next((st for st in self.stations if st["id"] == start_station_id), None)
+            e_raw = next((st for st in self.stations if st["id"] == end_station_id), None)
+            if s_raw and e_raw:
+                print(f"Drawing straight line {start_station_id}->{end_station_id} (Unsnapped station)")
+                return [(s_raw["lat"], s_raw["lon"]), (e_raw["lat"], e_raw["lon"])]
+            return None
+
         try :
             path = nx.shortest_path(self.graph, source=start_node, target=end_node, weight="weight")
-        except nx.NetworkXNoPath:
-            print(f"No path found between {start_station_id} and {end_station_id}")
-            return None
+        except (nx.NetworkXNoPath, nx.NodeNotFound):
+            print(f"No path found for {start_station_id} -> {end_station_id}. Drawing straight line.")
+            return [start_node, end_node]
         return path
 
     def load_graph_to_db(self):
@@ -108,7 +118,7 @@ class GraphLoader:
 
 
 current_folder = os.path.dirname(os.path.abspath(__file__))
-db_path = os.path.join(current_folder, 'EuroTicket.db')
+db_path = os.path.join(current_folder, 'EuroTicket_2.db')
 
 engine = create_engine(f"sqlite:///{db_path}")
 Session = sessionmaker(bind=engine)
@@ -157,4 +167,6 @@ if __name__ == "__main__":
     for i , (x, y) in enumerate(all_pairs):
         #print(i , x , y)
         p = loader.find_path(x, y)
-        upload_to_db(x, y, [(float(x), float(y)) for x, y in p])
+        if p:
+            #print([(float(x), float(y)) for x, y in p])
+            upload_to_db(x, y, [(float(x), float(y)) for x, y in p])

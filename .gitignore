@@ -229,3 +229,6 @@ old_files/test/export_2.json
 # Ignore the SQLite database so the live server data is never overwritten!
 EuroTicket_2.db
 *.db
+"old_files/poland.json" 
+"old_files/poland.json" 
+"old_files/poland.json" 

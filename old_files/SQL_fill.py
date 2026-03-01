@@ -92,7 +92,6 @@ class StationFill(DBFill):
 
         self.commit()
 
-
 from datetime import datetime
 
 def parse_time(time_str):

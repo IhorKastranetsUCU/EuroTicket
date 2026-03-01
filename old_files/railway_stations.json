@@ -1069,8 +1069,7 @@
     "Hrebenne": {
         "lat": 50.298362,
         "lon": 23.5760934,
-                "utc": 2
-
+        "utc": 2
     },
     "Gniezno": {
         "lat": 52.5296664,
@@ -5042,64 +5041,52 @@
     "Kyiv-Pasazhyrskyi": {
         "lat": 50.44058103206579,
         "lon": 30.489865023753698,
-                "platforms": "9",
+        "platforms": "9",
         "utc": 2
-
-
     },
     "Vinnytsia": {
         "lat": 49.24027480312877,
         "lon": 28.51533709498551,
         "platforms": "3",
         "utc": 2
-
-
     },
     "Khmelnytskyi": {
         "lat": 49.41735455695981,
         "lon": 27.010977407468566,
         "platforms": "3",
         "utc": 2
-
     },
     "Ternopil": {
         "lat": 49.56872460365535,
         "lon": 25.592346804260103,
-                "platforms": "3",
+        "platforms": "3",
         "utc": 2
-
-
     },
     "Lviv": {
         "lat": 49.84033656812766,
         "lon": 23.994875597923823,
-                "platforms": "5",
+        "platforms": "5",
         "utc": 2
-
-
     },
     "Praha Hlavni Nadrazi": {
         "lat": 50.083332617507935,
         "lon": 14.435895968623662,
-                "platforms": "9"
-
+        "platforms": "9"
     },
     "Pardubice Hlavni Nadrazi": {
         "lat": 50.031881764851775,
         "lon": 15.756760939077083
     },
-
     "Olomouc Hlavni Nadrazi": {
         "lat": 49.59215265737616,
         "lon": 17.277763149109948,
-            "platforms": "4"
+        "platforms": "4"
     },
     "Ostrava-Svinov": {
         "lat": 49.82133770545107,
         "lon": 18.209849568532423,
-            "platforms": "4"
+        "platforms": "4"
     },
-
     "Ostrava Hlavni Nadrazi": {
         "lat": 49.850627945861,
         "lon": 18.267804781130643
@@ -5175,48 +5162,43 @@
     "Dnipro-Holovnyi": {
         "lat": 48.47751676812369,
         "lon": 35.015989385032306,
-            "platforms": "5",
-                "utc": 2
-
+        "platforms": "5",
+        "utc": 2
     },
     "Kamianske-Pasazhyrske": {
         "lat": 48.497634179947966,
         "lon": 34.60481288318164,
-            "platforms": "3",
+        "platforms": "3",
         "utc": 2
     },
     "Oleksandriia": {
         "lat": 48.674205224283085,
         "lon": 33.132670979342336,
-            "platforms": "2",
+        "platforms": "2",
         "utc": 2
     },
     "Znamianka-Pasazhyrska": {
         "lat": 48.71083980623217,
         "lon": 32.69043211047803,
         "utc": 2
-
     },
     "Im. Tarasa Shevchenka": {
         "lat": 49.202228916987224,
         "lon": 31.89790030098299,
         "utc": 2,
-
-            "platforms": "2"
+        "platforms": "2"
     },
     "Bila Tserkva": {
         "lat": 49.81204094597882,
         "lon": 30.111196493409853,
-            "platforms": "2",
+        "platforms": "2",
         "utc": 2
-
     },
     "Berdychiv": {
         "lat": 49.8899828119233,
         "lon": 28.615067817527496,
-            "platforms": "2",
+        "platforms": "2",
         "utc": 2
-
     },
     "Międzyzdroje": {
         "lat": 53.92489858210794,
@@ -5225,12 +5207,12 @@
     "Berlin Hauptbahnhof": {
         "lat": 52.525214351333126,
         "lon": 13.370045713670681,
-            "platforms": "7"
+        "platforms": "7"
     },
     "Frankfurt Oder": {
         "lat": 52.337210570432035,
         "lon": 14.547525556919876,
-            "platforms": "7"
+        "platforms": "7"
     },
     "Muenchen Hbf": {
         "lat": 48.140520025859615,
@@ -5263,12 +5245,12 @@
     "Wien Meidling": {
         "lat": 48.175527046645946,
         "lon": 16.337044567785405,
-            "platforms": "6"
+        "platforms": "6"
     },
     "Wien Hbf": {
         "lat": 48.18528018844962,
         "lon": 16.377294656330445,
-            "platforms": "3"
+        "platforms": "3"
     },
     "Breclav": {
         "lat": 48.75439724441807,
@@ -5287,15 +5269,13 @@
     "Zhmerynka": {
         "lat": 49.034768105149034,
         "lon": 28.112114997096757,
-                "utc": 2
-
+        "utc": 2
     },
     "Zlochiv": {
         "lat": 49.78979756269231,
         "lon": 24.8908825795416,
-            "platforms": "2",
-                "utc": 2
-
+        "platforms": "2",
+        "utc": 2
     },
     "Warszawa Służewiec": {
         "lat": 52.18034961623257,
@@ -5308,57 +5288,49 @@
     "Kryvyi Rih": {
         "lat": 47.88199596352563,
         "lon": 33.386428424955604,
-            "platforms": "4",
+        "platforms": "4",
         "utc": 2
     },
     "Kharkiv-Pasazhyrskyi": {
         "lat": 49.988421184243464,
         "lon": 36.208694780231276,
-            "platforms": "6",
-                "utc": 2
-
+        "platforms": "6",
+        "utc": 2
     },
     "Liubotyn": {
         "lat": 49.941155934486694,
         "lon": 35.927077379160984,
-            "platforms": "3",
-                "utc": 2
-
+        "platforms": "3",
+        "utc": 2
     },
     "Poltava-Kyivska": {
         "lat": 49.6034620879249,
         "lon": 34.526447127980376,
-                "utc": 2,
+        "utc": 2,
         "platforms": "4"
-
     },
     "Myrhorod": {
         "lat": 49.949693484393414,
         "lon": 33.628954972593675,
-            "platforms": "3",
-                "utc": 2
-
+        "platforms": "3",
+        "utc": 2
     },
     "Romodan": {
         "lat": 49.992538135039794,
         "lon": 33.32041521400652,
-            "platforms": "2",
-                "utc": 2
-
+        "platforms": "2",
+        "utc": 2
     },
     "Hrebinka": {
         "lat": 50.12210612529385,
         "lon": 32.43284160901834,
         "platforms": "2",
         "utc": 2
-
     },
     "Darnytsia": {
         "lat": 50.43845682658201,
-        "lon": 30.675068852597736,
-            "platforms": "5",
-                "utc": 2
-
+        "platforms": "5",
+        "utc": 2
     },
     "Oborniki Wielkopolskie Miasto": {
         "lat": 52.644903716248734,
@@ -5367,12 +5339,12 @@
     "Praha-Liben": {
         "lat": 50.10152841314446,
         "lon": 14.501714484039871,
-            "platforms": "3"
+        "platforms": "3"
     },
     "Kolin": {
         "lat": 50.0250764278837,
         "lon": 15.21350149773155,
-            "platforms": "4"
+        "platforms": "4"
     },
     "Ceska Trebova": {
         "lat": 49.8976062084433,
@@ -5393,7 +5365,7 @@
     "Berlin Ostbahnhof": {
         "lat": 52.510354029289665,
         "lon": 13.435444418303828,
-            "platforms": "4"
+        "platforms": "4"
     },
     "Głuchów": {
         "lat": 50.08395611657983,
