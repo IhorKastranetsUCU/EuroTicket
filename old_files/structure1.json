@@ -1,0 +1,5708 @@
+{
+    "30429": {
+        "has_wifi": false,
+        "has_AC": true,
+        "has_bicycle": true,
+        "accessible": false,
+        "has_restaurant": true,
+        "day_mask": 127,
+                "stations": [
+            {
+                "stationName": "Rzeszów Główny",
+                "orderNumber": 1,
+                "departureTime": "22:33"
+            },
+            {
+                "stationName": "Rzeszów Pobitno",
+                "orderNumber": 2,
+                "departureTime": "22:36"
+            },
+            {
+                "stationName": "Rzeszów Załęże",
+                "orderNumber": 3,
+                "departureTime": "22:39"
+            },
+            {
+                "stationName": "Strażów",
+                "orderNumber": 4,
+                "departureTime": "22:42"
+            },
+            {
+                "stationName": "Krzemienica",
+                "orderNumber": 5,
+                "departureTime": "22:46"
+            },
+            {
+                "stationName": "Łańcut",
+                "orderNumber": 6,
+                "departureTime": "22:50"
+            },
+            {
+                "stationName": "Głuchów",
+                "orderNumber": 7,
+                "departureTime": "22:53"
+            },
+            {
+                "stationName": "Kosina",
+                "orderNumber": 8,
+                "departureTime": "22:56"
+            },
+            {
+                "stationName": "Rogóżno koło Łańcuta",
+                "orderNumber": 9,
+                "departureTime": "22:59"
+            },
+            {
+                "stationName": "Grzęska",
+                "orderNumber": 10,
+                "departureTime": "23:04"
+            },
+            {
+                "stationName": "Przeworsk",
+                "orderNumber": 11,
+                "departureTime": "23:08"
+            },
+            {
+                "stationName": "Pełkinie",
+                "orderNumber": 12,
+                "departureTime": "23:14"
+            },
+            {
+                "stationName": "Jarosław",
+                "orderNumber": 13,
+                "departureTime": "23:20"
+            },
+            {
+                "stationName": "Munina",
+                "orderNumber": 14,
+                "departureTime": "23:23"
+            },
+            {
+                "stationName": "Ostrów koło Radymna",
+                "orderNumber": 15,
+                "departureTime": "23:28"
+            },
+            {
+                "stationName": "Radymno",
+                "orderNumber": 16,
+                "departureTime": "23:32"
+            },
+            {
+                "stationName": "Sośnica Jarosławska",
+                "orderNumber": 17,
+                "departureTime": "23:35"
+            },
+            {
+                "stationName": "Niziny",
+                "orderNumber": 18,
+                "departureTime": "23:38"
+            },
+            {
+                "stationName": "Walawa",
+                "orderNumber": 19,
+                "departureTime": "23:41"
+            },
+            {
+                "stationName": "Żurawica Rozrządowa",
+                "orderNumber": 20,
+                "departureTime": "23:44"
+            },
+            {
+                "stationName": "Żurawica Osobowa",
+                "orderNumber": 21,
+                "departureTime": "23:47"
+            },
+            {
+                "stationName": "Przemyśl Zasanie",
+                "orderNumber": 22,
+                "departureTime": "23:53"
+            },
+            {
+                "stationName": "Przemyśl Główny",
+                "orderNumber": 23,
+                "arrivalTime": "23:57"
+            }
+        ]
+    },
+    "33000": {
+        "has_wifi": true,
+        "has_AC": true,
+        "has_bicycle": false,
+        "accessible": false,
+        "has_restaurant": true,
+        "day_mask": 127,
+                "stations": [
+            {
+                "stationName": "Kyiv-Pasazhyrskyi",
+                "orderNumber": 1,
+                "departureTime": "18:35"
+            },
+            {
+                "stationName": "Vinnytsia",
+                "orderNumber": 2,
+                "departureTime": "21:32"
+            },
+            {
+                "stationName": "Khmelnytskyi",
+                "orderNumber": 3,
+                "departureTime": "23:18"
+            },
+            {
+                "stationName": "Ternopil",
+                "orderNumber": 4,
+                "departureTime": "0:45"
+            },
+            {
+                "stationName": "Lviv",
+                "orderNumber": 5,
+                "departureTime": "2:53"
+            },
+            {
+                "stationName": "Przemyśl Główny",
+                "orderNumber": 6,
+                "arrivalTime": "3:30"
+            }
+        ]
+    },
+    "33002": {
+        "has_wifi": true,
+        "has_AC": true,
+        "has_bicycle": false,
+        "accessible": false,
+        "has_restaurant": false,
+        "day_mask": 127,
+                "stations": [
+            {
+                "stationName": "Kyiv-Pasazhyrskyi",
+                "orderNumber": 1,
+                "departureTime": "20:05"
+            },
+            {
+                "stationName": "Lviv",
+                "orderNumber": 2,
+                "departureTime": "3:04"
+            },
+            {
+                "stationName": "Przemyśl Główny",
+                "orderNumber": 3,
+                "arrivalTime": "5:00"
+            }
+        ]
+    },
+    "30401": {
+        "has_wifi": false,
+        "has_AC": true,
+        "has_bicycle": true,
+        "accessible": false,
+        "has_restaurant": true,
+        "day_mask": 32,
+                "stations": [
+            {
+                "stationName": "Rzeszów Główny",
+                "orderNumber": 1,
+                "departureTime": "4:43"
+            },
+            {
+                "stationName": "Rzeszów Pobitno",
+                "orderNumber": 2,
+                "departureTime": "4:46"
+            },
+            {
+                "stationName": "Rzeszów Załęże",
+                "orderNumber": 3,
+                "departureTime": "4:49"
+            },
+            {
+                "stationName": "Strażów",
+                "orderNumber": 4,
+                "departureTime": "4:52"
+            },
+            {
+                "stationName": "Krzemienica",
+                "orderNumber": 5,
+                "departureTime": "4:56"
+            },
+            {
+                "stationName": "Łańcut",
+                "orderNumber": 6,
+                "departureTime": "5:00"
+            },
+            {
+                "stationName": "Głuchów",
+                "orderNumber": 7,
+                "departureTime": "5:03"
+            },
+            {
+                "stationName": "Kosina",
+                "orderNumber": 8,
+                "departureTime": "5:06"
+            },
+            {
+                "stationName": "Rogóżno koło Łańcuta",
+                "orderNumber": 9,
+                "departureTime": "5:09"
+            },
+            {
+                "stationName": "Grzęska",
+                "orderNumber": 10,
+                "departureTime": "5:14"
+            },
+            {
+                "stationName": "Przeworsk",
+                "orderNumber": 11,
+                "departureTime": "5:18"
+            },
+            {
+                "stationName": "Pełkinie",
+                "orderNumber": 12,
+                "departureTime": "5:24"
+            },
+            {
+                "stationName": "Jarosław",
+                "orderNumber": 13,
+                "departureTime": "5:30"
+            },
+            {
+                "stationName": "Munina",
+                "orderNumber": 14,
+                "departureTime": "5:33"
+            },
+            {
+                "stationName": "Ostrów koło Radymna",
+                "orderNumber": 15,
+                "departureTime": "5:38"
+            },
+            {
+                "stationName": "Radymno",
+                "orderNumber": 16,
+                "departureTime": "5:42"
+            },
+            {
+                "stationName": "Sośnica Jarosławska",
+                "orderNumber": 17,
+                "departureTime": "5:45"
+            },
+            {
+                "stationName": "Niziny",
+                "orderNumber": 18,
+                "departureTime": "5:48"
+            },
+            {
+                "stationName": "Walawa",
+                "orderNumber": 19,
+                "departureTime": "5:51"
+            },
+            {
+                "stationName": "Żurawica Rozrządowa",
+                "orderNumber": 20,
+                "departureTime": "5:54"
+            },
+            {
+                "stationName": "Żurawica Osobowa",
+                "orderNumber": 21,
+                "departureTime": "5:57"
+            },
+            {
+                "stationName": "Przemyśl Zasanie",
+                "orderNumber": 22,
+                "departureTime": "6:03"
+            },
+            {
+                "stationName": "Przemyśl Główny",
+                "orderNumber": 23,
+                "arrivalTime": "6:07"
+            }
+        ]
+    },
+    "UNK_625": {
+        "has_wifi": false,
+        "has_AC": true,
+        "has_bicycle": true,
+        "accessible": false,
+        "has_restaurant": true,
+        "day_mask": 127,
+                "stations": [
+            {
+                "stationName": "Praha Hlavni Nadrazi",
+                "orderNumber": 1,
+                "departureTime": "21:48"
+            },
+            {
+                "stationName": "Pardubice Hlavni Nadrazi",
+                "orderNumber": 2,
+                "departureTime": "22:50"
+            },
+            {
+                "stationName": "Olomouc Hlavni Nadrazi",
+                "orderNumber": 3,
+                "departureTime": "0:09"
+            },
+            {
+                "stationName": "Ostrava-Svinov",
+                "orderNumber": 4,
+                "departureTime": "1:07"
+            },
+            {
+                "stationName": "Ostrava Hlavni Nadrazi",
+                "orderNumber": 5,
+                "departureTime": "1:15"
+            },
+            {
+                "stationName": "Petrovice u Karvine",
+                "orderNumber": 6,
+                "departureTime": "2:00"
+            },
+            {
+                "stationName": "Kraków Główny",
+                "orderNumber": 7,
+                "departureTime": "3:41"
+            },
+            {
+                "stationName": "Rzeszów Główny",
+                "orderNumber": 8,
+                "departureTime": "5:33"
+            },
+            {
+                "stationName": "Przemyśl Główny",
+                "orderNumber": 9,
+                "arrivalTime": "6:25"
+            }
+        ]
+    },
+    "30491": {
+        "has_wifi": false,
+        "has_AC": true,
+        "has_bicycle": true,
+        "accessible": false,
+        "has_restaurant": true,
+        "day_mask": 32,
+                "stations": [
+            {
+                "stationName": "Przeworsk",
+                "orderNumber": 1,
+                "departureTime": "6:00"
+            },
+            {
+                "stationName": "Pełkinie",
+                "orderNumber": 2,
+                "departureTime": "6:07"
+            },
+            {
+                "stationName": "Jarosław",
+                "orderNumber": 3,
+                "departureTime": "6:12"
+            },
+            {
+                "stationName": "Munina",
+                "orderNumber": 4,
+                "departureTime": "6:15"
+            },
+            {
+                "stationName": "Ostrów koło Radymna",
+                "orderNumber": 5,
+                "departureTime": "6:20"
+            },
+            {
+                "stationName": "Radymno",
+                "orderNumber": 6,
+                "departureTime": "6:23"
+            },
+            {
+                "stationName": "Sośnica Jarosławska",
+                "orderNumber": 7,
+                "departureTime": "6:27"
+            },
+            {
+                "stationName": "Niziny",
+                "orderNumber": 8,
+                "departureTime": "6:30"
+            },
+            {
+                "stationName": "Walawa",
+                "orderNumber": 9,
+                "departureTime": "6:32"
+            },
+            {
+                "stationName": "Żurawica Rozrządowa",
+                "orderNumber": 10,
+                "departureTime": "6:36"
+            },
+            {
+                "stationName": "Żurawica Osobowa",
+                "orderNumber": 11,
+                "departureTime": "6:40"
+            },
+            {
+                "stationName": "Przemyśl Zasanie",
+                "orderNumber": 12,
+                "departureTime": "6:45"
+            },
+            {
+                "stationName": "Przemyśl Główny",
+                "orderNumber": 13,
+                "arrivalTime": "6:48"
+            }
+        ]
+    },
+    "UNK_657": {
+        "has_wifi": false,
+        "has_AC": true,
+        "has_bicycle": true,
+        "accessible": false,
+        "has_restaurant": true,
+        "day_mask": 32,
+                "stations": [
+            {
+                "stationName": "Praha Hlavni Nadrazi",
+                "orderNumber": 1,
+                "departureTime": "21:48"
+            },
+            {
+                "stationName": "Pardubice Hlavni Nadrazi",
+                "orderNumber": 2,
+                "departureTime": "22:50"
+            },
+            {
+                "stationName": "Olomouc Hlavni Nadrazi",
+                "orderNumber": 3,
+                "departureTime": "0:09"
+            },
+            {
+                "stationName": "Ostrava-Svinov",
+                "orderNumber": 4,
+                "departureTime": "1:07"
+            },
+            {
+                "stationName": "Ostrava Hlavni Nadrazi",
+                "orderNumber": 5,
+                "departureTime": "1:15"
+            },
+            {
+                "stationName": "Petrovice u Karvine",
+                "orderNumber": 6,
+                "departureTime": "2:00"
+            },
+            {
+                "stationName": "Kraków Główny",
+                "orderNumber": 7,
+                "departureTime": "4:21"
+            },
+            {
+                "stationName": "Rzeszów Główny",
+                "orderNumber": 8,
+                "departureTime": "6:04"
+            },
+            {
+                "stationName": "Przemyśl Główny",
+                "orderNumber": 9,
+                "arrivalTime": "6:57"
+            }
+        ]
+    },
+    "30450": {
+        "has_wifi": false,
+        "has_AC": true,
+        "has_bicycle": false,
+        "accessible": false,
+        "has_restaurant": true,
+        "day_mask": 64,
+                "stations": [
+            {
+                "stationName": "Medyka",
+                "orderNumber": 1,
+                "departureTime": "7:07"
+            },
+            {
+                "stationName": "Medyka Rozrządowa",
+                "orderNumber": 2,
+                "departureTime": "7:09"
+            },
+            {
+                "stationName": "Medyka Towarowa",
+                "orderNumber": 3,
+                "departureTime": "7:12"
+            },
+            {
+                "stationName": "Hurko",
+                "orderNumber": 4,
+                "departureTime": "7:15"
+            },
+            {
+                "stationName": "Przemyśl Wschodni",
+                "orderNumber": 5,
+                "departureTime": "7:19"
+            },
+            {
+                "stationName": "Przemyśl Główny",
+                "orderNumber": 6,
+                "arrivalTime": "7:23"
+            }
+        ]
+    },
+    "39401": {
+        "has_wifi": false,
+        "has_AC": true,
+        "has_bicycle": true,
+        "accessible": false,
+        "has_restaurant": true,
+        "day_mask": 64,
+                "stations": [
+            {
+                "stationName": "Tarnów",
+                "orderNumber": 1,
+                "departureTime": "5:04"
+            },
+            {
+                "stationName": "Wola Rzędzińska",
+                "orderNumber": 2,
+                "departureTime": "5:10"
+            },
+            {
+                "stationName": "Wałki",
+                "orderNumber": 3,
+                "departureTime": "5:14"
+            },
+            {
+                "stationName": "Czarna Tarnowska",
+                "orderNumber": 4,
+                "departureTime": "5:19"
+            },
+            {
+                "stationName": "Grabiny",
+                "orderNumber": 5,
+                "departureTime": "5:24"
+            },
+            {
+                "stationName": "Dębica",
+                "orderNumber": 6,
+                "departureTime": "5:29"
+            },
+            {
+                "stationName": "Dębica Wschodnia",
+                "orderNumber": 7,
+                "departureTime": "5:31"
+            },
+            {
+                "stationName": "Lubzina",
+                "orderNumber": 8,
+                "departureTime": "5:36"
+            },
+            {
+                "stationName": "Ropczyce",
+                "orderNumber": 9,
+                "departureTime": "5:45"
+            },
+            {
+                "stationName": "Ropczyce Witkowice",
+                "orderNumber": 10,
+                "departureTime": "5:48"
+            },
+            {
+                "stationName": "Sędziszów Małopolski",
+                "orderNumber": 11,
+                "departureTime": "5:52"
+            },
+            {
+                "stationName": "Sędziszów Małopolski Wschodni",
+                "orderNumber": 12,
+                "departureTime": "5:55"
+            },
+            {
+                "stationName": "Będziemyśl",
+                "orderNumber": 13,
+                "departureTime": "5:58"
+            },
+            {
+                "stationName": "Trzciana",
+                "orderNumber": 14,
+                "departureTime": "6:02"
+            },
+            {
+                "stationName": "Świlcza",
+                "orderNumber": 15,
+                "departureTime": "6:06"
+            },
+            {
+                "stationName": "Rudna Wielka",
+                "orderNumber": 16,
+                "departureTime": "6:09"
+            },
+            {
+                "stationName": "Rzeszów Dworzysko",
+                "orderNumber": 17,
+                "departureTime": "6:11"
+            },
+            {
+                "stationName": "Rzeszów Baranówka",
+                "orderNumber": 18,
+                "departureTime": "6:14"
+            },
+            {
+                "stationName": "Rzeszów Zachodni",
+                "orderNumber": 19,
+                "departureTime": "6:16"
+            },
+            {
+                "stationName": "Rzeszów Główny",
+                "orderNumber": 20,
+                "departureTime": "6:20"
+            },
+            {
+                "stationName": "Rzeszów Pobitno",
+                "orderNumber": 21,
+                "departureTime": "6:22"
+            },
+            {
+                "stationName": "Rzeszów Załęże",
+                "orderNumber": 22,
+                "departureTime": "6:25"
+            },
+            {
+                "stationName": "Strażów",
+                "orderNumber": 23,
+                "departureTime": "6:28"
+            },
+            {
+                "stationName": "Krzemienica",
+                "orderNumber": 24,
+                "departureTime": "6:32"
+            },
+            {
+                "stationName": "Łańcut",
+                "orderNumber": 25,
+                "departureTime": "6:35"
+            },
+            {
+                "stationName": "Głuchów",
+                "orderNumber": 26,
+                "departureTime": "6:38"
+            },
+            {
+                "stationName": "Kosina",
+                "orderNumber": 27,
+                "departureTime": "6:41"
+            },
+            {
+                "stationName": "Rogóżno koło Łańcuta",
+                "orderNumber": 28,
+                "departureTime": "6:44"
+            },
+            {
+                "stationName": "Grzęska",
+                "orderNumber": 29,
+                "departureTime": "6:49"
+            },
+            {
+                "stationName": "Przeworsk",
+                "orderNumber": 30,
+                "departureTime": "6:53"
+            },
+            {
+                "stationName": "Pełkinie",
+                "orderNumber": 31,
+                "departureTime": "6:59"
+            },
+            {
+                "stationName": "Jarosław",
+                "orderNumber": 32,
+                "departureTime": "7:03"
+            },
+            {
+                "stationName": "Munina",
+                "orderNumber": 33,
+                "departureTime": "7:07"
+            },
+            {
+                "stationName": "Ostrów koło Radymna",
+                "orderNumber": 34,
+                "departureTime": "7:11"
+            },
+            {
+                "stationName": "Radymno",
+                "orderNumber": 35,
+                "departureTime": "7:14"
+            },
+            {
+                "stationName": "Sośnica Jarosławska",
+                "orderNumber": 36,
+                "departureTime": "7:18"
+            },
+            {
+                "stationName": "Niziny",
+                "orderNumber": 37,
+                "departureTime": "7:20"
+            },
+            {
+                "stationName": "Walawa",
+                "orderNumber": 38,
+                "departureTime": "7:22"
+            },
+            {
+                "stationName": "Żurawica Rozrządowa",
+                "orderNumber": 39,
+                "departureTime": "7:25"
+            },
+            {
+                "stationName": "Żurawica Osobowa",
+                "orderNumber": 40,
+                "departureTime": "7:28"
+            },
+            {
+                "stationName": "Przemyśl Zasanie",
+                "orderNumber": 41,
+                "departureTime": "7:34"
+            },
+            {
+                "stationName": "Przemyśl Główny",
+                "orderNumber": 42,
+                "arrivalTime": "7:37"
+            }
+        ]
+    },
+    "30173": {
+        "has_wifi": true,
+        "has_AC": true,
+        "has_bicycle": true,
+        "accessible": false,
+        "has_restaurant": true,
+        "day_mask": 64,
+                "stations": [
+            {
+                "stationName": "Kraków Płaszów",
+                "orderNumber": 1,
+                "departureTime": "5:45"
+            },
+            {
+                "stationName": "Bochnia",
+                "orderNumber": 2,
+                "departureTime": "6:02"
+            },
+            {
+                "stationName": "Tarnów",
+                "orderNumber": 3,
+                "departureTime": "6:22"
+            },
+            {
+                "stationName": "Dębica",
+                "orderNumber": 4,
+                "departureTime": "6:38"
+            },
+            {
+                "stationName": "Rzeszów Główny",
+                "orderNumber": 5,
+                "departureTime": "7:02"
+            },
+            {
+                "stationName": "Łańcut",
+                "orderNumber": 6,
+                "departureTime": "7:14"
+            },
+            {
+                "stationName": "Przeworsk",
+                "orderNumber": 7,
+                "departureTime": "7:27"
+            },
+            {
+                "stationName": "Jarosław",
+                "orderNumber": 8,
+                "departureTime": "7:37"
+            },
+            {
+                "stationName": "Przemyśl Główny",
+                "orderNumber": 9,
+                "arrivalTime": "8:01"
+            }
+        ]
+    },
+    "33004": {
+        "has_wifi": true,
+        "has_AC": true,
+        "has_bicycle": false,
+        "accessible": false,
+        "has_restaurant": true,
+        "day_mask": 32,
+                "stations": [
+            {
+                "stationName": "Zaporizhzhia-1",
+                "orderNumber": 1,
+                "departureTime": "13:50"
+            },
+            {
+                "stationName": "Dnipro-Holovnyi",
+                "orderNumber": 2,
+                "departureTime": "15:58"
+            },
+            {
+                "stationName": "Kamianske-Pasazhyrske",
+                "orderNumber": 3,
+                "departureTime": "16:32"
+            },
+            {
+                "stationName": "Oleksandriia",
+                "orderNumber": 4,
+                "departureTime": "19:16"
+            },
+            {
+                "stationName": "Znamianka-Pasazhyrska",
+                "orderNumber": 5,
+                "departureTime": "19:55"
+            },
+            {
+                "stationName": "Im. Tarasa Shevchenka",
+                "orderNumber": 6,
+                "departureTime": "21:10"
+            },
+            {
+                "stationName": "Bila Tserkva",
+                "orderNumber": 7,
+                "departureTime": "23:29"
+            },
+            {
+                "stationName": "Berdychiv",
+                "orderNumber": 8,
+                "departureTime": "1:50"
+            },
+            {
+                "stationName": "Lviv",
+                "orderNumber": 9,
+                "departureTime": "6:25"
+            },
+            {
+                "stationName": "Przemyśl Główny",
+                "orderNumber": 10,
+                "arrivalTime": "8:19"
+            }
+        ]
+    },
+    "30403": {
+        "has_wifi": true,
+        "has_AC": true,
+        "has_bicycle": true,
+        "accessible": false,
+        "has_restaurant": true,
+        "day_mask": 64,
+                "stations": [
+            {
+                "stationName": "Rzeszów Główny",
+                "orderNumber": 1,
+                "departureTime": "7:42"
+            },
+            {
+                "stationName": "Rzeszów Pobitno",
+                "orderNumber": 2,
+                "departureTime": "7:45"
+            },
+            {
+                "stationName": "Rzeszów Załęże",
+                "orderNumber": 3,
+                "departureTime": "7:48"
+            },
+            {
+                "stationName": "Strażów",
+                "orderNumber": 4,
+                "departureTime": "7:51"
+            },
+            {
+                "stationName": "Krzemienica",
+                "orderNumber": 5,
+                "departureTime": "7:55"
+            },
+            {
+                "stationName": "Łańcut",
+                "orderNumber": 6,
+                "departureTime": "7:59"
+            },
+            {
+                "stationName": "Głuchów",
+                "orderNumber": 7,
+                "departureTime": "8:02"
+            },
+            {
+                "stationName": "Kosina",
+                "orderNumber": 8,
+                "departureTime": "8:05"
+            },
+            {
+                "stationName": "Rogóżno koło Łańcuta",
+                "orderNumber": 9,
+                "departureTime": "8:08"
+            },
+            {
+                "stationName": "Grzęska",
+                "orderNumber": 10,
+                "departureTime": "8:13"
+            },
+            {
+                "stationName": "Przeworsk",
+                "orderNumber": 11,
+                "departureTime": "8:17"
+            },
+            {
+                "stationName": "Pełkinie",
+                "orderNumber": 12,
+                "departureTime": "8:23"
+            },
+            {
+                "stationName": "Jarosław",
+                "orderNumber": 13,
+                "departureTime": "8:29"
+            },
+            {
+                "stationName": "Munina",
+                "orderNumber": 14,
+                "departureTime": "8:32"
+            },
+            {
+                "stationName": "Ostrów koło Radymna",
+                "orderNumber": 15,
+                "departureTime": "8:37"
+            },
+            {
+                "stationName": "Radymno",
+                "orderNumber": 16,
+                "departureTime": "8:41"
+            },
+            {
+                "stationName": "Sośnica Jarosławska",
+                "orderNumber": 17,
+                "departureTime": "8:44"
+            },
+            {
+                "stationName": "Niziny",
+                "orderNumber": 18,
+                "departureTime": "8:47"
+            },
+            {
+                "stationName": "Walawa",
+                "orderNumber": 19,
+                "departureTime": "8:50"
+            },
+            {
+                "stationName": "Żurawica Rozrządowa",
+                "orderNumber": 20,
+                "departureTime": "8:53"
+            },
+            {
+                "stationName": "Żurawica Osobowa",
+                "orderNumber": 21,
+                "departureTime": "8:56"
+            },
+            {
+                "stationName": "Przemyśl Zasanie",
+                "orderNumber": 22,
+                "departureTime": "9:02"
+            },
+            {
+                "stationName": "Przemyśl Główny",
+                "orderNumber": 23,
+                "arrivalTime": "9:06"
+            }
+        ]
+    },
+    "73010": {
+        "has_wifi": true,
+        "has_AC": true,
+        "has_bicycle": true,
+        "accessible": false,
+        "has_restaurant": true,
+        "day_mask": 64,
+                "stations": [
+            {
+                "stationName": "Berlin Hauptbahnhof",
+                "orderNumber": 1,
+                "departureTime": "20:00"
+            },
+            {
+                "stationName": "Frankfurt Oder",
+                "orderNumber": 2,
+                "departureTime": "22:14"
+            },
+            {
+                "stationName": "Rzepin",
+                "orderNumber": 3,
+                "departureTime": "22:54"
+            },
+            {
+                "stationName": "Świebodzin",
+                "orderNumber": 4,
+                "departureTime": "23:18"
+            },
+            {
+                "stationName": "Zbąszynek",
+                "orderNumber": 5,
+                "departureTime": "23:31"
+            },
+            {
+                "stationName": "Zbąszyń",
+                "orderNumber": 6,
+                "departureTime": "23:38"
+            },
+            {
+                "stationName": "Nowy Tomyśl",
+                "orderNumber": 7,
+                "departureTime": "23:47"
+            },
+            {
+                "stationName": "Opalenica",
+                "orderNumber": 8,
+                "departureTime": "23:59"
+            },
+            {
+                "stationName": "Poznań Główny",
+                "orderNumber": 9,
+                "departureTime": "1:26"
+            },
+            {
+                "stationName": "Kościan",
+                "orderNumber": 10,
+                "departureTime": "1:55"
+            },
+            {
+                "stationName": "Leszno",
+                "orderNumber": 11,
+                "departureTime": "2:09"
+            },
+            {
+                "stationName": "Rawicz",
+                "orderNumber": 12,
+                "departureTime": "2:25"
+            },
+            {
+                "stationName": "Żmigród",
+                "orderNumber": 13,
+                "departureTime": "2:35"
+            },
+            {
+                "stationName": "Oborniki Śląskie",
+                "orderNumber": 14,
+                "departureTime": "2:47"
+            },
+            {
+                "stationName": "Wrocław Główny",
+                "orderNumber": 15,
+                "departureTime": "3:15"
+            },
+            {
+                "stationName": "Brzeg",
+                "orderNumber": 16,
+                "departureTime": "3:39"
+            },
+            {
+                "stationName": "Opole Główne",
+                "orderNumber": 17,
+                "departureTime": "4:06"
+            },
+            {
+                "stationName": "Kędzierzyn-Koźle",
+                "orderNumber": 18,
+                "departureTime": "4:36"
+            },
+            {
+                "stationName": "Gliwice",
+                "orderNumber": 19,
+                "departureTime": "5:04"
+            },
+            {
+                "stationName": "Zabrze",
+                "orderNumber": 20,
+                "departureTime": "5:11"
+            },
+            {
+                "stationName": "Katowice",
+                "orderNumber": 21,
+                "departureTime": "5:36"
+            },
+            {
+                "stationName": "Jaworzno Szczakowa",
+                "orderNumber": 22,
+                "departureTime": "5:57"
+            },
+            {
+                "stationName": "Trzebinia",
+                "orderNumber": 23,
+                "departureTime": "6:07"
+            },
+            {
+                "stationName": "Krzeszowice",
+                "orderNumber": 24,
+                "departureTime": "6:22"
+            },
+            {
+                "stationName": "Kraków Główny",
+                "orderNumber": 25,
+                "departureTime": "6:42"
+            },
+            {
+                "stationName": "Kraków Płaszów",
+                "orderNumber": 26,
+                "departureTime": "6:52"
+            },
+            {
+                "stationName": "Bochnia",
+                "orderNumber": 27,
+                "departureTime": "7:08"
+            },
+            {
+                "stationName": "Brzesko Okocim",
+                "orderNumber": 28,
+                "departureTime": "7:16"
+            },
+            {
+                "stationName": "Tarnów",
+                "orderNumber": 29,
+                "departureTime": "7:30"
+            },
+            {
+                "stationName": "Dębica",
+                "orderNumber": 30,
+                "departureTime": "7:46"
+            },
+            {
+                "stationName": "Rzeszów Główny",
+                "orderNumber": 31,
+                "departureTime": "8:12"
+            },
+            {
+                "stationName": "Łańcut",
+                "orderNumber": 32,
+                "departureTime": "8:24"
+            },
+            {
+                "stationName": "Przeworsk",
+                "orderNumber": 33,
+                "departureTime": "8:37"
+            },
+            {
+                "stationName": "Jarosław",
+                "orderNumber": 34,
+                "departureTime": "8:48"
+            },
+            {
+                "stationName": "Przemyśl Główny",
+                "orderNumber": 35,
+                "arrivalTime": "9:11"
+            }
+        ]
+    },
+    "30167": {
+        "has_wifi": true,
+        "has_AC": true,
+        "has_bicycle": true,
+        "accessible": false,
+        "has_restaurant": true,
+        "day_mask": 64,
+                "stations": [
+            {
+                "stationName": "Kraków Główny",
+                "orderNumber": 1,
+                "departureTime": "6:42"
+            },
+            {
+                "stationName": "Kraków Płaszów",
+                "orderNumber": 2,
+                "departureTime": "6:52"
+            },
+            {
+                "stationName": "Bochnia",
+                "orderNumber": 3,
+                "departureTime": "7:08"
+            },
+            {
+                "stationName": "Brzesko Okocim",
+                "orderNumber": 4,
+                "departureTime": "7:16"
+            },
+            {
+                "stationName": "Tarnów",
+                "orderNumber": 5,
+                "departureTime": "7:30"
+            },
+            {
+                "stationName": "Dębica",
+                "orderNumber": 6,
+                "departureTime": "7:46"
+            },
+            {
+                "stationName": "Rzeszów Główny",
+                "orderNumber": 7,
+                "departureTime": "8:12"
+            },
+            {
+                "stationName": "Łańcut",
+                "orderNumber": 8,
+                "departureTime": "8:24"
+            },
+            {
+                "stationName": "Przeworsk",
+                "orderNumber": 9,
+                "departureTime": "8:37"
+            },
+            {
+                "stationName": "Jarosław",
+                "orderNumber": 10,
+                "departureTime": "8:48"
+            },
+            {
+                "stationName": "Przemyśl Główny",
+                "orderNumber": 11,
+                "arrivalTime": "9:11"
+            }
+        ]
+    },
+    "43014": {
+        "has_wifi": true,
+        "has_AC": true,
+        "has_bicycle": true,
+        "accessible": false,
+        "has_restaurant": true,
+        "day_mask": 64,
+                "stations": [
+            {
+                "stationName": "Muenchen Hbf",
+                "orderNumber": 1,
+                "departureTime": "18:35"
+            },
+            {
+                "stationName": "Muenchen Ost",
+                "orderNumber": 2,
+                "departureTime": "18:45"
+            },
+            {
+                "stationName": "Rosenheim",
+                "orderNumber": 3,
+                "departureTime": "19:22"
+            },
+            {
+                "stationName": "Salzburg Hbf.",
+                "orderNumber": 4,
+                "departureTime": "20:30"
+            },
+            {
+                "stationName": "Attnang-Puchheim",
+                "orderNumber": 5,
+                "departureTime": "21:17"
+            },
+            {
+                "stationName": "Linz Hauptbahnhof",
+                "orderNumber": 6,
+                "departureTime": "21:46"
+            },
+            {
+                "stationName": "St.Poelten Hbf",
+                "orderNumber": 7,
+                "departureTime": "22:38"
+            },
+            {
+                "stationName": "Wien Meidling",
+                "orderNumber": 8,
+                "departureTime": "23:08"
+            },
+            {
+                "stationName": "Wien Hbf",
+                "orderNumber": 9,
+                "departureTime": "23:19"
+            },
+            {
+                "stationName": "Breclav",
+                "orderNumber": 10,
+                "departureTime": "0:50"
+            },
+            {
+                "stationName": "Ostrava Hlavni Nadrazi",
+                "orderNumber": 11,
+                "departureTime": "3:30"
+            },
+            {
+                "stationName": "Bohumin",
+                "orderNumber": 12,
+                "departureTime": "3:58"
+            },
+            {
+                "stationName": "Chałupki",
+                "orderNumber": 13,
+                "departureTime": "4:05"
+            },
+            {
+                "stationName": "Racibórz",
+                "orderNumber": 14,
+                "departureTime": "4:20"
+            },
+            {
+                "stationName": "Kędzierzyn-Koźle",
+                "orderNumber": 15,
+                "departureTime": "5:06"
+            },
+            {
+                "stationName": "Gliwice",
+                "orderNumber": 16,
+                "departureTime": "5:48"
+            },
+            {
+                "stationName": "Zabrze",
+                "orderNumber": 17,
+                "departureTime": "5:55"
+            },
+            {
+                "stationName": "Katowice",
+                "orderNumber": 18,
+                "departureTime": "6:19"
+            },
+            {
+                "stationName": "Mysłowice",
+                "orderNumber": 19,
+                "departureTime": "6:32"
+            },
+            {
+                "stationName": "Jaworzno Szczakowa",
+                "orderNumber": 20,
+                "departureTime": "6:42"
+            },
+            {
+                "stationName": "Trzebinia",
+                "orderNumber": 21,
+                "departureTime": "6:51"
+            },
+            {
+                "stationName": "Krzeszowice",
+                "orderNumber": 22,
+                "departureTime": "7:00"
+            },
+            {
+                "stationName": "Kraków Główny",
+                "orderNumber": 23,
+                "departureTime": "7:27"
+            },
+            {
+                "stationName": "Kraków Płaszów",
+                "orderNumber": 24,
+                "departureTime": "7:40"
+            },
+            {
+                "stationName": "Bochnia",
+                "orderNumber": 25,
+                "departureTime": "7:58"
+            },
+            {
+                "stationName": "Brzesko Okocim",
+                "orderNumber": 26,
+                "departureTime": "8:06"
+            },
+            {
+                "stationName": "Tarnów",
+                "orderNumber": 27,
+                "departureTime": "8:20"
+            },
+            {
+                "stationName": "Dębica",
+                "orderNumber": 28,
+                "departureTime": "8:37"
+            },
+            {
+                "stationName": "Ropczyce",
+                "orderNumber": 29,
+                "departureTime": "8:45"
+            },
+            {
+                "stationName": "Sędziszów Małopolski",
+                "orderNumber": 30,
+                "departureTime": "8:51"
+            },
+            {
+                "stationName": "Rzeszów Główny",
+                "orderNumber": 31,
+                "departureTime": "9:07"
+            },
+            {
+                "stationName": "Łańcut",
+                "orderNumber": 32,
+                "departureTime": "9:19"
+            },
+            {
+                "stationName": "Przeworsk",
+                "orderNumber": 33,
+                "departureTime": "9:33"
+            },
+            {
+                "stationName": "Jarosław",
+                "orderNumber": 34,
+                "departureTime": "9:43"
+            },
+            {
+                "stationName": "Radymno",
+                "orderNumber": 35,
+                "departureTime": "9:53"
+            },
+            {
+                "stationName": "Przemyśl Główny",
+                "orderNumber": 36,
+                "arrivalTime": "10:10"
+            }
+        ]
+    },
+    "30454": {
+        "has_wifi": false,
+        "has_AC": true,
+        "has_bicycle": false,
+        "accessible": false,
+        "has_restaurant": true,
+        "day_mask": 31,
+                "stations": [
+            {
+                "stationName": "Medyka",
+                "orderNumber": 1,
+                "departureTime": "10:10"
+            },
+            {
+                "stationName": "Medyka Rozrządowa",
+                "orderNumber": 2,
+                "departureTime": "10:13"
+            },
+            {
+                "stationName": "Medyka Towarowa",
+                "orderNumber": 3,
+                "departureTime": "10:15"
+            },
+            {
+                "stationName": "Hurko",
+                "orderNumber": 4,
+                "departureTime": "10:18"
+            },
+            {
+                "stationName": "Przemyśl Wschodni",
+                "orderNumber": 5,
+                "departureTime": "10:22"
+            },
+            {
+                "stationName": "Przemyśl Główny",
+                "orderNumber": 6,
+                "arrivalTime": "10:26"
+            }
+        ]
+    },
+    "UNK_1037": {
+        "has_wifi": true,
+        "has_AC": true,
+        "has_bicycle": true,
+        "accessible": false,
+        "has_restaurant": true,
+        "day_mask": 64,
+                "stations": [
+            {
+                "stationName": "Wrocław Główny",
+                "orderNumber": 1,
+                "departureTime": "5:09"
+            },
+            {
+                "stationName": "Opole Główne",
+                "orderNumber": 2,
+                "departureTime": "5:51"
+            },
+            {
+                "stationName": "Kędzierzyn-Koźle",
+                "orderNumber": 3,
+                "departureTime": "6:17"
+            },
+            {
+                "stationName": "Gliwice",
+                "orderNumber": 4,
+                "departureTime": "6:48"
+            },
+            {
+                "stationName": "Zabrze",
+                "orderNumber": 5,
+                "departureTime": "6:56"
+            },
+            {
+                "stationName": "Katowice",
+                "orderNumber": 6,
+                "departureTime": "7:18"
+            },
+            {
+                "stationName": "Kraków Główny",
+                "orderNumber": 7,
+                "departureTime": "8:15"
+            },
+            {
+                "stationName": "Kraków Płaszów",
+                "orderNumber": 8,
+                "departureTime": "8:21"
+            },
+            {
+                "stationName": "Bochnia",
+                "orderNumber": 9,
+                "departureTime": "8:38"
+            },
+            {
+                "stationName": "Tarnów",
+                "orderNumber": 10,
+                "departureTime": "8:57"
+            },
+            {
+                "stationName": "Dębica",
+                "orderNumber": 11,
+                "departureTime": "9:13"
+            },
+            {
+                "stationName": "Rzeszów Główny",
+                "orderNumber": 12,
+                "departureTime": "9:38"
+            },
+            {
+                "stationName": "Łańcut",
+                "orderNumber": 13,
+                "departureTime": "9:49"
+            },
+            {
+                "stationName": "Przeworsk",
+                "orderNumber": 14,
+                "departureTime": "10:03"
+            },
+            {
+                "stationName": "Jarosław",
+                "orderNumber": 15,
+                "departureTime": "10:13"
+            },
+            {
+                "stationName": "Przemyśl Główny",
+                "orderNumber": 16,
+                "arrivalTime": "10:37"
+            }
+        ]
+    },
+    "33006": {
+        "has_wifi": true,
+        "has_AC": true,
+        "has_bicycle": false,
+        "accessible": false,
+        "has_restaurant": true,
+        "day_mask": 32,
+                "stations": [
+            {
+                "stationName": "Odesa-Holovna",
+                "orderNumber": 1,
+                "departureTime": "21:15"
+            },
+            {
+                "stationName": "Zhmerynka",
+                "orderNumber": 2,
+                "departureTime": "2:15"
+            },
+            {
+                "stationName": "Khmelnytskyi",
+                "orderNumber": 3,
+                "departureTime": "3:42"
+            },
+            {
+                "stationName": "Ternopil",
+                "orderNumber": 4,
+                "departureTime": "5:35"
+            },
+            {
+                "stationName": "Zlochiv",
+                "orderNumber": 5,
+                "departureTime": "6:27"
+            },
+            {
+                "stationName": "Lviv",
+                "orderNumber": 6,
+                "departureTime": "9:00"
+            },
+            {
+                "stationName": "Przemyśl Główny",
+                "orderNumber": 7,
+                "arrivalTime": "11:20"
+            }
+        ]
+    },
+    "UNK_627": {
+        "has_wifi": false,
+        "has_AC": false,
+        "has_bicycle": false,
+        "accessible": false,
+        "has_restaurant": false,
+        "day_mask": 32,
+                "stations": [
+            {
+                "stationName": "Lviv",
+                "orderNumber": 1,
+                "departureTime": "9:00"
+            },
+            {
+                "stationName": "Przemyśl Główny",
+                "orderNumber": 2,
+                "arrivalTime": "6:27"
+            }
+        ]
+    },
+    "30405": {
+        "has_wifi": false,
+        "has_AC": true,
+        "has_bicycle": true,
+        "accessible": false,
+        "has_restaurant": true,
+        "day_mask": 127,
+                "stations": [
+            {
+                "stationName": "Rzeszów Główny",
+                "orderNumber": 1,
+                "departureTime": "10:32"
+            },
+            {
+                "stationName": "Rzeszów Pobitno",
+                "orderNumber": 2,
+                "departureTime": "10:35"
+            },
+            {
+                "stationName": "Rzeszów Załęże",
+                "orderNumber": 3,
+                "departureTime": "10:38"
+            },
+            {
+                "stationName": "Strażów",
+                "orderNumber": 4,
+                "departureTime": "10:41"
+            },
+            {
+                "stationName": "Krzemienica",
+                "orderNumber": 5,
+                "departureTime": "10:45"
+            },
+            {
+                "stationName": "Łańcut",
+                "orderNumber": 6,
+                "departureTime": "10:49"
+            },
+            {
+                "stationName": "Głuchów",
+                "orderNumber": 7,
+                "departureTime": "10:52"
+            },
+            {
+                "stationName": "Kosina",
+                "orderNumber": 8,
+                "departureTime": "10:55"
+            },
+            {
+                "stationName": "Rogóżno koło Łańcuta",
+                "orderNumber": 9,
+                "departureTime": "10:58"
+            },
+            {
+                "stationName": "Grzęska",
+                "orderNumber": 10,
+                "departureTime": "11:03"
+            },
+            {
+                "stationName": "Przeworsk",
+                "orderNumber": 11,
+                "departureTime": "11:07"
+            },
+            {
+                "stationName": "Pełkinie",
+                "orderNumber": 12,
+                "departureTime": "11:13"
+            },
+            {
+                "stationName": "Jarosław",
+                "orderNumber": 13,
+                "departureTime": "11:19"
+            },
+            {
+                "stationName": "Munina",
+                "orderNumber": 14,
+                "departureTime": "11:22"
+            },
+            {
+                "stationName": "Ostrów koło Radymna",
+                "orderNumber": 15,
+                "departureTime": "11:27"
+            },
+            {
+                "stationName": "Radymno",
+                "orderNumber": 16,
+                "departureTime": "11:31"
+            },
+            {
+                "stationName": "Sośnica Jarosławska",
+                "orderNumber": 17,
+                "departureTime": "11:34"
+            },
+            {
+                "stationName": "Niziny",
+                "orderNumber": 18,
+                "departureTime": "11:37"
+            },
+            {
+                "stationName": "Walawa",
+                "orderNumber": 19,
+                "departureTime": "11:40"
+            },
+            {
+                "stationName": "Żurawica Rozrządowa",
+                "orderNumber": 20,
+                "departureTime": "11:43"
+            },
+            {
+                "stationName": "Żurawica Osobowa",
+                "orderNumber": 21,
+                "departureTime": "11:46"
+            },
+            {
+                "stationName": "Przemyśl Zasanie",
+                "orderNumber": 22,
+                "departureTime": "11:52"
+            },
+            {
+                "stationName": "Przemyśl Główny",
+                "orderNumber": 23,
+                "arrivalTime": "11:56"
+            }
+        ]
+    },
+    "UNK_1201": {
+        "has_wifi": true,
+        "has_AC": true,
+        "has_bicycle": true,
+        "accessible": false,
+        "has_restaurant": true,
+        "day_mask": 64,
+                "stations": [
+            {
+                "stationName": "Wrocław Główny",
+                "orderNumber": 1,
+                "departureTime": "6:11"
+            },
+            {
+                "stationName": "Oława",
+                "orderNumber": 2,
+                "departureTime": "6:27"
+            },
+            {
+                "stationName": "Brzeg",
+                "orderNumber": 3,
+                "departureTime": "6:35"
+            },
+            {
+                "stationName": "Opole Główne",
+                "orderNumber": 4,
+                "departureTime": "6:55"
+            },
+            {
+                "stationName": "Strzelce Opolskie",
+                "orderNumber": 5,
+                "departureTime": "7:18"
+            },
+            {
+                "stationName": "Gliwice",
+                "orderNumber": 6,
+                "departureTime": "7:58"
+            },
+            {
+                "stationName": "Bytom",
+                "orderNumber": 7,
+                "departureTime": "8:15"
+            },
+            {
+                "stationName": "Mysłowice",
+                "orderNumber": 8,
+                "departureTime": "8:38"
+            },
+            {
+                "stationName": "Jaworzno Szczakowa",
+                "orderNumber": 9,
+                "departureTime": "8:47"
+            },
+            {
+                "stationName": "Trzebinia",
+                "orderNumber": 10,
+                "departureTime": "8:57"
+            },
+            {
+                "stationName": "Krzeszowice",
+                "orderNumber": 11,
+                "departureTime": "9:05"
+            },
+            {
+                "stationName": "Kraków Główny",
+                "orderNumber": 12,
+                "departureTime": "9:24"
+            },
+            {
+                "stationName": "Kraków Płaszów",
+                "orderNumber": 13,
+                "departureTime": "9:33"
+            },
+            {
+                "stationName": "Bochnia",
+                "orderNumber": 14,
+                "departureTime": "9:51"
+            },
+            {
+                "stationName": "Brzesko Okocim",
+                "orderNumber": 15,
+                "departureTime": "9:58"
+            },
+            {
+                "stationName": "Tarnów",
+                "orderNumber": 16,
+                "departureTime": "10:12"
+            },
+            {
+                "stationName": "Dębica",
+                "orderNumber": 17,
+                "departureTime": "10:29"
+            },
+            {
+                "stationName": "Ropczyce",
+                "orderNumber": 18,
+                "departureTime": "10:37"
+            },
+            {
+                "stationName": "Sędziszów Małopolski",
+                "orderNumber": 19,
+                "departureTime": "10:42"
+            },
+            {
+                "stationName": "Rzeszów Główny",
+                "orderNumber": 20,
+                "departureTime": "11:00"
+            },
+            {
+                "stationName": "Łańcut",
+                "orderNumber": 21,
+                "departureTime": "11:12"
+            },
+            {
+                "stationName": "Przeworsk",
+                "orderNumber": 22,
+                "departureTime": "11:25"
+            },
+            {
+                "stationName": "Jarosław",
+                "orderNumber": 23,
+                "departureTime": "11:35"
+            },
+            {
+                "stationName": "Radymno",
+                "orderNumber": 24,
+                "departureTime": "11:44"
+            },
+            {
+                "stationName": "Przemyśl Główny",
+                "orderNumber": 25,
+                "arrivalTime": "12:01"
+            }
+        ]
+    },
+    "UNK_1214": {
+        "has_wifi": true,
+        "has_AC": true,
+        "has_bicycle": false,
+        "accessible": false,
+        "has_restaurant": true,
+        "day_mask": 64,
+                "stations": [
+            {
+                "stationName": "Warszawa Wschodnia",
+                "orderNumber": 1,
+                "departureTime": "7:01"
+            },
+            {
+                "stationName": "Warszawa Centralna",
+                "orderNumber": 2,
+                "departureTime": "7:08"
+            },
+            {
+                "stationName": "Warszawa Zachodnia",
+                "orderNumber": 3,
+                "departureTime": "7:14"
+            },
+            {
+                "stationName": "Warszawa Służewiec",
+                "orderNumber": 4,
+                "departureTime": "7:22"
+            },
+            {
+                "stationName": "Piaseczno",
+                "orderNumber": 5,
+                "departureTime": "7:32"
+            },
+            {
+                "stationName": "Warka",
+                "orderNumber": 6,
+                "departureTime": "7:49"
+            },
+            {
+                "stationName": "Radom Główny",
+                "orderNumber": 7,
+                "departureTime": "8:18"
+            },
+            {
+                "stationName": "Starachowice Wschodnie",
+                "orderNumber": 8,
+                "departureTime": "9:05"
+            },
+            {
+                "stationName": "Ostrowiec Świętokrzyski",
+                "orderNumber": 9,
+                "departureTime": "9:22"
+            },
+            {
+                "stationName": "Sandomierz",
+                "orderNumber": 10,
+                "departureTime": "9:56"
+            },
+            {
+                "stationName": "Stalowa Wola Rozwadów",
+                "orderNumber": 11,
+                "departureTime": "10:31"
+            },
+            {
+                "stationName": "Stalowa Wola Centrum",
+                "orderNumber": 12,
+                "departureTime": "10:35"
+            },
+            {
+                "stationName": "Nisko",
+                "orderNumber": 13,
+                "departureTime": "10:43"
+            },
+            {
+                "stationName": "Rudnik nad Sanem",
+                "orderNumber": 14,
+                "departureTime": "10:55"
+            },
+            {
+                "stationName": "Nowa Sarzyna",
+                "orderNumber": 15,
+                "departureTime": "11:07"
+            },
+            {
+                "stationName": "Leżajsk",
+                "orderNumber": 16,
+                "departureTime": "11:15"
+            },
+            {
+                "stationName": "Przeworsk",
+                "orderNumber": 17,
+                "departureTime": "11:37"
+            },
+            {
+                "stationName": "Jarosław",
+                "orderNumber": 18,
+                "departureTime": "11:47"
+            },
+            {
+                "stationName": "Radymno",
+                "orderNumber": 19,
+                "departureTime": "11:57"
+            },
+            {
+                "stationName": "Przemyśl Główny",
+                "orderNumber": 20,
+                "arrivalTime": "12:14"
+            }
+        ]
+    },
+    "UNK_1215": {
+        "has_wifi": true,
+        "has_AC": true,
+        "has_bicycle": false,
+        "accessible": false,
+        "has_restaurant": true,
+        "day_mask": 64,
+                "stations": [
+            {
+                "stationName": "Warszawa Wschodnia",
+                "orderNumber": 1,
+                "departureTime": "7:01"
+            },
+            {
+                "stationName": "Warszawa Centralna",
+                "orderNumber": 2,
+                "departureTime": "7:08"
+            },
+            {
+                "stationName": "Warszawa Zachodnia",
+                "orderNumber": 3,
+                "departureTime": "7:14"
+            },
+            {
+                "stationName": "Warszawa Służewiec",
+                "orderNumber": 4,
+                "departureTime": "7:22"
+            },
+            {
+                "stationName": "Piaseczno",
+                "orderNumber": 5,
+                "departureTime": "7:32"
+            },
+            {
+                "stationName": "Warka",
+                "orderNumber": 6,
+                "departureTime": "7:49"
+            },
+            {
+                "stationName": "Radom Główny",
+                "orderNumber": 7,
+                "departureTime": "8:18"
+            },
+            {
+                "stationName": "Starachowice Wschodnie",
+                "orderNumber": 8,
+                "departureTime": "9:05"
+            },
+            {
+                "stationName": "Ostrowiec Świętokrzyski",
+                "orderNumber": 9,
+                "departureTime": "9:22"
+            },
+            {
+                "stationName": "Sandomierz",
+                "orderNumber": 10,
+                "departureTime": "9:56"
+            },
+            {
+                "stationName": "Stalowa Wola Rozwadów",
+                "orderNumber": 11,
+                "departureTime": "10:31"
+            },
+            {
+                "stationName": "Stalowa Wola Centrum",
+                "orderNumber": 12,
+                "departureTime": "10:35"
+            },
+            {
+                "stationName": "Nisko",
+                "orderNumber": 13,
+                "departureTime": "10:43"
+            },
+            {
+                "stationName": "Rudnik nad Sanem",
+                "orderNumber": 14,
+                "departureTime": "10:56"
+            },
+            {
+                "stationName": "Nowa Sarzyna",
+                "orderNumber": 15,
+                "departureTime": "11:08"
+            },
+            {
+                "stationName": "Leżajsk",
+                "orderNumber": 16,
+                "departureTime": "11:16"
+            },
+            {
+                "stationName": "Przeworsk",
+                "orderNumber": 17,
+                "departureTime": "11:38"
+            },
+            {
+                "stationName": "Jarosław",
+                "orderNumber": 18,
+                "departureTime": "11:48"
+            },
+            {
+                "stationName": "Radymno",
+                "orderNumber": 19,
+                "departureTime": "11:58"
+            },
+            {
+                "stationName": "Przemyśl Główny",
+                "orderNumber": 20,
+                "arrivalTime": "12:15"
+            }
+        ]
+    },
+    "UNK_1242": {
+        "has_wifi": true,
+        "has_AC": true,
+        "has_bicycle": true,
+        "accessible": false,
+        "has_restaurant": true,
+        "day_mask": 64,
+                "stations": [
+            {
+                "stationName": "Wrocław Główny",
+                "orderNumber": 1,
+                "departureTime": "7:09"
+            },
+            {
+                "stationName": "Opole Główne",
+                "orderNumber": 2,
+                "departureTime": "7:56"
+            },
+            {
+                "stationName": "Kędzierzyn-Koźle",
+                "orderNumber": 3,
+                "departureTime": "8:17"
+            },
+            {
+                "stationName": "Gliwice",
+                "orderNumber": 4,
+                "departureTime": "8:49"
+            },
+            {
+                "stationName": "Zabrze",
+                "orderNumber": 5,
+                "departureTime": "8:57"
+            },
+            {
+                "stationName": "Katowice",
+                "orderNumber": 6,
+                "departureTime": "9:21"
+            },
+            {
+                "stationName": "Kraków Główny",
+                "orderNumber": 7,
+                "departureTime": "10:15"
+            },
+            {
+                "stationName": "Kraków Płaszów",
+                "orderNumber": 8,
+                "departureTime": "10:23"
+            },
+            {
+                "stationName": "Bochnia",
+                "orderNumber": 9,
+                "departureTime": "10:40"
+            },
+            {
+                "stationName": "Tarnów",
+                "orderNumber": 10,
+                "departureTime": "11:00"
+            },
+            {
+                "stationName": "Dębica",
+                "orderNumber": 11,
+                "departureTime": "11:17"
+            },
+            {
+                "stationName": "Rzeszów Główny",
+                "orderNumber": 12,
+                "departureTime": "11:42"
+            },
+            {
+                "stationName": "Łańcut",
+                "orderNumber": 13,
+                "departureTime": "11:53"
+            },
+            {
+                "stationName": "Przeworsk",
+                "orderNumber": 14,
+                "departureTime": "12:07"
+            },
+            {
+                "stationName": "Jarosław",
+                "orderNumber": 15,
+                "departureTime": "12:17"
+            },
+            {
+                "stationName": "Przemyśl Główny",
+                "orderNumber": 16,
+                "arrivalTime": "12:42"
+            }
+        ]
+    },
+    "30407": {
+        "has_wifi": false,
+        "has_AC": true,
+        "has_bicycle": true,
+        "accessible": false,
+        "has_restaurant": true,
+        "day_mask": 31,
+                "stations": [
+            {
+                "stationName": "Rzeszów Główny",
+                "orderNumber": 1,
+                "departureTime": "11:26"
+            },
+            {
+                "stationName": "Rzeszów Pobitno",
+                "orderNumber": 2,
+                "departureTime": "11:29"
+            },
+            {
+                "stationName": "Rzeszów Załęże",
+                "orderNumber": 3,
+                "departureTime": "11:32"
+            },
+            {
+                "stationName": "Strażów",
+                "orderNumber": 4,
+                "departureTime": "11:35"
+            },
+            {
+                "stationName": "Krzemienica",
+                "orderNumber": 5,
+                "departureTime": "11:39"
+            },
+            {
+                "stationName": "Łańcut",
+                "orderNumber": 6,
+                "departureTime": "11:43"
+            },
+            {
+                "stationName": "Głuchów",
+                "orderNumber": 7,
+                "departureTime": "11:46"
+            },
+            {
+                "stationName": "Kosina",
+                "orderNumber": 8,
+                "departureTime": "11:49"
+            },
+            {
+                "stationName": "Rogóżno koło Łańcuta",
+                "orderNumber": 9,
+                "departureTime": "11:52"
+            },
+            {
+                "stationName": "Grzęska",
+                "orderNumber": 10,
+                "departureTime": "11:57"
+            },
+            {
+                "stationName": "Przeworsk",
+                "orderNumber": 11,
+                "departureTime": "12:14"
+            },
+            {
+                "stationName": "Pełkinie",
+                "orderNumber": 12,
+                "departureTime": "12:20"
+            },
+            {
+                "stationName": "Jarosław",
+                "orderNumber": 13,
+                "departureTime": "12:25"
+            },
+            {
+                "stationName": "Munina",
+                "orderNumber": 14,
+                "departureTime": "12:29"
+            },
+            {
+                "stationName": "Ostrów koło Radymna",
+                "orderNumber": 15,
+                "departureTime": "12:33"
+            },
+            {
+                "stationName": "Radymno",
+                "orderNumber": 16,
+                "departureTime": "12:37"
+            },
+            {
+                "stationName": "Sośnica Jarosławska",
+                "orderNumber": 17,
+                "departureTime": "12:41"
+            },
+            {
+                "stationName": "Niziny",
+                "orderNumber": 18,
+                "departureTime": "12:43"
+            },
+            {
+                "stationName": "Walawa",
+                "orderNumber": 19,
+                "departureTime": "12:46"
+            },
+            {
+                "stationName": "Żurawica Rozrządowa",
+                "orderNumber": 20,
+                "departureTime": "12:49"
+            },
+            {
+                "stationName": "Żurawica Osobowa",
+                "orderNumber": 21,
+                "departureTime": "12:53"
+            },
+            {
+                "stationName": "Przemyśl Zasanie",
+                "orderNumber": 22,
+                "departureTime": "12:58"
+            },
+            {
+                "stationName": "Przemyśl Główny",
+                "orderNumber": 23,
+                "arrivalTime": "13:02"
+            }
+        ]
+    },
+    "39446": {
+        "has_wifi": false,
+        "has_AC": true,
+        "has_bicycle": false,
+        "accessible": false,
+        "has_restaurant": true,
+        "day_mask": 31,
+                "stations": [
+            {
+                "stationName": "Medyka",
+                "orderNumber": 1,
+                "departureTime": "13:00"
+            },
+            {
+                "stationName": "Medyka Rozrządowa",
+                "orderNumber": 2,
+                "departureTime": "13:02"
+            },
+            {
+                "stationName": "Medyka Towarowa",
+                "orderNumber": 3,
+                "departureTime": "13:05"
+            },
+            {
+                "stationName": "Hurko",
+                "orderNumber": 4,
+                "departureTime": "13:07"
+            },
+            {
+                "stationName": "Przemyśl Wschodni",
+                "orderNumber": 5,
+                "departureTime": "13:11"
+            },
+            {
+                "stationName": "Przemyśl Główny",
+                "orderNumber": 6,
+                "arrivalTime": "13:14"
+            }
+        ]
+    },
+    "UNK_1359": {
+        "has_wifi": true,
+        "has_AC": true,
+        "has_bicycle": true,
+        "accessible": false,
+        "has_restaurant": true,
+        "day_mask": 64,
+                "stations": [
+            {
+                "stationName": "Szczecin Główny",
+                "orderNumber": 1,
+                "departureTime": "4:35"
+            },
+            {
+                "stationName": "Szczecin Dąbie",
+                "orderNumber": 2,
+                "departureTime": "4:47"
+            },
+            {
+                "stationName": "Stargard",
+                "orderNumber": 3,
+                "departureTime": "5:02"
+            },
+            {
+                "stationName": "Choszczno",
+                "orderNumber": 4,
+                "departureTime": "5:18"
+            },
+            {
+                "stationName": "Dobiegniew",
+                "orderNumber": 5,
+                "departureTime": "5:33"
+            },
+            {
+                "stationName": "Krzyż",
+                "orderNumber": 6,
+                "departureTime": "5:45"
+            },
+            {
+                "stationName": "Wronki",
+                "orderNumber": 7,
+                "departureTime": "6:01"
+            },
+            {
+                "stationName": "Szamotuły",
+                "orderNumber": 8,
+                "departureTime": "6:10"
+            },
+            {
+                "stationName": "Poznań Główny",
+                "orderNumber": 9,
+                "departureTime": "6:31"
+            },
+            {
+                "stationName": "Kościan",
+                "orderNumber": 10,
+                "departureTime": "6:53"
+            },
+            {
+                "stationName": "Leszno",
+                "orderNumber": 11,
+                "departureTime": "7:07"
+            },
+            {
+                "stationName": "Rawicz",
+                "orderNumber": 12,
+                "departureTime": "7:22"
+            },
+            {
+                "stationName": "Żmigród",
+                "orderNumber": 13,
+                "departureTime": "7:31"
+            },
+            {
+                "stationName": "Oborniki Śląskie",
+                "orderNumber": 14,
+                "departureTime": "7:42"
+            },
+            {
+                "stationName": "Wrocław Główny",
+                "orderNumber": 15,
+                "departureTime": "8:10"
+            },
+            {
+                "stationName": "Oława",
+                "orderNumber": 16,
+                "departureTime": "8:25"
+            },
+            {
+                "stationName": "Brzeg",
+                "orderNumber": 17,
+                "departureTime": "8:33"
+            },
+            {
+                "stationName": "Opole Główne",
+                "orderNumber": 18,
+                "departureTime": "8:54"
+            },
+            {
+                "stationName": "Strzelce Opolskie",
+                "orderNumber": 19,
+                "departureTime": "9:17"
+            },
+            {
+                "stationName": "Gliwice",
+                "orderNumber": 20,
+                "departureTime": "9:59"
+            },
+            {
+                "stationName": "Bytom",
+                "orderNumber": 21,
+                "departureTime": "10:17"
+            },
+            {
+                "stationName": "Mysłowice",
+                "orderNumber": 22,
+                "departureTime": "10:40"
+            },
+            {
+                "stationName": "Jaworzno Szczakowa",
+                "orderNumber": 23,
+                "departureTime": "10:49"
+            },
+            {
+                "stationName": "Trzebinia",
+                "orderNumber": 24,
+                "departureTime": "11:01"
+            },
+            {
+                "stationName": "Krzeszowice",
+                "orderNumber": 25,
+                "departureTime": "11:09"
+            },
+            {
+                "stationName": "Kraków Główny",
+                "orderNumber": 26,
+                "departureTime": "11:28"
+            },
+            {
+                "stationName": "Kraków Płaszów",
+                "orderNumber": 27,
+                "departureTime": "11:34"
+            },
+            {
+                "stationName": "Bochnia",
+                "orderNumber": 28,
+                "departureTime": "11:52"
+            },
+            {
+                "stationName": "Brzesko Okocim",
+                "orderNumber": 29,
+                "departureTime": "12:00"
+            },
+            {
+                "stationName": "Tarnów",
+                "orderNumber": 30,
+                "departureTime": "12:13"
+            },
+            {
+                "stationName": "Dębica",
+                "orderNumber": 31,
+                "departureTime": "12:29"
+            },
+            {
+                "stationName": "Ropczyce",
+                "orderNumber": 32,
+                "departureTime": "12:37"
+            },
+            {
+                "stationName": "Sędziszów Małopolski",
+                "orderNumber": 33,
+                "departureTime": "12:43"
+            },
+            {
+                "stationName": "Rzeszów Główny",
+                "orderNumber": 34,
+                "departureTime": "12:58"
+            },
+            {
+                "stationName": "Łańcut",
+                "orderNumber": 35,
+                "departureTime": "13:10"
+            },
+            {
+                "stationName": "Przeworsk",
+                "orderNumber": 36,
+                "departureTime": "13:23"
+            },
+            {
+                "stationName": "Jarosław",
+                "orderNumber": 37,
+                "departureTime": "13:33"
+            },
+            {
+                "stationName": "Radymno",
+                "orderNumber": 38,
+                "departureTime": "13:42"
+            },
+            {
+                "stationName": "Przemyśl Główny",
+                "orderNumber": 39,
+                "arrivalTime": "13:59"
+            }
+        ]
+    },
+    "33008": {
+        "has_wifi": true,
+        "has_AC": true,
+        "has_bicycle": false,
+        "accessible": false,
+        "has_restaurant": true,
+        "day_mask": 64,
+                "stations": [
+            {
+                "stationName": "Kryvyi Rih",
+                "orderNumber": 1,
+                "departureTime": "21:05"
+            },
+            {
+                "stationName": "Oleksandriia",
+                "orderNumber": 2,
+                "departureTime": "0:00"
+            },
+            {
+                "stationName": "Znamianka-Pasazhyrska",
+                "orderNumber": 3,
+                "departureTime": "0:47"
+            },
+            {
+                "stationName": "Im. Tarasa Shevchenka",
+                "orderNumber": 4,
+                "departureTime": "2:10"
+            },
+            {
+                "stationName": "Kyiv-Pasazhyrskyi",
+                "orderNumber": 5,
+                "departureTime": "5:09"
+            },
+            {
+                "stationName": "Lviv",
+                "orderNumber": 6,
+                "departureTime": "11:53"
+            },
+            {
+                "stationName": "Przemyśl Główny",
+                "orderNumber": 7,
+                "arrivalTime": "14:04"
+            }
+        ]
+    },
+    "30409": {
+        "has_wifi": false,
+        "has_AC": true,
+        "has_bicycle": true,
+        "accessible": false,
+        "has_restaurant": true,
+        "day_mask": 127,
+                "stations": [
+            {
+                "stationName": "Rzeszów Główny",
+                "orderNumber": 1,
+                "departureTime": "12:43"
+            },
+            {
+                "stationName": "Rzeszów Pobitno",
+                "orderNumber": 2,
+                "departureTime": "12:46"
+            },
+            {
+                "stationName": "Rzeszów Załęże",
+                "orderNumber": 3,
+                "departureTime": "12:49"
+            },
+            {
+                "stationName": "Strażów",
+                "orderNumber": 4,
+                "departureTime": "12:52"
+            },
+            {
+                "stationName": "Krzemienica",
+                "orderNumber": 5,
+                "departureTime": "12:56"
+            },
+            {
+                "stationName": "Łańcut",
+                "orderNumber": 6,
+                "departureTime": "13:00"
+            },
+            {
+                "stationName": "Głuchów",
+                "orderNumber": 7,
+                "departureTime": "13:03"
+            },
+            {
+                "stationName": "Kosina",
+                "orderNumber": 8,
+                "departureTime": "13:06"
+            },
+            {
+                "stationName": "Rogóżno koło Łańcuta",
+                "orderNumber": 9,
+                "departureTime": "13:09"
+            },
+            {
+                "stationName": "Grzęska",
+                "orderNumber": 10,
+                "departureTime": "13:14"
+            },
+            {
+                "stationName": "Przeworsk",
+                "orderNumber": 11,
+                "departureTime": "13:27"
+            },
+            {
+                "stationName": "Pełkinie",
+                "orderNumber": 12,
+                "departureTime": "13:33"
+            },
+            {
+                "stationName": "Jarosław",
+                "orderNumber": 13,
+                "departureTime": "13:38"
+            },
+            {
+                "stationName": "Munina",
+                "orderNumber": 14,
+                "departureTime": "13:42"
+            },
+            {
+                "stationName": "Ostrów koło Radymna",
+                "orderNumber": 15,
+                "departureTime": "13:46"
+            },
+            {
+                "stationName": "Radymno",
+                "orderNumber": 16,
+                "departureTime": "13:50"
+            },
+            {
+                "stationName": "Sośnica Jarosławska",
+                "orderNumber": 17,
+                "departureTime": "13:54"
+            },
+            {
+                "stationName": "Niziny",
+                "orderNumber": 18,
+                "departureTime": "13:57"
+            },
+            {
+                "stationName": "Walawa",
+                "orderNumber": 19,
+                "departureTime": "13:59"
+            },
+            {
+                "stationName": "Żurawica Rozrządowa",
+                "orderNumber": 20,
+                "departureTime": "14:03"
+            },
+            {
+                "stationName": "Żurawica Osobowa",
+                "orderNumber": 21,
+                "departureTime": "14:06"
+            },
+            {
+                "stationName": "Przemyśl Zasanie",
+                "orderNumber": 22,
+                "departureTime": "14:12"
+            },
+            {
+                "stationName": "Przemyśl Główny",
+                "orderNumber": 23,
+                "arrivalTime": "14:15"
+            }
+        ]
+    },
+    "UNK_1440": {
+        "has_wifi": true,
+        "has_AC": true,
+        "has_bicycle": true,
+        "accessible": false,
+        "has_restaurant": true,
+        "day_mask": 64,
+                "stations": [
+            {
+                "stationName": "Zielona Góra Główna",
+                "orderNumber": 1,
+                "departureTime": "7:01"
+            },
+            {
+                "stationName": "Nowa Sól",
+                "orderNumber": 2,
+                "departureTime": "7:18"
+            },
+            {
+                "stationName": "Głogów",
+                "orderNumber": 3,
+                "departureTime": "7:40"
+            },
+            {
+                "stationName": "Lubin",
+                "orderNumber": 4,
+                "departureTime": "8:14"
+            },
+            {
+                "stationName": "Legnica",
+                "orderNumber": 5,
+                "departureTime": "8:31"
+            },
+            {
+                "stationName": "Główny",
+                "orderNumber": 6,
+                "departureTime": "9:10"
+            },
+            {
+                "stationName": "Opole Główne",
+                "orderNumber": 7,
+                "departureTime": "9:50"
+            },
+            {
+                "stationName": "Kędzierzyn-Koźle",
+                "orderNumber": 8,
+                "departureTime": "10:11"
+            },
+            {
+                "stationName": "Gliwice",
+                "orderNumber": 9,
+                "departureTime": "10:38"
+            },
+            {
+                "stationName": "Zabrze",
+                "orderNumber": 10,
+                "departureTime": "10:45"
+            },
+            {
+                "stationName": "Katowice",
+                "orderNumber": 11,
+                "departureTime": "11:09"
+            },
+            {
+                "stationName": "Kraków Główny",
+                "orderNumber": 12,
+                "departureTime": "12:15"
+            },
+            {
+                "stationName": "Kraków Płaszów",
+                "orderNumber": 13,
+                "departureTime": "12:23"
+            },
+            {
+                "stationName": "Bochnia",
+                "orderNumber": 14,
+                "departureTime": "12:41"
+            },
+            {
+                "stationName": "Tarnów",
+                "orderNumber": 15,
+                "departureTime": "13:00"
+            },
+            {
+                "stationName": "Dębica",
+                "orderNumber": 16,
+                "departureTime": "13:16"
+            },
+            {
+                "stationName": "Rzeszów Główny",
+                "orderNumber": 17,
+                "departureTime": "13:40"
+            },
+            {
+                "stationName": "Łańcut",
+                "orderNumber": 18,
+                "departureTime": "13:52"
+            },
+            {
+                "stationName": "Przeworsk",
+                "orderNumber": 19,
+                "departureTime": "14:05"
+            },
+            {
+                "stationName": "Jarosław",
+                "orderNumber": 20,
+                "departureTime": "14:15"
+            },
+            {
+                "stationName": "Przemyśl Główny",
+                "orderNumber": 21,
+                "arrivalTime": "14:40"
+            }
+        ]
+    },
+    "30413": {
+        "has_wifi": false,
+        "has_AC": true,
+        "has_bicycle": true,
+        "accessible": false,
+        "has_restaurant": true,
+        "day_mask": 127,
+                "stations": [
+            {
+                "stationName": "Rzeszów Główny",
+                "orderNumber": 1,
+                "departureTime": "13:57"
+            },
+            {
+                "stationName": "Rzeszów Pobitno",
+                "orderNumber": 2,
+                "departureTime": "14:00"
+            },
+            {
+                "stationName": "Rzeszów Załęże",
+                "orderNumber": 3,
+                "departureTime": "14:03"
+            },
+            {
+                "stationName": "Strażów",
+                "orderNumber": 4,
+                "departureTime": "14:07"
+            },
+            {
+                "stationName": "Krzemienica",
+                "orderNumber": 5,
+                "departureTime": "14:11"
+            },
+            {
+                "stationName": "Łańcut",
+                "orderNumber": 6,
+                "departureTime": "14:15"
+            },
+            {
+                "stationName": "Głuchów",
+                "orderNumber": 7,
+                "departureTime": "14:19"
+            },
+            {
+                "stationName": "Kosina",
+                "orderNumber": 8,
+                "departureTime": "14:22"
+            },
+            {
+                "stationName": "Rogóżno koło Łańcuta",
+                "orderNumber": 9,
+                "departureTime": "14:25"
+            },
+            {
+                "stationName": "Grzęska",
+                "orderNumber": 10,
+                "departureTime": "14:30"
+            },
+            {
+                "stationName": "Przeworsk",
+                "orderNumber": 11,
+                "departureTime": "14:34"
+            },
+            {
+                "stationName": "Pełkinie",
+                "orderNumber": 12,
+                "departureTime": "14:40"
+            },
+            {
+                "stationName": "Jarosław",
+                "orderNumber": 13,
+                "departureTime": "14:46"
+            },
+            {
+                "stationName": "Munina",
+                "orderNumber": 14,
+                "departureTime": "14:49"
+            },
+            {
+                "stationName": "Ostrów koło Radymna",
+                "orderNumber": 15,
+                "departureTime": "14:54"
+            },
+            {
+                "stationName": "Radymno",
+                "orderNumber": 16,
+                "departureTime": "14:57"
+            },
+            {
+                "stationName": "Sośnica Jarosławska",
+                "orderNumber": 17,
+                "departureTime": "15:01"
+            },
+            {
+                "stationName": "Niziny",
+                "orderNumber": 18,
+                "departureTime": "15:04"
+            },
+            {
+                "stationName": "Walawa",
+                "orderNumber": 19,
+                "departureTime": "15:06"
+            },
+            {
+                "stationName": "Żurawica Rozrządowa",
+                "orderNumber": 20,
+                "departureTime": "15:09"
+            },
+            {
+                "stationName": "Żurawica Osobowa",
+                "orderNumber": 21,
+                "departureTime": "15:13"
+            },
+            {
+                "stationName": "Przemyśl Zasanie",
+                "orderNumber": 22,
+                "departureTime": "15:19"
+            },
+            {
+                "stationName": "Przemyśl Główny",
+                "orderNumber": 23,
+                "arrivalTime": "15:22"
+            }
+        ]
+    },
+    "30462": {
+        "has_wifi": false,
+        "has_AC": true,
+        "has_bicycle": false,
+        "accessible": false,
+        "has_restaurant": true,
+        "day_mask": 31,
+                "stations": [
+            {
+                "stationName": "Medyka",
+                "orderNumber": 1,
+                "departureTime": "15:11"
+            },
+            {
+                "stationName": "Medyka Rozrządowa",
+                "orderNumber": 2,
+                "departureTime": "15:13"
+            },
+            {
+                "stationName": "Medyka Towarowa",
+                "orderNumber": 3,
+                "departureTime": "15:16"
+            },
+            {
+                "stationName": "Hurko",
+                "orderNumber": 4,
+                "departureTime": "15:19"
+            },
+            {
+                "stationName": "Przemyśl Wschodni",
+                "orderNumber": 5,
+                "departureTime": "15:23"
+            },
+            {
+                "stationName": "Przemyśl Główny",
+                "orderNumber": 6,
+                "arrivalTime": "15:27"
+            }
+        ]
+    },
+    "UNK_1600": {
+        "has_wifi": true,
+        "has_AC": true,
+        "has_bicycle": true,
+        "accessible": false,
+        "has_restaurant": true,
+        "day_mask": 127,
+                "stations": [
+            {
+                "stationName": "Poznań Główny",
+                "orderNumber": 1,
+                "departureTime": "8:31"
+            },
+            {
+                "stationName": "Kościan",
+                "orderNumber": 2,
+                "departureTime": "8:53"
+            },
+            {
+                "stationName": "Leszno",
+                "orderNumber": 3,
+                "departureTime": "9:07"
+            },
+            {
+                "stationName": "Rawicz",
+                "orderNumber": 4,
+                "departureTime": "9:22"
+            },
+            {
+                "stationName": "Żmigród",
+                "orderNumber": 5,
+                "departureTime": "9:32"
+            },
+            {
+                "stationName": "Śląskie",
+                "orderNumber": 6,
+                "departureTime": "9:43"
+            },
+            {
+                "stationName": "Wrocław Główny",
+                "orderNumber": 7,
+                "departureTime": "10:11"
+            },
+            {
+                "stationName": "Oława",
+                "orderNumber": 8,
+                "departureTime": "10:27"
+            },
+            {
+                "stationName": "Brzeg",
+                "orderNumber": 9,
+                "departureTime": "10:35"
+            },
+            {
+                "stationName": "Opole Główne",
+                "orderNumber": 10,
+                "departureTime": "10:59"
+            },
+            {
+                "stationName": "Strzelce Opolskie",
+                "orderNumber": 11,
+                "departureTime": "11:22"
+            },
+            {
+                "stationName": "Gliwice",
+                "orderNumber": 12,
+                "departureTime": "11:54"
+            },
+            {
+                "stationName": "Zabrze",
+                "orderNumber": 13,
+                "departureTime": "12:01"
+            },
+            {
+                "stationName": "Katowice",
+                "orderNumber": 14,
+                "departureTime": "12:20"
+            },
+            {
+                "stationName": "Mysłowice",
+                "orderNumber": 15,
+                "departureTime": "12:38"
+            },
+            {
+                "stationName": "Jaworzno Szczakowa",
+                "orderNumber": 16,
+                "departureTime": "12:48"
+            },
+            {
+                "stationName": "Trzebinia",
+                "orderNumber": 17,
+                "departureTime": "12:59"
+            },
+            {
+                "stationName": "Krzeszowice",
+                "orderNumber": 18,
+                "departureTime": "13:08"
+            },
+            {
+                "stationName": "Kraków Główny",
+                "orderNumber": 19,
+                "departureTime": "13:30"
+            },
+            {
+                "stationName": "Kraków Płaszów",
+                "orderNumber": 20,
+                "departureTime": "13:35"
+            },
+            {
+                "stationName": "Bochnia",
+                "orderNumber": 21,
+                "departureTime": "13:52"
+            },
+            {
+                "stationName": "Brzesko Okocim",
+                "orderNumber": 22,
+                "departureTime": "13:59"
+            },
+            {
+                "stationName": "Tarnów",
+                "orderNumber": 23,
+                "departureTime": "14:13"
+            },
+            {
+                "stationName": "Dębica",
+                "orderNumber": 24,
+                "departureTime": "14:29"
+            },
+            {
+                "stationName": "Ropczyce",
+                "orderNumber": 25,
+                "departureTime": "14:36"
+            },
+            {
+                "stationName": "Sędziszów Małopolski",
+                "orderNumber": 26,
+                "departureTime": "14:42"
+            },
+            {
+                "stationName": "Rzeszów Główny",
+                "orderNumber": 27,
+                "departureTime": "14:58"
+            },
+            {
+                "stationName": "Łańcut",
+                "orderNumber": 28,
+                "departureTime": "15:10"
+            },
+            {
+                "stationName": "Przeworsk",
+                "orderNumber": 29,
+                "departureTime": "15:23"
+            },
+            {
+                "stationName": "Jarosław",
+                "orderNumber": 30,
+                "departureTime": "15:33"
+            },
+            {
+                "stationName": "Radymno",
+                "orderNumber": 31,
+                "departureTime": "15:43"
+            },
+            {
+                "stationName": "Przemyśl Główny",
+                "orderNumber": 32,
+                "arrivalTime": "16:00"
+            }
+        ]
+    },
+    "30411": {
+        "has_wifi": false,
+        "has_AC": true,
+        "has_bicycle": true,
+        "accessible": false,
+        "has_restaurant": true,
+        "day_mask": 127,
+                "stations": [
+            {
+                "stationName": "Rzeszów Główny",
+                "orderNumber": 1,
+                "departureTime": "14:43"
+            },
+            {
+                "stationName": "Rzeszów Pobitno",
+                "orderNumber": 2,
+                "departureTime": "14:46"
+            },
+            {
+                "stationName": "Rzeszów Załęże",
+                "orderNumber": 3,
+                "departureTime": "14:49"
+            },
+            {
+                "stationName": "Strażów",
+                "orderNumber": 4,
+                "departureTime": "14:52"
+            },
+            {
+                "stationName": "Krzemienica",
+                "orderNumber": 5,
+                "departureTime": "14:56"
+            },
+            {
+                "stationName": "Łańcut",
+                "orderNumber": 6,
+                "departureTime": "15:00"
+            },
+            {
+                "stationName": "Głuchów",
+                "orderNumber": 7,
+                "departureTime": "15:03"
+            },
+            {
+                "stationName": "Kosina",
+                "orderNumber": 8,
+                "departureTime": "15:06"
+            },
+            {
+                "stationName": "Rogóżno koło Łańcuta",
+                "orderNumber": 9,
+                "departureTime": "15:09"
+            },
+            {
+                "stationName": "Grzęska",
+                "orderNumber": 10,
+                "departureTime": "15:14"
+            },
+            {
+                "stationName": "Przeworsk",
+                "orderNumber": 11,
+                "departureTime": "15:27"
+            },
+            {
+                "stationName": "Pełkinie",
+                "orderNumber": 12,
+                "departureTime": "15:33"
+            },
+            {
+                "stationName": "Jarosław",
+                "orderNumber": 13,
+                "departureTime": "15:38"
+            },
+            {
+                "stationName": "Munina",
+                "orderNumber": 14,
+                "departureTime": "15:42"
+            },
+            {
+                "stationName": "Ostrów koło Radymna",
+                "orderNumber": 15,
+                "departureTime": "15:46"
+            },
+            {
+                "stationName": "Radymno",
+                "orderNumber": 16,
+                "departureTime": "15:50"
+            },
+            {
+                "stationName": "Sośnica Jarosławska",
+                "orderNumber": 17,
+                "departureTime": "15:54"
+            },
+            {
+                "stationName": "Niziny",
+                "orderNumber": 18,
+                "departureTime": "15:57"
+            },
+            {
+                "stationName": "Walawa",
+                "orderNumber": 19,
+                "departureTime": "15:59"
+            },
+            {
+                "stationName": "Żurawica Rozrządowa",
+                "orderNumber": 20,
+                "departureTime": "16:03"
+            },
+            {
+                "stationName": "Żurawica Osobowa",
+                "orderNumber": 21,
+                "departureTime": "16:06"
+            },
+            {
+                "stationName": "Przemyśl Zasanie",
+                "orderNumber": 22,
+                "departureTime": "16:12"
+            },
+            {
+                "stationName": "Przemyśl Główny",
+                "orderNumber": 23,
+                "arrivalTime": "16:15"
+            }
+        ]
+    },
+    "30415": {
+        "has_wifi": false,
+        "has_AC": true,
+        "has_bicycle": false,
+        "accessible": false,
+        "has_restaurant": true,
+        "day_mask": 31,
+                "stations": [
+            {
+                "stationName": "Rzeszów Główny",
+                "orderNumber": 1,
+                "departureTime": "15:35"
+            },
+            {
+                "stationName": "Łańcut",
+                "orderNumber": 2,
+                "departureTime": "15:46"
+            },
+            {
+                "stationName": "Przeworsk",
+                "orderNumber": 3,
+                "departureTime": "15:59"
+            },
+            {
+                "stationName": "Jarosław",
+                "orderNumber": 4,
+                "departureTime": "16:10"
+            },
+            {
+                "stationName": "Radymno",
+                "orderNumber": 5,
+                "departureTime": "16:19"
+            },
+            {
+                "stationName": "Przemyśl Zasanie",
+                "orderNumber": 6,
+                "departureTime": "16:33"
+            },
+            {
+                "stationName": "Przemyśl Główny",
+                "orderNumber": 7,
+                "arrivalTime": "16:36"
+            }
+        ]
+    },
+    "30464": {
+        "has_wifi": false,
+        "has_AC": true,
+        "has_bicycle": false,
+        "accessible": false,
+        "has_restaurant": true,
+        "day_mask": 31,
+                "stations": [
+            {
+                "stationName": "Medyka",
+                "orderNumber": 1,
+                "departureTime": "16:27"
+            },
+            {
+                "stationName": "Medyka Rozrządowa",
+                "orderNumber": 2,
+                "departureTime": "16:29"
+            },
+            {
+                "stationName": "Medyka Towarowa",
+                "orderNumber": 3,
+                "departureTime": "16:32"
+            },
+            {
+                "stationName": "Hurko",
+                "orderNumber": 4,
+                "departureTime": "16:35"
+            },
+            {
+                "stationName": "Przemyśl Wschodni",
+                "orderNumber": 5,
+                "departureTime": "16:39"
+            },
+            {
+                "stationName": "Przemyśl Główny",
+                "orderNumber": 6,
+                "arrivalTime": "16:43"
+            }
+        ]
+    },
+    "UNK_1646": {
+        "has_wifi": true,
+        "has_AC": true,
+        "has_bicycle": true,
+        "accessible": false,
+        "has_restaurant": true,
+        "day_mask": 64,
+                "stations": [
+            {
+                "stationName": "Szczecin Główny",
+                "orderNumber": 1,
+                "departureTime": "6:50"
+            },
+            {
+                "stationName": "Gryfino",
+                "orderNumber": 2,
+                "departureTime": "7:07"
+            },
+            {
+                "stationName": "Chojna",
+                "orderNumber": 3,
+                "departureTime": "7:30"
+            },
+            {
+                "stationName": "Mieszkowice",
+                "orderNumber": 4,
+                "departureTime": "7:43"
+            },
+            {
+                "stationName": "Kostrzyn",
+                "orderNumber": 5,
+                "departureTime": "8:01"
+            },
+            {
+                "stationName": "Rzepin",
+                "orderNumber": 6,
+                "departureTime": "8:24"
+            },
+            {
+                "stationName": "Zielona Góra Główna",
+                "orderNumber": 7,
+                "departureTime": "9:10"
+            },
+            {
+                "stationName": "Nowa Sól",
+                "orderNumber": 8,
+                "departureTime": "9:27"
+            },
+            {
+                "stationName": "Głogów",
+                "orderNumber": 9,
+                "departureTime": "9:49"
+            },
+            {
+                "stationName": "Lubin",
+                "orderNumber": 10,
+                "departureTime": "10:16"
+            },
+            {
+                "stationName": "Legnica",
+                "orderNumber": 11,
+                "departureTime": "10:31"
+            },
+            {
+                "stationName": "Wrocław Główny",
+                "orderNumber": 12,
+                "departureTime": "11:10"
+            },
+            {
+                "stationName": "Opole Główne",
+                "orderNumber": 13,
+                "departureTime": "11:50"
+            },
+            {
+                "stationName": "Kędzierzyn-Koźle",
+                "orderNumber": 14,
+                "departureTime": "12:11"
+            },
+            {
+                "stationName": "Gliwice",
+                "orderNumber": 15,
+                "departureTime": "12:40"
+            },
+            {
+                "stationName": "Zabrze",
+                "orderNumber": 16,
+                "departureTime": "12:48"
+            },
+            {
+                "stationName": "Katowice",
+                "orderNumber": 17,
+                "departureTime": "13:08"
+            },
+            {
+                "stationName": "Kraków Główny",
+                "orderNumber": 18,
+                "departureTime": "14:06"
+            },
+            {
+                "stationName": "Kraków Płaszów",
+                "orderNumber": 19,
+                "departureTime": "14:12"
+            },
+            {
+                "stationName": "Bochnia",
+                "orderNumber": 20,
+                "departureTime": "14:44"
+            },
+            {
+                "stationName": "Tarnów",
+                "orderNumber": 21,
+                "departureTime": "15:05"
+            },
+            {
+                "stationName": "Dębica",
+                "orderNumber": 22,
+                "departureTime": "15:22"
+            },
+            {
+                "stationName": "Rzeszów Główny",
+                "orderNumber": 23,
+                "departureTime": "15:45"
+            },
+            {
+                "stationName": "Łańcut",
+                "orderNumber": 24,
+                "departureTime": "15:57"
+            },
+            {
+                "stationName": "Przeworsk",
+                "orderNumber": 25,
+                "departureTime": "16:11"
+            },
+            {
+                "stationName": "Jarosław",
+                "orderNumber": 26,
+                "departureTime": "16:21"
+            },
+            {
+                "stationName": "Przemyśl Główny",
+                "orderNumber": 27,
+                "arrivalTime": "16:46"
+            }
+        ]
+    },
+    "33010": {
+        "has_wifi": true,
+        "has_AC": true,
+        "has_bicycle": true,
+        "accessible": false,
+        "has_restaurant": true,
+        "day_mask": 64,
+                "stations": [
+            {
+                "stationName": "Kharkiv-Pasazhyrskyi",
+                "orderNumber": 1,
+                "departureTime": "22:52"
+            },
+            {
+                "stationName": "Liubotyn",
+                "orderNumber": 2,
+                "departureTime": "23:25"
+            },
+            {
+                "stationName": "Poltava-Kyivska",
+                "orderNumber": 3,
+                "departureTime": "1:43"
+            },
+            {
+                "stationName": "Myrhorod",
+                "orderNumber": 4,
+                "departureTime": "3:08"
+            },
+            {
+                "stationName": "Romodan",
+                "orderNumber": 5,
+                "departureTime": "3:32"
+            },
+            {
+                "stationName": "Hrebinka",
+                "orderNumber": 6,
+                "departureTime": "4:50"
+            },
+            {
+                "stationName": "Darnytsia",
+                "orderNumber": 7,
+                "departureTime": "6:18"
+            },
+            {
+                "stationName": "Kyiv-Pasazhyrskyi",
+                "orderNumber": 8,
+                "departureTime": "7:35"
+            },
+            {
+                "stationName": "Lviv",
+                "orderNumber": 9,
+                "departureTime": "14:49"
+            },
+            {
+                "stationName": "Przemyśl Główny",
+                "orderNumber": 10,
+                "arrivalTime": "16:59"
+            }
+        ]
+    },
+    "30417": {
+        "has_wifi": false,
+        "has_AC": true,
+        "has_bicycle": true,
+        "accessible": false,
+        "has_restaurant": true,
+        "day_mask": 127,
+                "stations": [
+            {
+                "stationName": "Rzeszów Główny",
+                "orderNumber": 1,
+                "departureTime": "15:51"
+            },
+            {
+                "stationName": "Rzeszów Pobitno",
+                "orderNumber": 2,
+                "departureTime": "15:54"
+            },
+            {
+                "stationName": "Rzeszów Załęże",
+                "orderNumber": 3,
+                "departureTime": "15:56"
+            },
+            {
+                "stationName": "Strażów",
+                "orderNumber": 4,
+                "departureTime": "16:00"
+            },
+            {
+                "stationName": "Krzemienica",
+                "orderNumber": 5,
+                "departureTime": "16:04"
+            },
+            {
+                "stationName": "Łańcut",
+                "orderNumber": 6,
+                "departureTime": "16:07"
+            },
+            {
+                "stationName": "Głuchów",
+                "orderNumber": 7,
+                "departureTime": "16:11"
+            },
+            {
+                "stationName": "Kosina",
+                "orderNumber": 8,
+                "departureTime": "16:14"
+            },
+            {
+                "stationName": "Rogóżno koło Łańcuta",
+                "orderNumber": 9,
+                "departureTime": "16:17"
+            },
+            {
+                "stationName": "Grzęska",
+                "orderNumber": 10,
+                "departureTime": "16:22"
+            },
+            {
+                "stationName": "Przeworsk",
+                "orderNumber": 11,
+                "departureTime": "16:26"
+            },
+            {
+                "stationName": "Pełkinie",
+                "orderNumber": 12,
+                "departureTime": "16:31"
+            },
+            {
+                "stationName": "Jarosław",
+                "orderNumber": 13,
+                "departureTime": "16:37"
+            },
+            {
+                "stationName": "Munina",
+                "orderNumber": 14,
+                "departureTime": "16:40"
+            },
+            {
+                "stationName": "Ostrów koło Radymna",
+                "orderNumber": 15,
+                "departureTime": "16:45"
+            },
+            {
+                "stationName": "Radymno",
+                "orderNumber": 16,
+                "departureTime": "16:48"
+            },
+            {
+                "stationName": "Sośnica Jarosławska",
+                "orderNumber": 17,
+                "departureTime": "16:52"
+            },
+            {
+                "stationName": "Niziny",
+                "orderNumber": 18,
+                "departureTime": "16:55"
+            },
+            {
+                "stationName": "Walawa",
+                "orderNumber": 19,
+                "departureTime": "16:57"
+            },
+            {
+                "stationName": "Żurawica Rozrządowa",
+                "orderNumber": 20,
+                "departureTime": "17:01"
+            },
+            {
+                "stationName": "Żurawica Osobowa",
+                "orderNumber": 21,
+                "departureTime": "17:04"
+            },
+            {
+                "stationName": "Przemyśl Zasanie",
+                "orderNumber": 22,
+                "departureTime": "17:10"
+            },
+            {
+                "stationName": "Przemyśl Główny",
+                "orderNumber": 23,
+                "arrivalTime": "17:14"
+            }
+        ]
+    },
+    "30419": {
+        "has_wifi": false,
+        "has_AC": true,
+        "has_bicycle": false,
+        "accessible": false,
+        "has_restaurant": true,
+        "day_mask": 31,
+                "stations": [
+            {
+                "stationName": "Rzeszów Główny",
+                "orderNumber": 1,
+                "departureTime": "16:21"
+            },
+            {
+                "stationName": "Łańcut",
+                "orderNumber": 2,
+                "departureTime": "16:32"
+            },
+            {
+                "stationName": "Przeworsk",
+                "orderNumber": 3,
+                "departureTime": "16:45"
+            },
+            {
+                "stationName": "Jarosław",
+                "orderNumber": 4,
+                "departureTime": "16:55"
+            },
+            {
+                "stationName": "Radymno",
+                "orderNumber": 5,
+                "departureTime": "17:04"
+            },
+            {
+                "stationName": "Przemyśl Zasanie",
+                "orderNumber": 6,
+                "departureTime": "17:18"
+            },
+            {
+                "stationName": "Przemyśl Główny",
+                "orderNumber": 7,
+                "arrivalTime": "17:22"
+            }
+        ]
+    },
+    "UNK_1801": {
+        "has_wifi": true,
+        "has_AC": true,
+        "has_bicycle": true,
+        "accessible": false,
+        "has_restaurant": true,
+        "day_mask": 64,
+                "stations": [
+            {
+                "stationName": "Ustka",
+                "orderNumber": 1,
+                "departureTime": "5:18"
+            },
+            {
+                "stationName": "Słupsk",
+                "orderNumber": 2,
+                "departureTime": "5:50"
+            },
+            {
+                "stationName": "Sławno",
+                "orderNumber": 3,
+                "departureTime": "6:35"
+            },
+            {
+                "stationName": "Koszalin",
+                "orderNumber": 4,
+                "departureTime": "7:11"
+            },
+            {
+                "stationName": "Białogard",
+                "orderNumber": 5,
+                "departureTime": "7:30"
+            },
+            {
+                "stationName": "Szczecinek",
+                "orderNumber": 6,
+                "departureTime": "8:18"
+            },
+            {
+                "stationName": "Jastrowie",
+                "orderNumber": 7,
+                "departureTime": "8:50"
+            },
+            {
+                "stationName": "Piła Główna",
+                "orderNumber": 8,
+                "departureTime": "9:15"
+            },
+            {
+                "stationName": "Chodzież",
+                "orderNumber": 9,
+                "departureTime": "9:29"
+            },
+            {
+                "stationName": "Rogoźno Wielkopolskie",
+                "orderNumber": 10,
+                "departureTime": "9:46"
+            },
+            {
+                "stationName": "Oborniki Wielkopolskie Miasto",
+                "orderNumber": 11,
+                "departureTime": "9:56"
+            },
+            {
+                "stationName": "Poznań Główny",
+                "orderNumber": 12,
+                "departureTime": "10:31"
+            },
+            {
+                "stationName": "Kościan",
+                "orderNumber": 13,
+                "departureTime": "10:53"
+            },
+            {
+                "stationName": "Leszno",
+                "orderNumber": 14,
+                "departureTime": "11:07"
+            },
+            {
+                "stationName": "Rawicz",
+                "orderNumber": 15,
+                "departureTime": "11:24"
+            },
+            {
+                "stationName": "Żmigród",
+                "orderNumber": 16,
+                "departureTime": "11:33"
+            },
+            {
+                "stationName": "Oborniki Śląskie",
+                "orderNumber": 17,
+                "departureTime": "11:45"
+            },
+            {
+                "stationName": "Wrocław Główny",
+                "orderNumber": 18,
+                "departureTime": "12:10"
+            },
+            {
+                "stationName": "Oława",
+                "orderNumber": 19,
+                "departureTime": "12:26"
+            },
+            {
+                "stationName": "Brzeg",
+                "orderNumber": 20,
+                "departureTime": "12:34"
+            },
+            {
+                "stationName": "Opole Główne",
+                "orderNumber": 21,
+                "departureTime": "13:00"
+            },
+            {
+                "stationName": "Strzelce Opolskie",
+                "orderNumber": 22,
+                "departureTime": "13:23"
+            },
+            {
+                "stationName": "Gliwice",
+                "orderNumber": 23,
+                "departureTime": "13:56"
+            },
+            {
+                "stationName": "Zabrze",
+                "orderNumber": 24,
+                "departureTime": "14:03"
+            },
+            {
+                "stationName": "Katowice",
+                "orderNumber": 25,
+                "departureTime": "14:27"
+            },
+            {
+                "stationName": "Mysłowice",
+                "orderNumber": 26,
+                "departureTime": "14:40"
+            },
+            {
+                "stationName": "Jaworzno Szczakowa",
+                "orderNumber": 27,
+                "departureTime": "14:51"
+            },
+            {
+                "stationName": "Trzebinia",
+                "orderNumber": 28,
+                "departureTime": "15:00"
+            },
+            {
+                "stationName": "Krzeszowice",
+                "orderNumber": 29,
+                "departureTime": "15:12"
+            },
+            {
+                "stationName": "Kraków Główny",
+                "orderNumber": 30,
+                "departureTime": "15:30"
+            },
+            {
+                "stationName": "Kraków Płaszów",
+                "orderNumber": 31,
+                "departureTime": "15:35"
+            },
+            {
+                "stationName": "Bochnia",
+                "orderNumber": 32,
+                "departureTime": "15:52"
+            },
+            {
+                "stationName": "Brzesko Okocim",
+                "orderNumber": 33,
+                "departureTime": "15:59"
+            },
+            {
+                "stationName": "Tarnów",
+                "orderNumber": 34,
+                "departureTime": "16:14"
+            },
+            {
+                "stationName": "Dębica",
+                "orderNumber": 35,
+                "departureTime": "16:31"
+            },
+            {
+                "stationName": "Ropczyce",
+                "orderNumber": 36,
+                "departureTime": "16:38"
+            },
+            {
+                "stationName": "Sędziszów Małopolski",
+                "orderNumber": 37,
+                "departureTime": "16:44"
+            },
+            {
+                "stationName": "Rzeszów Główny",
+                "orderNumber": 38,
+                "departureTime": "17:00"
+            },
+            {
+                "stationName": "Łańcut",
+                "orderNumber": 39,
+                "departureTime": "17:12"
+            },
+            {
+                "stationName": "Przeworsk",
+                "orderNumber": 40,
+                "departureTime": "17:25"
+            },
+            {
+                "stationName": "Jarosław",
+                "orderNumber": 41,
+                "departureTime": "17:35"
+            },
+            {
+                "stationName": "Radymno",
+                "orderNumber": 42,
+                "departureTime": "17:44"
+            },
+            {
+                "stationName": "Przemyśl Główny",
+                "orderNumber": 43,
+                "arrivalTime": "18:01"
+            }
+        ]
+    },
+    "30421": {
+        "has_wifi": false,
+        "has_AC": true,
+        "has_bicycle": true,
+        "accessible": false,
+        "has_restaurant": true,
+        "day_mask": 127,
+                "stations": [
+            {
+                "stationName": "Rzeszów Główny",
+                "orderNumber": 1,
+                "departureTime": "17:17"
+            },
+            {
+                "stationName": "Rzeszów Pobitno",
+                "orderNumber": 2,
+                "departureTime": "17:20"
+            },
+            {
+                "stationName": "Rzeszów Załęże",
+                "orderNumber": 3,
+                "departureTime": "17:23"
+            },
+            {
+                "stationName": "Strażów",
+                "orderNumber": 4,
+                "departureTime": "17:26"
+            },
+            {
+                "stationName": "Krzemienica",
+                "orderNumber": 5,
+                "departureTime": "17:31"
+            },
+            {
+                "stationName": "Łańcut",
+                "orderNumber": 6,
+                "departureTime": "17:34"
+            },
+            {
+                "stationName": "Głuchów",
+                "orderNumber": 7,
+                "departureTime": "17:37"
+            },
+            {
+                "stationName": "Kosina",
+                "orderNumber": 8,
+                "departureTime": "17:40"
+            },
+            {
+                "stationName": "Rogóżno koło Łańcuta",
+                "orderNumber": 9,
+                "departureTime": "17:43"
+            },
+            {
+                "stationName": "Grzęska",
+                "orderNumber": 10,
+                "departureTime": "17:48"
+            },
+            {
+                "stationName": "Przeworsk",
+                "orderNumber": 11,
+                "departureTime": "17:52"
+            },
+            {
+                "stationName": "Pełkinie",
+                "orderNumber": 12,
+                "departureTime": "17:58"
+            },
+            {
+                "stationName": "Jarosław",
+                "orderNumber": 13,
+                "departureTime": "18:04"
+            },
+            {
+                "stationName": "Munina",
+                "orderNumber": 14,
+                "departureTime": "18:07"
+            },
+            {
+                "stationName": "Ostrów koło Radymna",
+                "orderNumber": 15,
+                "departureTime": "18:12"
+            },
+            {
+                "stationName": "Radymno",
+                "orderNumber": 16,
+                "departureTime": "18:15"
+            },
+            {
+                "stationName": "Sośnica Jarosławska",
+                "orderNumber": 17,
+                "departureTime": "18:19"
+            },
+            {
+                "stationName": "Niziny",
+                "orderNumber": 18,
+                "departureTime": "18:22"
+            },
+            {
+                "stationName": "Walawa",
+                "orderNumber": 19,
+                "departureTime": "18:24"
+            },
+            {
+                "stationName": "Żurawica Rozrządowa",
+                "orderNumber": 20,
+                "departureTime": "18:28"
+            },
+            {
+                "stationName": "Żurawica Osobowa",
+                "orderNumber": 21,
+                "departureTime": "18:31"
+            },
+            {
+                "stationName": "Przemyśl Zasanie",
+                "orderNumber": 22,
+                "departureTime": "18:37"
+            },
+            {
+                "stationName": "Przemyśl Główny",
+                "orderNumber": 23,
+                "arrivalTime": "18:40"
+            }
+        ]
+    },
+    "73000": {
+        "has_wifi": true,
+        "has_AC": true,
+        "has_bicycle": true,
+        "accessible": false,
+        "has_restaurant": true,
+        "day_mask": 64,
+                "stations": [
+            {
+                "stationName": "Berlin Hauptbahnhof",
+                "orderNumber": 1,
+                "departureTime": "7:35"
+            },
+            {
+                "stationName": "Frankfurt Oder",
+                "orderNumber": 2,
+                "departureTime": "9:50"
+            },
+            {
+                "stationName": "Rzepin",
+                "orderNumber": 3,
+                "departureTime": "10:12"
+            },
+            {
+                "stationName": "Zielona Góra Główna",
+                "orderNumber": 4,
+                "departureTime": "10:59"
+            },
+            {
+                "stationName": "Głogów",
+                "orderNumber": 5,
+                "departureTime": "11:33"
+            },
+            {
+                "stationName": "Lubin",
+                "orderNumber": 6,
+                "departureTime": "12:00"
+            },
+            {
+                "stationName": "Legnica",
+                "orderNumber": 7,
+                "departureTime": "12:26"
+            },
+            {
+                "stationName": "Wrocław Główny",
+                "orderNumber": 8,
+                "departureTime": "13:10"
+            },
+            {
+                "stationName": "Opole Główne",
+                "orderNumber": 9,
+                "departureTime": "13:50"
+            },
+            {
+                "stationName": "Kędzierzyn-Koźle",
+                "orderNumber": 10,
+                "departureTime": "14:13"
+            },
+            {
+                "stationName": "Gliwice",
+                "orderNumber": 11,
+                "departureTime": "14:42"
+            },
+            {
+                "stationName": "Zabrze",
+                "orderNumber": 12,
+                "departureTime": "14:49"
+            },
+            {
+                "stationName": "Katowice",
+                "orderNumber": 13,
+                "departureTime": "15:15"
+            },
+            {
+                "stationName": "Kraków Główny",
+                "orderNumber": 14,
+                "departureTime": "16:17"
+            },
+            {
+                "stationName": "Kraków Płaszów",
+                "orderNumber": 15,
+                "departureTime": "16:24"
+            },
+            {
+                "stationName": "Bochnia",
+                "orderNumber": 16,
+                "departureTime": "16:42"
+            },
+            {
+                "stationName": "Tarnów",
+                "orderNumber": 17,
+                "departureTime": "17:01"
+            },
+            {
+                "stationName": "Dębica",
+                "orderNumber": 18,
+                "departureTime": "17:17"
+            },
+            {
+                "stationName": "Rzeszów Główny",
+                "orderNumber": 19,
+                "departureTime": "17:43"
+            },
+            {
+                "stationName": "Łańcut",
+                "orderNumber": 20,
+                "departureTime": "17:55"
+            },
+            {
+                "stationName": "Przeworsk",
+                "orderNumber": 21,
+                "departureTime": "18:09"
+            },
+            {
+                "stationName": "Jarosław",
+                "orderNumber": 22,
+                "departureTime": "18:20"
+            },
+            {
+                "stationName": "Przemyśl Główny",
+                "orderNumber": 23,
+                "arrivalTime": "18:45"
+            }
+        ]
+    },
+    "43008": {
+        "has_wifi": true,
+        "has_AC": true,
+        "has_bicycle": true,
+        "accessible": false,
+        "has_restaurant": true,
+        "day_mask": 127,
+                "stations": [
+            {
+                "stationName": "Praha Hlavni Nadrazi",
+                "orderNumber": 1,
+                "departureTime": "10:08"
+            },
+            {
+                "stationName": "Praha-Liben",
+                "orderNumber": 2,
+                "departureTime": "10:16"
+            },
+            {
+                "stationName": "Kolin",
+                "orderNumber": 3,
+                "departureTime": "10:50"
+            },
+            {
+                "stationName": "Pardubice Hlavni Nadrazi",
+                "orderNumber": 4,
+                "departureTime": "11:11"
+            },
+            {
+                "stationName": "Ceska Trebova",
+                "orderNumber": 5,
+                "departureTime": "11:50"
+            },
+            {
+                "stationName": "Zabreh na Morave",
+                "orderNumber": 6,
+                "departureTime": "12:13"
+            },
+            {
+                "stationName": "Olomouc Hlavni Nadrazi",
+                "orderNumber": 7,
+                "departureTime": "12:37"
+            },
+            {
+                "stationName": "Hranice na Morave",
+                "orderNumber": 8,
+                "departureTime": "13:08"
+            },
+            {
+                "stationName": "Ostrava-Svinov",
+                "orderNumber": 9,
+                "departureTime": "13:37"
+            },
+            {
+                "stationName": "Ostrava Hlavni Nadrazi",
+                "orderNumber": 10,
+                "departureTime": "13:46"
+            },
+            {
+                "stationName": "Bohumin",
+                "orderNumber": 11,
+                "departureTime": "14:32"
+            },
+            {
+                "stationName": "Zebrzydowice",
+                "orderNumber": 12,
+                "departureTime": "14:53"
+            },
+            {
+                "stationName": "Czechowice-Dziedzice",
+                "orderNumber": 13,
+                "departureTime": "15:27"
+            },
+            {
+                "stationName": "Oświęcim",
+                "orderNumber": 14,
+                "departureTime": "15:46"
+            },
+            {
+                "stationName": "Chrzanów Śródmieście",
+                "orderNumber": 15,
+                "departureTime": "16:02"
+            },
+            {
+                "stationName": "Trzebinia",
+                "orderNumber": 16,
+                "departureTime": "16:15"
+            },
+            {
+                "stationName": "Krzeszowice",
+                "orderNumber": 17,
+                "departureTime": "16:25"
+            },
+            {
+                "stationName": "Kraków Główny",
+                "orderNumber": 18,
+                "departureTime": "16:47"
+            },
+            {
+                "stationName": "Kraków Płaszów",
+                "orderNumber": 19,
+                "departureTime": "17:01"
+            },
+            {
+                "stationName": "Bochnia",
+                "orderNumber": 20,
+                "departureTime": "17:18"
+            },
+            {
+                "stationName": "Tarnów",
+                "orderNumber": 21,
+                "departureTime": "17:44"
+            },
+            {
+                "stationName": "Dębica",
+                "orderNumber": 22,
+                "departureTime": "18:02"
+            },
+            {
+                "stationName": "Rzeszów Główny",
+                "orderNumber": 23,
+                "departureTime": "18:28"
+            },
+            {
+                "stationName": "Łańcut",
+                "orderNumber": 24,
+                "departureTime": "18:40"
+            },
+            {
+                "stationName": "Przeworsk",
+                "orderNumber": 25,
+                "departureTime": "18:53"
+            },
+            {
+                "stationName": "Jarosław",
+                "orderNumber": 26,
+                "departureTime": "19:04"
+            },
+            {
+                "stationName": "Przemyśl Główny",
+                "orderNumber": 27,
+                "arrivalTime": "19:29"
+            }
+        ]
+    },
+    "30468": {
+        "has_wifi": false,
+        "has_AC": true,
+        "has_bicycle": false,
+        "accessible": false,
+        "has_restaurant": true,
+        "day_mask": 127,
+                "stations": [
+            {
+                "stationName": "Medyka",
+                "orderNumber": 1,
+                "departureTime": "19:27"
+            },
+            {
+                "stationName": "Medyka Rozrządowa",
+                "orderNumber": 2,
+                "departureTime": "19:29"
+            },
+            {
+                "stationName": "Medyka Towarowa",
+                "orderNumber": 3,
+                "departureTime": "19:32"
+            },
+            {
+                "stationName": "Hurko",
+                "orderNumber": 4,
+                "departureTime": "19:35"
+            },
+            {
+                "stationName": "Przemyśl Wschodni",
+                "orderNumber": 5,
+                "departureTime": "19:39"
+            },
+            {
+                "stationName": "Przemyśl Główny",
+                "orderNumber": 6,
+                "arrivalTime": "19:43"
+            }
+        ]
+    },
+    "33012": {
+        "has_wifi": true,
+        "has_AC": true,
+        "has_bicycle": false,
+        "accessible": false,
+        "has_restaurant": true,
+        "day_mask": 127,
+                "stations": [
+            {
+                "stationName": "Kyiv-Pasazhyrskyi",
+                "orderNumber": 1,
+                "departureTime": "11:06"
+            },
+            {
+                "stationName": "Vinnytsia",
+                "orderNumber": 2,
+                "departureTime": "13:54"
+            },
+            {
+                "stationName": "Khmelnytskyi",
+                "orderNumber": 3,
+                "departureTime": "15:30"
+            },
+            {
+                "stationName": "Ternopil",
+                "orderNumber": 4,
+                "departureTime": "16:55"
+            },
+            {
+                "stationName": "Lviv",
+                "orderNumber": 5,
+                "departureTime": "19:13"
+            },
+            {
+                "stationName": "Przemyśl Główny",
+                "orderNumber": 6,
+                "arrivalTime": "19:55"
+            }
+        ]
+    },
+    "30423": {
+        "has_wifi": false,
+        "has_AC": true,
+        "has_bicycle": true,
+        "accessible": false,
+        "has_restaurant": true,
+        "day_mask": 127,
+                "stations": [
+            {
+                "stationName": "Rzeszów Główny",
+                "orderNumber": 1,
+                "departureTime": "18:32"
+            },
+            {
+                "stationName": "Rzeszów Pobitno",
+                "orderNumber": 2,
+                "departureTime": "18:35"
+            },
+            {
+                "stationName": "Rzeszów Załęże",
+                "orderNumber": 3,
+                "departureTime": "18:38"
+            },
+            {
+                "stationName": "Strażów",
+                "orderNumber": 4,
+                "departureTime": "18:41"
+            },
+            {
+                "stationName": "Krzemienica",
+                "orderNumber": 5,
+                "departureTime": "18:45"
+            },
+            {
+                "stationName": "Łańcut",
+                "orderNumber": 6,
+                "departureTime": "18:49"
+            },
+            {
+                "stationName": "Głuchów",
+                "orderNumber": 7,
+                "departureTime": "18:52"
+            },
+            {
+                "stationName": "Kosina",
+                "orderNumber": 8,
+                "departureTime": "18:55"
+            },
+            {
+                "stationName": "Rogóżno koło Łańcuta",
+                "orderNumber": 9,
+                "departureTime": "18:58"
+            },
+            {
+                "stationName": "Grzęska",
+                "orderNumber": 10,
+                "departureTime": "19:03"
+            },
+            {
+                "stationName": "Przeworsk",
+                "orderNumber": 11,
+                "departureTime": "19:07"
+            },
+            {
+                "stationName": "Pełkinie",
+                "orderNumber": 12,
+                "departureTime": "19:13"
+            },
+            {
+                "stationName": "Jarosław",
+                "orderNumber": 13,
+                "departureTime": "19:19"
+            },
+            {
+                "stationName": "Munina",
+                "orderNumber": 14,
+                "departureTime": "19:23"
+            },
+            {
+                "stationName": "Ostrów koło Radymna",
+                "orderNumber": 15,
+                "departureTime": "19:27"
+            },
+            {
+                "stationName": "Radymno",
+                "orderNumber": 16,
+                "departureTime": "19:31"
+            },
+            {
+                "stationName": "Sośnica Jarosławska",
+                "orderNumber": 17,
+                "departureTime": "19:35"
+            },
+            {
+                "stationName": "Niziny",
+                "orderNumber": 18,
+                "departureTime": "19:37"
+            },
+            {
+                "stationName": "Walawa",
+                "orderNumber": 19,
+                "departureTime": "19:40"
+            },
+            {
+                "stationName": "Żurawica Rozrządowa",
+                "orderNumber": 20,
+                "departureTime": "19:43"
+            },
+            {
+                "stationName": "Żurawica Osobowa",
+                "orderNumber": 21,
+                "departureTime": "19:46"
+            },
+            {
+                "stationName": "Przemyśl Zasanie",
+                "orderNumber": 22,
+                "departureTime": "19:52"
+            },
+            {
+                "stationName": "Przemyśl Główny",
+                "orderNumber": 23,
+                "arrivalTime": "19:55"
+            }
+        ]
+    },
+    "UNK_2000": {
+        "has_wifi": true,
+        "has_AC": true,
+        "has_bicycle": true,
+        "accessible": false,
+        "has_restaurant": true,
+        "day_mask": 127,
+                "stations": [
+            {
+                "stationName": "Kołobrzeg",
+                "orderNumber": 1,
+                "departureTime": "7:45"
+            },
+            {
+                "stationName": "Koszalin",
+                "orderNumber": 2,
+                "departureTime": "8:55"
+            },
+            {
+                "stationName": "Białogard",
+                "orderNumber": 3,
+                "departureTime": "9:30"
+            },
+            {
+                "stationName": "Szczecinek",
+                "orderNumber": 4,
+                "departureTime": "10:08"
+            },
+            {
+                "stationName": "Jastrowie",
+                "orderNumber": 5,
+                "departureTime": "10:35"
+            },
+            {
+                "stationName": "Główna",
+                "orderNumber": 6,
+                "departureTime": "11:14"
+            },
+            {
+                "stationName": "Chodzież",
+                "orderNumber": 7,
+                "departureTime": "11:29"
+            },
+            {
+                "stationName": "Rogoźno Wielkopolskie",
+                "orderNumber": 8,
+                "departureTime": "11:46"
+            },
+            {
+                "stationName": "Oborniki Wielkopolskie Miasto",
+                "orderNumber": 9,
+                "departureTime": "11:57"
+            },
+            {
+                "stationName": "Poznań Główny",
+                "orderNumber": 10,
+                "departureTime": "12:31"
+            },
+            {
+                "stationName": "Kościan",
+                "orderNumber": 11,
+                "departureTime": "12:53"
+            },
+            {
+                "stationName": "Leszno",
+                "orderNumber": 12,
+                "departureTime": "13:07"
+            },
+            {
+                "stationName": "Rawicz",
+                "orderNumber": 13,
+                "departureTime": "13:22"
+            },
+            {
+                "stationName": "Żmigród",
+                "orderNumber": 14,
+                "departureTime": "13:31"
+            },
+            {
+                "stationName": "Oborniki Śląskie",
+                "orderNumber": 15,
+                "departureTime": "13:42"
+            },
+            {
+                "stationName": "Wrocław Główny",
+                "orderNumber": 16,
+                "departureTime": "14:10"
+            },
+            {
+                "stationName": "Oława",
+                "orderNumber": 17,
+                "departureTime": "14:25"
+            },
+            {
+                "stationName": "Brzeg",
+                "orderNumber": 18,
+                "departureTime": "14:34"
+            },
+            {
+                "stationName": "Opole Główne",
+                "orderNumber": 19,
+                "departureTime": "14:54"
+            },
+            {
+                "stationName": "Strzelce Opolskie",
+                "orderNumber": 20,
+                "departureTime": "15:19"
+            },
+            {
+                "stationName": "Gliwice",
+                "orderNumber": 21,
+                "departureTime": "16:00"
+            },
+            {
+                "stationName": "Bytom",
+                "orderNumber": 22,
+                "departureTime": "16:17"
+            },
+            {
+                "stationName": "Mysłowice",
+                "orderNumber": 23,
+                "departureTime": "16:40"
+            },
+            {
+                "stationName": "Jaworzno Szczakowa",
+                "orderNumber": 24,
+                "departureTime": "16:50"
+            },
+            {
+                "stationName": "Trzebinia",
+                "orderNumber": 25,
+                "departureTime": "17:00"
+            },
+            {
+                "stationName": "Krzeszowice",
+                "orderNumber": 26,
+                "departureTime": "17:08"
+            },
+            {
+                "stationName": "Kraków Główny",
+                "orderNumber": 27,
+                "departureTime": "17:28"
+            },
+            {
+                "stationName": "Kraków Płaszów",
+                "orderNumber": 28,
+                "departureTime": "17:33"
+            },
+            {
+                "stationName": "Bochnia",
+                "orderNumber": 29,
+                "departureTime": "17:50"
+            },
+            {
+                "stationName": "Brzesko Okocim",
+                "orderNumber": 30,
+                "departureTime": "17:58"
+            },
+            {
+                "stationName": "Tarnów",
+                "orderNumber": 31,
+                "departureTime": "18:12"
+            },
+            {
+                "stationName": "Dębica",
+                "orderNumber": 32,
+                "departureTime": "18:28"
+            },
+            {
+                "stationName": "Ropczyce",
+                "orderNumber": 33,
+                "departureTime": "18:36"
+            },
+            {
+                "stationName": "Sędziszów Małopolski",
+                "orderNumber": 34,
+                "departureTime": "18:42"
+            },
+            {
+                "stationName": "Rzeszów Główny",
+                "orderNumber": 35,
+                "departureTime": "18:58"
+            },
+            {
+                "stationName": "Łańcut",
+                "orderNumber": 36,
+                "departureTime": "19:10"
+            },
+            {
+                "stationName": "Przeworsk",
+                "orderNumber": 37,
+                "departureTime": "19:23"
+            },
+            {
+                "stationName": "Jarosław",
+                "orderNumber": 38,
+                "departureTime": "19:34"
+            },
+            {
+                "stationName": "Radymno",
+                "orderNumber": 39,
+                "departureTime": "19:43"
+            },
+            {
+                "stationName": "Przemyśl Główny",
+                "orderNumber": 40,
+                "arrivalTime": "20:00"
+            }
+        ]
+    },
+    "UNK_2054": {
+        "has_wifi": true,
+        "has_AC": true,
+        "has_bicycle": true,
+        "accessible": false,
+        "has_restaurant": true,
+        "day_mask": 127,
+                "stations": [
+            {
+                "stationName": "Świnoujście",
+                "orderNumber": 1,
+                "departureTime": "9:12"
+            },
+            {
+                "stationName": "Międzyzdroje",
+                "orderNumber": 2,
+                "departureTime": "9:24"
+            },
+            {
+                "stationName": "Wysoka Kamieńska",
+                "orderNumber": 3,
+                "departureTime": "9:47"
+            },
+            {
+                "stationName": "Goleniów",
+                "orderNumber": 4,
+                "departureTime": "10:06"
+            },
+            {
+                "stationName": "Dąbie",
+                "orderNumber": 5,
+                "departureTime": "10:24"
+            },
+            {
+                "stationName": "Szczecin Główny",
+                "orderNumber": 6,
+                "departureTime": "10:40"
+            },
+            {
+                "stationName": "Gryfino",
+                "orderNumber": 7,
+                "departureTime": "10:57"
+            },
+            {
+                "stationName": "Chojna",
+                "orderNumber": 8,
+                "departureTime": "11:21"
+            },
+            {
+                "stationName": "Mieszkowice",
+                "orderNumber": 9,
+                "departureTime": "11:34"
+            },
+            {
+                "stationName": "Kostrzyn",
+                "orderNumber": 10,
+                "departureTime": "11:52"
+            },
+            {
+                "stationName": "Rzepin",
+                "orderNumber": 11,
+                "departureTime": "12:17"
+            },
+            {
+                "stationName": "Zielona Góra Główna",
+                "orderNumber": 12,
+                "departureTime": "13:02"
+            },
+            {
+                "stationName": "Nowa Sól",
+                "orderNumber": 13,
+                "departureTime": "13:19"
+            },
+            {
+                "stationName": "Głogów",
+                "orderNumber": 14,
+                "departureTime": "13:42"
+            },
+            {
+                "stationName": "Ścinawa",
+                "orderNumber": 15,
+                "departureTime": "14:09"
+            },
+            {
+                "stationName": "Wołów",
+                "orderNumber": 16,
+                "departureTime": "14:23"
+            },
+            {
+                "stationName": "Brzeg Dolny",
+                "orderNumber": 17,
+                "departureTime": "14:31"
+            },
+            {
+                "stationName": "Wrocław Główny",
+                "orderNumber": 18,
+                "departureTime": "15:17"
+            },
+            {
+                "stationName": "Opole Główne",
+                "orderNumber": 19,
+                "departureTime": "15:57"
+            },
+            {
+                "stationName": "Kędzierzyn-Koźle",
+                "orderNumber": 20,
+                "departureTime": "16:22"
+            },
+            {
+                "stationName": "Gliwice",
+                "orderNumber": 21,
+                "departureTime": "16:49"
+            },
+            {
+                "stationName": "Zabrze",
+                "orderNumber": 22,
+                "departureTime": "16:56"
+            },
+            {
+                "stationName": "Katowice",
+                "orderNumber": 23,
+                "departureTime": "17:16"
+            },
+            {
+                "stationName": "Kraków Główny",
+                "orderNumber": 24,
+                "departureTime": "18:16"
+            },
+            {
+                "stationName": "Kraków Płaszów",
+                "orderNumber": 25,
+                "departureTime": "18:22"
+            },
+            {
+                "stationName": "Bochnia",
+                "orderNumber": 26,
+                "departureTime": "18:48"
+            },
+            {
+                "stationName": "Tarnów",
+                "orderNumber": 27,
+                "departureTime": "19:08"
+            },
+            {
+                "stationName": "Dębica",
+                "orderNumber": 28,
+                "departureTime": "19:25"
+            },
+            {
+                "stationName": "Rzeszów Główny",
+                "orderNumber": 29,
+                "departureTime": "19:52"
+            },
+            {
+                "stationName": "Łańcut",
+                "orderNumber": 30,
+                "departureTime": "20:04"
+            },
+            {
+                "stationName": "Przeworsk",
+                "orderNumber": 31,
+                "departureTime": "20:18"
+            },
+            {
+                "stationName": "Jarosław",
+                "orderNumber": 32,
+                "departureTime": "20:28"
+            },
+            {
+                "stationName": "Przemyśl Główny",
+                "orderNumber": 33,
+                "arrivalTime": "20:54"
+            }
+        ]
+    },
+    "30425": {
+        "has_wifi": false,
+        "has_AC": true,
+        "has_bicycle": true,
+        "accessible": false,
+        "has_restaurant": true,
+        "day_mask": 127,
+                "stations": [
+            {
+                "stationName": "Rzeszów Główny",
+                "orderNumber": 1,
+                "departureTime": "19:38"
+            },
+            {
+                "stationName": "Rzeszów Pobitno",
+                "orderNumber": 2,
+                "departureTime": "19:41"
+            },
+            {
+                "stationName": "Rzeszów Załęże",
+                "orderNumber": 3,
+                "departureTime": "19:43"
+            },
+            {
+                "stationName": "Strażów",
+                "orderNumber": 4,
+                "departureTime": "19:47"
+            },
+            {
+                "stationName": "Krzemienica",
+                "orderNumber": 5,
+                "departureTime": "19:51"
+            },
+            {
+                "stationName": "Łańcut",
+                "orderNumber": 6,
+                "departureTime": "19:54"
+            },
+            {
+                "stationName": "Głuchów",
+                "orderNumber": 7,
+                "departureTime": "19:57"
+            },
+            {
+                "stationName": "Kosina",
+                "orderNumber": 8,
+                "departureTime": "20:00"
+            },
+            {
+                "stationName": "Rogóżno koło Łańcuta",
+                "orderNumber": 9,
+                "departureTime": "20:03"
+            },
+            {
+                "stationName": "Grzęska",
+                "orderNumber": 10,
+                "departureTime": "20:08"
+            },
+            {
+                "stationName": "Przeworsk",
+                "orderNumber": 11,
+                "departureTime": "20:23"
+            },
+            {
+                "stationName": "Pełkinie",
+                "orderNumber": 12,
+                "departureTime": "20:29"
+            },
+            {
+                "stationName": "Jarosław",
+                "orderNumber": 13,
+                "departureTime": "20:34"
+            },
+            {
+                "stationName": "Munina",
+                "orderNumber": 14,
+                "departureTime": "20:38"
+            },
+            {
+                "stationName": "Ostrów koło Radymna",
+                "orderNumber": 15,
+                "departureTime": "20:43"
+            },
+            {
+                "stationName": "Radymno",
+                "orderNumber": 16,
+                "departureTime": "20:46"
+            },
+            {
+                "stationName": "Sośnica Jarosławska",
+                "orderNumber": 17,
+                "departureTime": "20:50"
+            },
+            {
+                "stationName": "Niziny",
+                "orderNumber": 18,
+                "departureTime": "20:53"
+            },
+            {
+                "stationName": "Walawa",
+                "orderNumber": 19,
+                "departureTime": "20:56"
+            },
+            {
+                "stationName": "Żurawica Rozrządowa",
+                "orderNumber": 20,
+                "departureTime": "20:59"
+            },
+            {
+                "stationName": "Żurawica Osobowa",
+                "orderNumber": 21,
+                "departureTime": "21:03"
+            },
+            {
+                "stationName": "Przemyśl Zasanie",
+                "orderNumber": 22,
+                "departureTime": "21:09"
+            },
+            {
+                "stationName": "Przemyśl Główny",
+                "orderNumber": 23,
+                "arrivalTime": "21:12"
+            }
+        ]
+    },
+    "30427": {
+        "has_wifi": false,
+        "has_AC": true,
+        "has_bicycle": true,
+        "accessible": false,
+        "has_restaurant": true,
+        "day_mask": 127,
+                "stations": [
+            {
+                "stationName": "Rzeszów Główny",
+                "orderNumber": 1,
+                "departureTime": "20:34"
+            },
+            {
+                "stationName": "Rzeszów Pobitno",
+                "orderNumber": 2,
+                "departureTime": "20:37"
+            },
+            {
+                "stationName": "Rzeszów Załęże",
+                "orderNumber": 3,
+                "departureTime": "20:40"
+            },
+            {
+                "stationName": "Strażów",
+                "orderNumber": 4,
+                "departureTime": "20:43"
+            },
+            {
+                "stationName": "Krzemienica",
+                "orderNumber": 5,
+                "departureTime": "20:47"
+            },
+            {
+                "stationName": "Łańcut",
+                "orderNumber": 6,
+                "departureTime": "20:51"
+            },
+            {
+                "stationName": "Głuchów",
+                "orderNumber": 7,
+                "departureTime": "20:54"
+            },
+            {
+                "stationName": "Kosina",
+                "orderNumber": 8,
+                "departureTime": "20:57"
+            },
+            {
+                "stationName": "Rogóżno koło Łańcuta",
+                "orderNumber": 9,
+                "departureTime": "21:00"
+            },
+            {
+                "stationName": "Grzęska",
+                "orderNumber": 10,
+                "departureTime": "21:05"
+            },
+            {
+                "stationName": "Przeworsk",
+                "orderNumber": 11,
+                "departureTime": "21:10"
+            },
+            {
+                "stationName": "Pełkinie",
+                "orderNumber": 12,
+                "departureTime": "21:16"
+            },
+            {
+                "stationName": "Jarosław",
+                "orderNumber": 13,
+                "departureTime": "21:22"
+            },
+            {
+                "stationName": "Munina",
+                "orderNumber": 14,
+                "departureTime": "21:25"
+            },
+            {
+                "stationName": "Ostrów koło Radymna",
+                "orderNumber": 15,
+                "departureTime": "21:30"
+            },
+            {
+                "stationName": "Radymno",
+                "orderNumber": 16,
+                "departureTime": "21:33"
+            },
+            {
+                "stationName": "Sośnica Jarosławska",
+                "orderNumber": 17,
+                "departureTime": "21:36"
+            },
+            {
+                "stationName": "Niziny",
+                "orderNumber": 18,
+                "departureTime": "21:39"
+            },
+            {
+                "stationName": "Walawa",
+                "orderNumber": 19,
+                "departureTime": "21:41"
+            },
+            {
+                "stationName": "Żurawica Rozrządowa",
+                "orderNumber": 20,
+                "departureTime": "21:45"
+            },
+            {
+                "stationName": "Żurawica Osobowa",
+                "orderNumber": 21,
+                "departureTime": "21:48"
+            },
+            {
+                "stationName": "Przemyśl Zasanie",
+                "orderNumber": 22,
+                "departureTime": "21:54"
+            },
+            {
+                "stationName": "Przemyśl Główny",
+                "orderNumber": 23,
+                "arrivalTime": "21:57"
+            }
+        ]
+    },
+    "UNK_2207": {
+        "has_wifi": true,
+        "has_AC": true,
+        "has_bicycle": false,
+        "accessible": false,
+        "has_restaurant": true,
+        "day_mask": 127,
+                "stations": [
+            {
+                "stationName": "Warszawa Wschodnia",
+                "orderNumber": 1,
+                "departureTime": "16:57"
+            },
+            {
+                "stationName": "Warszawa Centralna",
+                "orderNumber": 2,
+                "departureTime": "17:08"
+            },
+            {
+                "stationName": "Warszawa Zachodnia",
+                "orderNumber": 3,
+                "departureTime": "17:14"
+            },
+            {
+                "stationName": "Warszawa Służewiec",
+                "orderNumber": 4,
+                "departureTime": "17:22"
+            },
+            {
+                "stationName": "Piaseczno",
+                "orderNumber": 5,
+                "departureTime": "17:31"
+            },
+            {
+                "stationName": "Warka",
+                "orderNumber": 6,
+                "departureTime": "17:48"
+            },
+            {
+                "stationName": "Radom Główny",
+                "orderNumber": 7,
+                "departureTime": "18:11"
+            },
+            {
+                "stationName": "Starachowice Wschodnie",
+                "orderNumber": 8,
+                "departureTime": "18:59"
+            },
+            {
+                "stationName": "Ostrowiec Świętokrzyski",
+                "orderNumber": 9,
+                "departureTime": "19:17"
+            },
+            {
+                "stationName": "Sandomierz",
+                "orderNumber": 10,
+                "departureTime": "19:51"
+            },
+            {
+                "stationName": "Stalowa Wola Rozwadów",
+                "orderNumber": 11,
+                "departureTime": "20:28"
+            },
+            {
+                "stationName": "Stalowa Wola Centrum",
+                "orderNumber": 12,
+                "departureTime": "20:31"
+            },
+            {
+                "stationName": "Nisko",
+                "orderNumber": 13,
+                "departureTime": "20:39"
+            },
+            {
+                "stationName": "Rudnik nad Sanem",
+                "orderNumber": 14,
+                "departureTime": "20:48"
+            },
+            {
+                "stationName": "Nowa Sarzyna",
+                "orderNumber": 15,
+                "departureTime": "21:00"
+            },
+            {
+                "stationName": "Leżajsk",
+                "orderNumber": 16,
+                "departureTime": "21:07"
+            },
+            {
+                "stationName": "Przeworsk",
+                "orderNumber": 17,
+                "departureTime": "21:30"
+            },
+            {
+                "stationName": "Jarosław",
+                "orderNumber": 18,
+                "departureTime": "21:40"
+            },
+            {
+                "stationName": "Radymno",
+                "orderNumber": 19,
+                "departureTime": "21:49"
+            },
+            {
+                "stationName": "Przemyśl Główny",
+                "orderNumber": 20,
+                "arrivalTime": "22:07"
+            }
+        ]
+    },
+    "UNK_2213": {
+        "has_wifi": true,
+        "has_AC": true,
+        "has_bicycle": true,
+        "accessible": false,
+        "has_restaurant": true,
+        "day_mask": 64,
+                "stations": [
+            {
+                "stationName": "Ustka",
+                "orderNumber": 1,
+                "departureTime": "9:46"
+            },
+            {
+                "stationName": "Słupsk",
+                "orderNumber": 2,
+                "departureTime": "10:18"
+            },
+            {
+                "stationName": "Sławno",
+                "orderNumber": 3,
+                "departureTime": "11:03"
+            },
+            {
+                "stationName": "Koszalin",
+                "orderNumber": 4,
+                "departureTime": "11:27"
+            },
+            {
+                "stationName": "Białogard",
+                "orderNumber": 5,
+                "departureTime": "11:42"
+            },
+            {
+                "stationName": "Szczecinek",
+                "orderNumber": 6,
+                "departureTime": "12:21"
+            },
+            {
+                "stationName": "Jastrowie",
+                "orderNumber": 7,
+                "departureTime": "12:47"
+            },
+            {
+                "stationName": "Piła Główna",
+                "orderNumber": 8,
+                "departureTime": "13:17"
+            },
+            {
+                "stationName": "Chodzież",
+                "orderNumber": 9,
+                "departureTime": "13:33"
+            },
+            {
+                "stationName": "Rogoźno Wielkopolskie",
+                "orderNumber": 10,
+                "departureTime": "13:52"
+            },
+            {
+                "stationName": "Oborniki Wielkopolskie Miasto",
+                "orderNumber": 11,
+                "departureTime": "14:03"
+            },
+            {
+                "stationName": "Poznań Główny",
+                "orderNumber": 12,
+                "departureTime": "14:31"
+            },
+            {
+                "stationName": "Kościan",
+                "orderNumber": 13,
+                "departureTime": "14:54"
+            },
+            {
+                "stationName": "Leszno",
+                "orderNumber": 14,
+                "departureTime": "15:08"
+            },
+            {
+                "stationName": "Rawicz",
+                "orderNumber": 15,
+                "departureTime": "15:23"
+            },
+            {
+                "stationName": "Żmigród",
+                "orderNumber": 16,
+                "departureTime": "15:32"
+            },
+            {
+                "stationName": "Oborniki Śląskie",
+                "orderNumber": 17,
+                "departureTime": "15:43"
+            },
+            {
+                "stationName": "Wrocław Główny",
+                "orderNumber": 18,
+                "departureTime": "16:10"
+            },
+            {
+                "stationName": "Oława",
+                "orderNumber": 19,
+                "departureTime": "16:25"
+            },
+            {
+                "stationName": "Brzeg",
+                "orderNumber": 20,
+                "departureTime": "16:34"
+            },
+            {
+                "stationName": "Opole Główne",
+                "orderNumber": 21,
+                "departureTime": "16:57"
+            },
+            {
+                "stationName": "Strzelce Opolskie",
+                "orderNumber": 22,
+                "departureTime": "17:28"
+            },
+            {
+                "stationName": "Gliwice",
+                "orderNumber": 23,
+                "departureTime": "18:01"
+            },
+            {
+                "stationName": "Zabrze",
+                "orderNumber": 24,
+                "departureTime": "18:08"
+            },
+            {
+                "stationName": "Katowice",
+                "orderNumber": 25,
+                "departureTime": "18:30"
+            },
+            {
+                "stationName": "Mysłowice",
+                "orderNumber": 26,
+                "departureTime": "18:43"
+            },
+            {
+                "stationName": "Jaworzno Szczakowa",
+                "orderNumber": 27,
+                "departureTime": "18:57"
+            },
+            {
+                "stationName": "Trzebinia",
+                "orderNumber": 28,
+                "departureTime": "19:06"
+            },
+            {
+                "stationName": "Krzeszowice",
+                "orderNumber": 29,
+                "departureTime": "19:15"
+            },
+            {
+                "stationName": "Kraków Główny",
+                "orderNumber": 30,
+                "departureTime": "19:37"
+            },
+            {
+                "stationName": "Kraków Płaszów",
+                "orderNumber": 31,
+                "departureTime": "19:45"
+            },
+            {
+                "stationName": "Bochnia",
+                "orderNumber": 32,
+                "departureTime": "20:03"
+            },
+            {
+                "stationName": "Brzesko Okocim",
+                "orderNumber": 33,
+                "departureTime": "20:11"
+            },
+            {
+                "stationName": "Tarnów",
+                "orderNumber": 34,
+                "departureTime": "20:26"
+            },
+            {
+                "stationName": "Dębica",
+                "orderNumber": 35,
+                "departureTime": "20:42"
+            },
+            {
+                "stationName": "Ropczyce",
+                "orderNumber": 36,
+                "departureTime": "20:50"
+            },
+            {
+                "stationName": "Sędziszów Małopolski",
+                "orderNumber": 37,
+                "departureTime": "20:56"
+            },
+            {
+                "stationName": "Rzeszów Główny",
+                "orderNumber": 38,
+                "departureTime": "21:12"
+            },
+            {
+                "stationName": "Łańcut",
+                "orderNumber": 39,
+                "departureTime": "21:23"
+            },
+            {
+                "stationName": "Przeworsk",
+                "orderNumber": 40,
+                "departureTime": "21:37"
+            },
+            {
+                "stationName": "Jarosław",
+                "orderNumber": 41,
+                "departureTime": "21:47"
+            },
+            {
+                "stationName": "Radymno",
+                "orderNumber": 42,
+                "departureTime": "21:56"
+            },
+            {
+                "stationName": "Przemyśl Główny",
+                "orderNumber": 43,
+                "arrivalTime": "22:13"
+            }
+        ]
+    },
+    "73002": {
+        "has_wifi": true,
+        "has_AC": true,
+        "has_bicycle": true,
+        "accessible": false,
+        "has_restaurant": true,
+        "day_mask": 127,
+                "stations": [
+            {
+                "stationName": "Berlin Hauptbahnhof",
+                "orderNumber": 1,
+                "departureTime": "12:52"
+            },
+            {
+                "stationName": "Berlin Ostbahnhof",
+                "orderNumber": 2,
+                "departureTime": "13:00"
+            },
+            {
+                "stationName": "Frankfurt Oder",
+                "orderNumber": 3,
+                "departureTime": "13:50"
+            },
+            {
+                "stationName": "Rzepin",
+                "orderNumber": 4,
+                "departureTime": "14:12"
+            },
+            {
+                "stationName": "Zielona Góra Główna",
+                "orderNumber": 5,
+                "departureTime": "14:57"
+            },
+            {
+                "stationName": "Głogów",
+                "orderNumber": 6,
+                "departureTime": "15:32"
+            },
+            {
+                "stationName": "Lubin",
+                "orderNumber": 7,
+                "departureTime": "15:59"
+            },
+            {
+                "stationName": "Legnica",
+                "orderNumber": 8,
+                "departureTime": "16:20"
+            },
+            {
+                "stationName": "Wrocław Główny",
+                "orderNumber": 9,
+                "departureTime": "17:10"
+            },
+            {
+                "stationName": "Opole Główne",
+                "orderNumber": 10,
+                "departureTime": "17:50"
+            },
+            {
+                "stationName": "Kędzierzyn-Koźle",
+                "orderNumber": 11,
+                "departureTime": "18:12"
+            },
+            {
+                "stationName": "Gliwice",
+                "orderNumber": 12,
+                "departureTime": "18:44"
+            },
+            {
+                "stationName": "Zabrze",
+                "orderNumber": 13,
+                "departureTime": "18:51"
+            },
+            {
+                "stationName": "Katowice",
+                "orderNumber": 14,
+                "departureTime": "19:12"
+            },
+            {
+                "stationName": "Kraków Główny",
+                "orderNumber": 15,
+                "departureTime": "20:15"
+            },
+            {
+                "stationName": "Kraków Płaszów",
+                "orderNumber": 16,
+                "departureTime": "20:26"
+            },
+            {
+                "stationName": "Bochnia",
+                "orderNumber": 17,
+                "departureTime": "20:42"
+            },
+            {
+                "stationName": "Tarnów",
+                "orderNumber": 18,
+                "departureTime": "21:02"
+            },
+            {
+                "stationName": "Dębica",
+                "orderNumber": 19,
+                "departureTime": "21:18"
+            },
+            {
+                "stationName": "Rzeszów Główny",
+                "orderNumber": 20,
+                "departureTime": "21:43"
+            },
+            {
+                "stationName": "Łańcut",
+                "orderNumber": 21,
+                "departureTime": "21:55"
+            },
+            {
+                "stationName": "Przeworsk",
+                "orderNumber": 22,
+                "departureTime": "22:08"
+            },
+            {
+                "stationName": "Jarosław",
+                "orderNumber": 23,
+                "departureTime": "22:18"
+            },
+            {
+                "stationName": "Przemyśl Główny",
+                "orderNumber": 24,
+                "arrivalTime": "22:43"
+            }
+
+        ]
+    }
+}

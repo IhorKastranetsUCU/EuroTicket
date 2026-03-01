@@ -26,6 +26,7 @@ def get_train_positions():
     from_station = request.args.get('from_station')
     to_station = request.args.get('to_station')
     time_str = request.args.get('time')
+    date_str = request.args.get('date')
 
     if not from_station or not to_station:
         return jsonify([])
@@ -34,6 +35,6 @@ def get_train_positions():
     current_time = parse_time(time_str) if time_str else (datetime.now() - timedelta(hours=1))
 
     tracker = TrainTracker(service, current_time)
-    active_trains = tracker.get_active_trains(from_station, to_station, time_str)
+    active_trains = tracker.get_active_trains(from_station, to_station, time_str, date_str)
 
     return jsonify(active_trains)

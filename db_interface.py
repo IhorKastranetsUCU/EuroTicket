@@ -7,7 +7,7 @@ class RouteService:
 
     def get_all_stations(self) -> list:
         query = text("""
-            SELECT id, name, latitude as lat, longitude as lon, platform as platforms
+            SELECT id, name, latitude as lat, longitude as lon, platform as platforms, utc_offset
             FROM stations
             WHERE latitude IS NOT NULL AND longitude IS NOT NULL
         """)
@@ -99,11 +99,14 @@ class RouteService:
         trip_query = text("""
             SELECT t.id AS trip_id, t.days_mask, tr.number AS train_number, tr.name AS train_name,
                    tr.has_wifi, tr.has_air_con, tr.has_restaurant, tr.has_bicycle_holder, tr.is_accessible,
-                   rs_dep.stop_order AS dep_order, rs_arr.stop_order AS arr_order
+                   rs_dep.stop_order AS dep_order, rs_arr.stop_order AS arr_order,
+                   s_dep.utc_offset AS dep_utc, s_arr.utc_offset AS arr_utc
             FROM trips t
             JOIN trains tr ON t.train_id = tr.id
             JOIN route_stops rs_dep ON t.id = rs_dep.trip_id AND rs_dep.station_id = :dep_id
             JOIN route_stops rs_arr ON t.id = rs_arr.trip_id AND rs_arr.station_id = :arr_id
+            JOIN stations s_dep ON s_dep.id = :dep_id
+            JOIN stations s_arr ON s_arr.id = :arr_id
             WHERE CAST(rs_dep.stop_order AS INTEGER) < CAST(rs_arr.stop_order AS INTEGER)
         """)
 
@@ -116,7 +119,7 @@ class RouteService:
         results = []
 
         segment_query = text("""
-            SELECT s.name AS station, rs.arrival_time, rs.departure_time, CAST(rs.stop_order AS INTEGER) as stop_order
+            SELECT s.name AS station, rs.arrival_time, rs.departure_time, CAST(rs.stop_order AS INTEGER) as stop_order, s.utc_offset
             FROM route_stops rs
             JOIN stations s ON rs.station_id = s.id
             WHERE rs.trip_id = :trip_id
@@ -128,7 +131,7 @@ class RouteService:
                 "trip_id": trip_row['trip_id']
             }).mappings().all()
 
-            route_full = [{"station": rs['station'], "arrival": rs['arrival_time'], "departure": rs['departure_time'], "order": rs['stop_order']} for rs in segment_stops]
+            route_full = [{"station": rs['station'], "arrival": rs['arrival_time'], "departure": rs['departure_time'], "order": rs['stop_order'], "utc_offset": int(rs['utc_offset']) if rs['utc_offset'] is not None else 1} for rs in segment_stops]
 
             results.append({
                 "trip_id": trip_row['trip_id'],
@@ -141,7 +144,9 @@ class RouteService:
                 "accessible": bool(trip_row['is_accessible']),
                 "route": route_full,
                 "dep_order": int(trip_row['dep_order']),
-                "arr_order": int(trip_row['arr_order'])
+                "arr_order": int(trip_row['arr_order']),
+                "dep_utc": int(trip_row['dep_utc']),
+                "arr_utc": int(trip_row['arr_utc']),
             })
 
         return results

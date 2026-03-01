@@ -8,8 +8,8 @@ class TrainTracker:
         self.service = route_service
         self.current_time = current_time
 
-    def get_active_trains(self, from_station: str, to_station: str, time_str: str | None) -> list[dict]:
-        trips = self.service.get_route_between(from_station, to_station)
+    def get_active_trains(self, from_station: str, to_station: str, time_str: str | None, date_str: str | None = None) -> list[dict]:
+        trips = self.service.get_route_between(from_station, to_station, date_str)
         active_trains = []
 
         for trip in trips:

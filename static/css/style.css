@@ -41,7 +41,6 @@ html {
     height: 100vh;
 }
 
-/* Header Styles */
 .topbar {
     height: 60px;
     background-color: var(--bg-header);
@@ -63,7 +62,6 @@ html {
     display: flex;
     align-items: center;
     gap: 10px;
-    /* Space out the theme buttons horizontally */
 }
 
 .logo {
@@ -83,7 +81,6 @@ html {
     font-weight: 600;
 }
 
-/* Digital Clock */
 .digital-clock {
     position: absolute;
     left: 50%;
@@ -134,23 +131,19 @@ html {
     background: #282d36;
 }
 
-/* Main Content Area */
 .main-content {
     display: flex;
     flex: 1;
     height: calc(100vh - 60px);
     position: relative;
-    /* Core for map overlays */
 }
 
-/* Sidebar Styles (Now Overlays) */
 .sidebar {
     position: absolute;
     left: 0;
     top: 0;
     bottom: 0;
     width: 340px;
-    /* Restored original width */
     background-color: var(--bg-sidebar);
     border-right: 1px solid var(--border-color);
     box-shadow: 2px 0 10px rgba(0, 0, 0, 0.3);
@@ -160,7 +153,6 @@ html {
     flex-direction: column;
 }
 
-/* Custom Scrollbar */
 ::-webkit-scrollbar {
     width: 8px;
 }
@@ -182,7 +174,6 @@ html {
     position: relative;
     display: flex;
     flex-direction: row;
-    /* Horizontal layout */
     align-items: center;
     background: var(--bg-input);
     border-radius: 8px;
@@ -197,18 +188,14 @@ html {
     min-width: 230px;
     flex: 1;
     width: 50%;
-    /* Force perfectly equal widths so center is absolute center */
-    /* Slightly narrower inputs */
 }
 
 .bottom-input {
     padding-left: 30px;
-    /* Push the 'To' icon away from the central swap button */
 }
 
 .top-input {
     border-right: 1px solid var(--border-color);
-    /* Vertical border now */
     border-bottom: none;
 }
 
@@ -226,14 +213,12 @@ input[type="text"] {
     width: 100%;
     outline: none;
     padding-right: 25px;
-    /* Space for the clear button */
 }
 
 input[type="text"]::placeholder {
     color: var(--text-secondary);
 }
 
-/* Inline Clear Buttons */
 .clear-inline-btn {
     position: absolute;
     right: 15px;
@@ -246,7 +231,6 @@ input[type="text"]::placeholder {
     line-height: 1;
     cursor: pointer;
     display: none;
-    /* Shown via JS when input has text */
     z-index: 5;
 }
 
@@ -254,17 +238,14 @@ input[type="text"]::placeholder {
     color: #ff4b4b;
 }
 
-/* Autocomplete Styles */
 .autocomplete-list {
     position: absolute;
     bottom: 100%;
-    /* Open upwards from the input */
     left: 0;
     right: 0;
     background: var(--bg-input);
     border: 1px solid var(--border-color);
     border-radius: 8px 8px 0 0;
-    /* Rounded on top instead of bottom */
     max-height: 250px;
     overflow-y: auto;
     z-index: 1000;
@@ -292,13 +273,11 @@ input[type="text"]::placeholder {
     background: #282d36;
 }
 
-/* Swap Button */
 .swap-btn {
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    /* Centers perfectly over the border line */
     background: var(--bg-sidebar);
     border: 1px solid var(--border-color);
     border-radius: 50%;
@@ -317,21 +296,16 @@ input[type="text"]::placeholder {
     width: 14px;
     height: 14px;
     transform: rotate(90deg);
-    /* Horizontal arrow direction */
 }
 
-/* Bottom Floating Panel */
 .bottom-floating-panel {
     position: absolute;
     bottom: 15px;
-    /* Extremely low to the bottom */
     left: 50%;
-    /* Centered rigidly relative to screen */
     transform: translateX(-50%);
     z-index: 1000;
     display: flex;
     flex-direction: column;
-    /* Stack search bar on top of date/time */
     align-items: center;
     justify-content: center;
     gap: 15px;
@@ -340,18 +314,15 @@ input[type="text"]::placeholder {
     white-space: nowrap;
 }
 
-/* No longer shifting layout based on sidebars, it remains centered always */
 
 @media (max-width: 1200px) {
 
-    /* If window is small, wrap the elements so they fit */
     .bottom-floating-panel {
         flex-wrap: wrap;
         width: 80%;
     }
 }
 
-/* Map Container */
 #map-container {
     flex: 1;
     position: relative;
@@ -365,7 +336,6 @@ input[type="text"]::placeholder {
     background-color: #0b0b0b;
 }
 
-/* Leaflet Controls Customization */
 .leaflet-bar {
     border: none !important;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3) !important;
@@ -381,7 +351,6 @@ input[type="text"]::placeholder {
     background-color: #282d36 !important;
 }
 
-/* Date/Time and Actions */
 .datetime-container {
     display: flex;
     gap: 10px;
@@ -389,7 +358,6 @@ input[type="text"]::placeholder {
     border: 1px solid var(--border-color);
     border-radius: 8px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
-    /* Remove top margin as it's inline now */
 }
 
 .datetime-input {
@@ -419,9 +387,7 @@ input[type="text"]::placeholder {
     cursor: pointer;
 }
 
-/* Train Results Section */
 .train-results-container {
-    /* Removed padding/margin since it starts at top of sidebar now */
     flex: 1;
     overflow-y: auto;
 }
@@ -500,7 +466,6 @@ input[type="text"]::placeholder {
     font-weight: bold;
 }
 
-/* Scrollbar styling for sidebar */
 .sidebar::-webkit-scrollbar,
 .train-results-container::-webkit-scrollbar {
     width: 6px;
@@ -518,7 +483,6 @@ input[type="text"]::placeholder {
     border-radius: 6px;
 }
 
-/* Right Sidebar Details */
 .right-sidebar {
     width: 300px;
     background-color: var(--bg-sidebar);
@@ -530,9 +494,7 @@ input[type="text"]::placeholder {
     position: absolute;
     right: -360px;
     top: 0;
-    /* Align perfectly to the top of main-content */
     bottom: 0;
-    /* Stretch full height alongside the map */
     transition: right 0.3s ease;
     overflow-y: auto;
     box-shadow: -4px 0 10px rgba(0, 0, 0, 0.3);
@@ -565,14 +527,11 @@ input[type="text"]::placeholder {
     font-weight: 700;
     color: var(--brand-orange);
     margin-top: 25px;
-    /* Give space below absolute the close button */
     margin-bottom: 5px;
     text-transform: uppercase;
     letter-spacing: 1px;
     padding-right: 30px;
-    /* Prevent text going under close button */
     word-break: break-word;
-    /* Handle extremely long train names gracefully */
 }
 
 .details-subheader {
@@ -625,7 +584,6 @@ input[type="text"]::placeholder {
     position: relative;
     margin-bottom: 20px;
     opacity: 0.4;
-    /* Inactive stops are faded by default */
     transition: opacity 0.2s;
 }
 
@@ -639,7 +597,6 @@ input[type="text"]::placeholder {
     width: 12px;
     height: 12px;
     background: var(--border-color);
-    /* Inactive color */
     border-radius: 50%;
     left: -18px;
     top: 4px;
@@ -658,8 +615,9 @@ input[type="text"]::placeholder {
     font-weight: 600;
     color: var(--text-primary);
     margin-right: 10px;
-    display: inline-block;
-    width: 45px;
+    display: inline-flex;
+    align-items: baseline;
+    width: 70px;
 }
 
 .stop-name {
@@ -667,7 +625,6 @@ input[type="text"]::placeholder {
     font-size: 0.95rem;
 }
 
-/* Modal Overlay Styles */
 .modal-overlay {
     position: fixed;
     top: 0;
@@ -761,19 +718,14 @@ input[type="text"]::placeholder {
     margin: 0 !important;
 }
 
-/* Mobile Bottom Sheet */
 .mobile-routes-sheet {
     display: none;
 }
 
-/* Mobile Fullscreen Train Detail */
 .mobile-train-detail {
     display: none;
 }
 
-/* --- Responsive Media Queries --- */
-
-/* Tablet & Smaller Laptops (Max Width 900px) */
 @media (max-width: 900px) {
     .sidebar {
         width: 300px;
@@ -794,13 +746,11 @@ input[type="text"]::placeholder {
     }
 }
 
-/* Mobile Phones (Max Width 600px) */
 @media (max-width: 600px) {
     .digital-clock {
         display: none;
     }
 
-    /* Пошукова панель — bottom sheet знизу */
     .bottom-floating-panel {
         position: fixed;
         bottom: 0;
@@ -865,7 +815,6 @@ input[type="text"]::placeholder {
         flex: 1;
     }
 
-    /* Ліва панель — над bottom sheet, height: auto */
     .sidebar {
         position: fixed;
         left: 0;
@@ -879,11 +828,9 @@ input[type="text"]::placeholder {
         border-radius: 0;
         box-shadow: none;
         z-index: 999;
-        /* Відступ знизу = висота bottom-floating-panel */
         padding-bottom: 185px;
     }
 
-    /* Правий sidebar — повний екран */
     .right-sidebar {
         position: fixed;
         top: 0;
@@ -899,6 +846,29 @@ input[type="text"]::placeholder {
     .right-sidebar.open {
         right: 0;
     }
+}
+
+.tz-badge {
+    font-size: 0.7rem;
+    color: var(--brand-orange);
+    border: 1px solid var(--brand-orange);
+    border-radius: 4px;
+    padding: 1px 5px;
+    margin-left: 5px;
+    vertical-align: middle;
+    opacity: 0.85;
+}
+
+.stop-tz-badge {
+    font-size: 0.62rem;
+    color: var(--brand-orange);
+    border: 1px solid var(--brand-orange);
+    border-radius: 3px;
+    padding: 0px 3px;
+    margin-left: 3px;
+    vertical-align: super;
+    opacity: 0.9;
+    font-weight: 700;
 }
 
 .reset-datetime-btn {

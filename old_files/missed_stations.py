@@ -18,4 +18,4 @@ def missed_stations(stations_path, schedule_path):
     print(len(missed))
     return missed
 if __name__ == "__main__":
-    print(missed_stations("railway_stations.json", "structure.json"))
+    print(missed_stations("railway_stations.json", "structure2.json"))

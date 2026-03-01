@@ -3,10 +3,8 @@ import math
 import os
 from datetime import datetime, timedelta
 from sqlalchemy import create_engine, MetaData, Table, select
-
-db_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'EuroTicket_2.db')
-
-engine = create_engine(f"sqlite:///{db_path}")
+db_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'EuroTicket.db')
+engine = create_engine(f'sqlite:///{db_path}')
 
 metadata = MetaData()
 stations_table = Table('stations', metadata, autoload_with=engine)
@@ -96,7 +94,7 @@ def get_active_segment(conn, trip_id, current_time):
             dep_station_id = dep_stop[1]
             arr_station_id = arr_stop[1]
 
-            graph_query = select(graph_table.c.path, graph_table.c.maxspeed).where(
+            graph_query = select(graph_table.c.path).where(
                 (graph_table.c.departure == dep_station_id) &
                 (graph_table.c.arrival == arr_station_id))
 

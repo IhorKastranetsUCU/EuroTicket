@@ -59,6 +59,10 @@ function initTrainMap(config) {
       if (timeParam) url += `&time=${encodeURIComponent(timeParam)}`;
     }
 
+    const dateInput = window.parent && window.parent.document.getElementById('date-input');
+    const dateParam = dateInput ? dateInput.value : null;
+    if (dateParam) url += `&date=${encodeURIComponent(dateParam)}`;
+
     return url;
   }
 

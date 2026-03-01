@@ -1,4 +1,5 @@
 let ALL_STATIONS = [];
+let REACHABLE_FROM = [];
 
 document.addEventListener('DOMContentLoaded', () => {
     fetch('/api/stations')
@@ -55,6 +56,18 @@ document.addEventListener('DOMContentLoaded', () => {
     updateClearBtnVisibility(inputFrom, clearFromBtn);
     updateClearBtnVisibility(inputTo, clearToBtn);
 
+    function fetchReachable(stationName) {
+        if (!stationName) { REACHABLE_FROM = []; return; }
+        fetch(`/api/reachable?name=${encodeURIComponent(stationName)}`)
+            .then(res => res.json())
+            .then(names => { REACHABLE_FROM = names; })
+            .catch(() => { REACHABLE_FROM = []; });
+    }
+
+    function getPolandTime() {
+        return new Date(new Date().toLocaleString('en-US', { timeZone: 'Europe/Warsaw' }));
+    }
+
     const swapBtn = document.querySelector('.swap-btn');
     if (swapBtn && inputFrom && inputTo) {
         swapBtn.addEventListener('click', () => {
@@ -63,6 +76,7 @@ document.addEventListener('DOMContentLoaded', () => {
             inputTo.value = temp;
             updateClearBtnVisibility(inputFrom, clearFromBtn);
             updateClearBtnVisibility(inputTo, clearToBtn);
+            fetchReachable(inputFrom.value);
             updateMap();
         });
     }
@@ -71,6 +85,7 @@ document.addEventListener('DOMContentLoaded', () => {
         inputFrom.addEventListener('input', () => updateClearBtnVisibility(inputFrom, clearFromBtn));
         clearFromBtn.addEventListener('click', () => {
             inputFrom.value = '';
+            REACHABLE_FROM = [];
             updateClearBtnVisibility(inputFrom, clearFromBtn);
             updateMap();
         });
@@ -87,15 +102,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const dateInput = document.getElementById('date-input');
     const timeInput = document.getElementById('time-input');
-    const now = new Date();
-    if (dateInput) dateInput.value = now.toISOString().split('T')[0];
-    if (timeInput) timeInput.value = String(now.getHours()).padStart(2, '0') + ':' + String(now.getMinutes()).padStart(2, '0');
+
+    // Встановлюємо початковий час польський
+    const nowPL = getPolandTime();
+    if (dateInput) dateInput.value = nowPL.toISOString().split('T')[0];
+    if (timeInput) timeInput.value = String(nowPL.getHours()).padStart(2, '0') + ':' + String(nowPL.getMinutes()).padStart(2, '0');
+
     const resetBtn = document.getElementById('reset-datetime-btn');
     if (resetBtn) {
         resetBtn.addEventListener('click', () => {
-            const now = new Date();
-            dateInput.value = now.toISOString().split('T')[0];
-            timeInput.value = String(now.getHours()).padStart(2, '0') + ':' + String(now.getMinutes()).padStart(2, '0');
+            const pl = getPolandTime();
+            dateInput.value = pl.toISOString().split('T')[0];
+            timeInput.value = String(pl.getHours()).padStart(2, '0') + ':' + String(pl.getMinutes()).padStart(2, '0');
             window.isLiveMode = true;
             document.getElementById('date-warning').style.display = 'none';
             updateMap();
@@ -116,9 +134,10 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         updateMap();
     });
+
     if (timeInput) timeInput.addEventListener('change', () => { window.isLiveMode = false; });
 
-    function setupAutocomplete(inputElement, listElement, isFromInput) {
+    function setupAutocomplete(inputElement, listElement, isFromInput, getSource) {
         if (!inputElement || !listElement) return;
 
         inputElement.addEventListener('input', (e) => {
@@ -130,7 +149,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 return;
             }
 
-            const matches = ALL_STATIONS.filter(st => st.name.toLowerCase().includes(val)).slice(0, 7);
+            const source = getSource ? getSource() : ALL_STATIONS;
+            const matches = source.filter(st => st.name.toLowerCase().includes(val)).slice(0, 7);
 
             if (matches.length > 0) {
                 listElement.classList.add('active');
@@ -142,6 +162,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         inputElement.value = match.name;
                         listElement.classList.remove('active');
                         updateClearBtnVisibility(inputElement, isFromInput ? clearFromBtn : clearToBtn);
+                        if (isFromInput) fetchReachable(match.name);
                         updateMap();
                     });
                     listElement.appendChild(item);
@@ -158,14 +179,19 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    setupAutocomplete(inputFrom, document.getElementById('from-autocomplete'), true);
-    setupAutocomplete(inputTo, document.getElementById('to-autocomplete'), false);
+    setupAutocomplete(inputFrom, document.getElementById('from-autocomplete'), true, () => ALL_STATIONS);
+    setupAutocomplete(inputTo, document.getElementById('to-autocomplete'), false, () => {
+        if (inputFrom.value && REACHABLE_FROM.length > 0) {
+            return ALL_STATIONS.filter(st => REACHABLE_FROM.includes(st.name));
+        }
+        return ALL_STATIONS;
+    });
 
     const clockElement = document.getElementById('digital-clock');
     if (clockElement) {
         setInterval(() => {
-            const now = new Date();
-            clockElement.textContent = `${String(now.getHours()).padStart(2, '0')}:${String(now.getMinutes()).padStart(2, '0')}:${String(now.getSeconds()).padStart(2, '0')}`;
+            const pl = getPolandTime();
+            clockElement.textContent = `${String(pl.getHours()).padStart(2, '0')}:${String(pl.getMinutes()).padStart(2, '0')}:${String(pl.getSeconds()).padStart(2, '0')}`;
         }, 1000);
     }
 
@@ -178,6 +204,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 inputTo.value = '';
                 updateClearBtnVisibility(inputFrom, clearFromBtn);
                 updateClearBtnVisibility(inputTo, clearToBtn);
+                fetchReachable(stationName);
                 updateMap();
             } else {
                 inputTo.value = stationName;
@@ -244,6 +271,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
                         const depTime = dep.departure ? dep.departure.slice(0, 5) : (dep.arrival ? dep.arrival.slice(0, 5) : '--:--');
                         const arrTime = arr.arrival ? arr.arrival.slice(0, 5) : (arr.departure ? arr.departure.slice(0, 5) : '--:--');
+                        const depTzBadge = trip.dep_utc && trip.dep_utc !== 1 ? `<span class="tz-badge">UTC+${trip.dep_utc}</span>` : '';
+                        const arrTzBadge = trip.arr_utc && trip.arr_utc !== 1 ? `<span class="tz-badge">UTC+${trip.arr_utc}</span>` : '';
 
                         card.innerHTML = `
                             <div class="train-card-header">
@@ -252,12 +281,12 @@ document.addEventListener('DOMContentLoaded', () => {
                             </div>
                             <div class="train-route-info">
                                 <div class="route-point">
-                                    <span class="route-time">${depTime}</span>
+                                    <span class="route-time">${depTime}</span>${depTzBadge}
                                     <span class="route-station" title="${dep.station}">${dep.station}</span>
                                 </div>
                                 <div class="route-arrow">➔</div>
                                 <div class="route-point" style="text-align: right;">
-                                    <span class="route-time">${arrTime}</span>
+                                    <span class="route-time">${arrTime}</span>${arrTzBadge}
                                     <span class="route-station" title="${arr.station}">${arr.station}</span>
                                 </div>
                             </div>
@@ -299,9 +328,12 @@ document.addEventListener('DOMContentLoaded', () => {
             if (isTerminal) timeClass += 'terminal ';
             if (isActive) timeClass += 'active-segment ';
             const t = stop.arrival ? stop.arrival.slice(0, 5) : (stop.departure ? stop.departure.slice(0, 5) : '--:--');
+            const stopOffset = stop.utc_offset !== undefined ? stop.utc_offset : 1;
+            const tzDiff = stopOffset - 1; // relative to Polish time (UTC+1)
+            const tzBadge = tzDiff !== 0 ? `<span class="stop-tz-badge">${tzDiff > 0 ? '+' : ''}${tzDiff}</span>` : '';
             html += `
                 <div class="stop-item ${timeClass.trim()}">
-                    <span class="stop-time">${t}</span>
+                    <span class="stop-time">${t}${tzBadge}</span>
                     <span class="stop-name">${stop.station}</span>
                 </div>
             `;
