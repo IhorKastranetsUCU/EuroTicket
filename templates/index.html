@@ -7,7 +7,7 @@
     <link rel="icon" href="{{ url_for('static', filename='img/logo.jpg') }}" type="image/jpg">
     <title>Euro Ticket</title>
 
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}?v=3">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}?v=4">
 </head>
 
 <body>
@@ -93,9 +93,9 @@
                             title="Повернутись до поточного часу">↺</button>
 
                     </div>
-                    <div id="date-warning"
-                        style="display:none; color:#ff4b4b; font-size:0.85rem; margin-top:6px; text-align:center;">
-                        ⚠️ Немає актуальних даних після 8 березня 2026
+                    <div id="date-warning" class="date-warning-alert" style="display:none;">
+                        <span class="warning-icon">⚠️</span>
+                        <span class="warning-text">Немає актуальних даних після 8 березня 2026</span>
                     </div>
                 </div>
             </div>
@@ -107,7 +107,7 @@
         </main>
     </div>
 
-    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/main.js') }}?v=2"></script>
 </body>
 
 </html>

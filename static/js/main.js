@@ -129,7 +129,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const cutoff = new Date('2026-03-08');
         const warning = document.getElementById('date-warning');
         if (selected > cutoff) {
-            warning.style.display = 'block';
+            warning.style.display = 'flex';
         } else {
             warning.style.display = 'none';
         }
