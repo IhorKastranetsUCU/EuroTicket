@@ -36,7 +36,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const trainDetailsContent = document.getElementById('train-details-content');
 
     if (closeRightSidebar) {
-        closeRightSidebar.addEventListener('click', () => {
+        closeRightSidebar.addEventListener('click', (e) => {
+            e.stopPropagation();
             rightSidebar.classList.remove('open');
             document.body.classList.remove('right-panel-active');
         });
