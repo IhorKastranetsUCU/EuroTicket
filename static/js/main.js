@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const themeToggler = document.getElementById('theme-toggler');
     const sunIcon = document.getElementById('sun-icon');
     const moonIcon = document.getElementById('moon-icon');
-    let isDark = localStorage.getItem('theme') === 'dark';
+    let isDark = localStorage.getItem('theme') !== 'light';
     let currentMapTheme = isDark ? 'dark' : 'light';
 
     function applyTheme() {

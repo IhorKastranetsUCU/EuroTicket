@@ -15,7 +15,7 @@ def get_map():
     from_station = request.args.get('from_station')
     to_station = request.args.get('to_station')
     time_str = request.args.get('time')
-    map_theme = request.args.get('map_theme', 'light')
+    map_theme = request.args.get('map_theme', 'dark')
 
     service = get_route_service()
     builder = MapBuilder(service, map_theme)

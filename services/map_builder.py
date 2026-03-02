@@ -17,9 +17,9 @@ STATION_DEFAULTS = {
 
 
 class MapBuilder:
-    def __init__(self, route_service, map_theme: str = 'light'):
+    def __init__(self, route_service, map_theme: str = 'dark'):
         self.service = route_service
-        self.tiles = TILE_THEMES.get(map_theme, TILE_THEMES['light'])
+        self.tiles = TILE_THEMES.get(map_theme, TILE_THEMES['dark'])
 
     def build(self, from_station: str | None, to_station: str | None, time_str: str | None) -> folium.Map:
         m = folium.Map(location=[52.0, 19.0], zoom_start=6, tiles=self.tiles, zoom_control=False)
@@ -107,7 +107,7 @@ class MapBuilder:
                         radius=base_radius, fill_opacity=1.0)
 
         if name == from_station:
-            return dict(color='#ffffff', fill_color='#ffffff', weight=3.0,
+            return dict(color='#f27b21', fill_color='#f27b21', weight=3.0,
                         radius=base_radius * 1.4, fill_opacity=1.0)
 
         if name == to_station:
