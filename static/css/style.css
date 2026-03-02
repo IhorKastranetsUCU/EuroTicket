@@ -264,18 +264,18 @@ input[type="text"]::placeholder {
 
 .autocomplete-list {
     position: absolute;
-    top: 100%;
+    top: auto;
     left: 0;
     right: 0;
-    bottom: auto;
+    bottom: 100%;
     background: var(--bg-input);
     border: 1px solid var(--border-color);
-    border-radius: 0 0 8px 8px;
+    border-radius: 8px 8px 0 0;
     max-height: 250px;
     overflow-y: auto;
-    z-index: 1000;
+    z-index: 9999;
     display: none;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.4);
 }
 
 .autocomplete-list.active {
@@ -295,7 +295,11 @@ input[type="text"]::placeholder {
 }
 
 .autocomplete-item:hover {
-    background: #282d36;
+    background: #3a414e;
+}
+
+[data-theme="light"] .autocomplete-item:hover {
+    background: #f1f5f9;
 }
 
 .swap-btn {
@@ -772,6 +776,11 @@ input[type="text"]::placeholder {
 }
 
 @media (max-width: 600px) {
+    .topbar {
+        position: relative !important;
+        z-index: 4900 !important;
+    }
+
     .digital-clock {
         display: block !important;
         font-size: 0.9rem !important;
@@ -887,6 +896,13 @@ input[type="text"]::placeholder {
     .right-sidebar.open {
         transform: translateX(0);
         right: auto;
+    }
+
+    .autocomplete-list {
+        top: 100% !important;
+        bottom: auto !important;
+        border-radius: 0 0 8px 8px !important;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4) !important;
     }
 }
 
