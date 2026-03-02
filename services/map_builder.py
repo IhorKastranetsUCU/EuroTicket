@@ -59,12 +59,11 @@ class MapBuilder:
     def _add_live_train_js(
         self, m: folium.Map, from_station: str, to_station: str, time_str: str | None
     ) -> None:
-        fallback_time = time_str or ''
         safe_config = json.dumps({
             "fromStation": from_station or "",
             "toStation": to_station or "",
             "fallbackTime": time_str or ""
-        })
+        }).replace('<', '\\u003c').replace('>', '\\u003e')
 
         js = f"""
         <script src="/static/js/train_map.js"></script>
