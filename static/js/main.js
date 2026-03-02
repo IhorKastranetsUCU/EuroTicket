@@ -1,6 +1,16 @@
 let ALL_STATIONS = [];
 let REACHABLE_FROM = [];
 
+function escapeHTML(str) {
+    if (str === null || str === undefined) return '';
+    return String(str)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#39;');
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     fetch('/api/stations')
         .then(res => res.json())
@@ -80,6 +90,7 @@ document.addEventListener('DOMContentLoaded', () => {
             fetchReachable(inputFrom.value);
             updateMap();
         });
+
     }
 
     if (inputFrom && clearFromBtn) {
@@ -275,20 +286,25 @@ document.addEventListener('DOMContentLoaded', () => {
                         const depTzBadge = trip.dep_utc && trip.dep_utc !== 1 ? `<span class="tz-badge">UTC+${trip.dep_utc}</span>` : '';
                         const arrTzBadge = trip.arr_utc && trip.arr_utc !== 1 ? `<span class="tz-badge">UTC+${trip.arr_utc}</span>` : '';
 
+                        const safeTrainNumber = escapeHTML(trip.train_number || 'Поїзд');
+                        const safeTrainName = escapeHTML(trip.train_name || '');
+                        const safeDepStation = escapeHTML(dep.station);
+                        const safeArrStation = escapeHTML(arr.station);
+
                         card.innerHTML = `
                             <div class="train-card-header">
-                                <span class="train-number">${trip.train_number || 'Поїзд'}</span>
-                                ${trip.train_name ? `<div class="train-name">${trip.train_name}</div>` : ''}
+                                <span class="train-number">${safeTrainNumber}</span>
+                                ${trip.train_name ? `<div class="train-name">${safeTrainName}</div>` : ''}
                             </div>
                             <div class="train-route-info">
                                 <div class="route-point">
                                     <span class="route-time">${depTime}</span>${depTzBadge}
-                                    <span class="route-station" title="${dep.station}">${dep.station}</span>
+                                    <span class="route-station" title="${safeDepStation}">${safeDepStation}</span>
                                 </div>
                                 <div class="route-arrow">➔</div>
                                 <div class="route-point" style="text-align: right;">
                                     <span class="route-time">${arrTime}</span>${arrTzBadge}
-                                    <span class="route-station" title="${arr.station}">${arr.station}</span>
+                                    <span class="route-station" title="${safeArrStation}">${safeArrStation}</span>
                                 </div>
                             </div>
                         `;
@@ -310,8 +326,11 @@ document.addEventListener('DOMContentLoaded', () => {
     function showTrainDetails(trip) {
         if (!trainDetailsContent || !rightSidebar) return;
 
-        let html = `<div class="details-header">${trip.train_number || 'Поїзд'}</div>`;
-        html += `<div class="details-subheader">${trip.train_name || 'Деталі маршруту'}</div>`;
+        const safeTrainNumber = escapeHTML(trip.train_number || 'Поїзд');
+        const safeTrainName = escapeHTML(trip.train_name || 'Деталі маршруту');
+
+        let html = `<div class="details-header">${safeTrainNumber}</div>`;
+        html += `<div class="details-subheader">${safeTrainName}</div>`;
 
         html += `<div class="amenities-list">
             <span class="amenity-badge ${trip.has_wifi ? 'active' : ''}">WiFi</span>
@@ -332,10 +351,11 @@ document.addEventListener('DOMContentLoaded', () => {
             const stopOffset = stop.utc_offset !== undefined ? stop.utc_offset : 1;
             const tzDiff = stopOffset - 1; // relative to Polish time (UTC+1)
             const tzBadge = tzDiff !== 0 ? `<span class="stop-tz-badge">${tzDiff > 0 ? '+' : ''}${tzDiff}</span>` : '';
+            const safeStopStation = escapeHTML(stop.station);
             html += `
                 <div class="stop-item ${timeClass.trim()}">
                     <span class="stop-time">${t}${tzBadge}</span>
-                    <span class="stop-name">${stop.station}</span>
+                    <span class="stop-name">${safeStopStation}</span>
                 </div>
             `;
         });

@@ -77,8 +77,9 @@ class GraphLoader:
         for st in self.stations:
             dist, index = tree.query([st["lat"], st["lon"]])
 
-            if dist > 0.1:
-                print(f"Station {st['name']} (ID {st['id']}) is too far from graph ({dist:.4f}). Left unsnapped.")
+            if dist > 0.03:
+                safe_name = st['name'].encode('ascii', 'replace').decode('ascii')
+                print(f"Station {safe_name} (ID {st['id']}) is too far from graph ({dist:.4f}). Left unsnapped.")
                 continue
 
             nearest_node = tuple(graph_nodes[index])

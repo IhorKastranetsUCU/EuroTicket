@@ -1,4 +1,5 @@
 import folium
+import json
 from folium import Element
 
 
@@ -59,20 +60,17 @@ class MapBuilder:
         self, m: folium.Map, from_station: str, to_station: str, time_str: str | None
     ) -> None:
         fallback_time = time_str or ''
+        safe_config = json.dumps({
+            "fromStation": from_station or "",
+            "toStation": to_station or "",
+            "fallbackTime": time_str or ""
+        })
+
         js = f"""
-        <style>
-        .leaflet-marker-icon.train-marker {{
-            transition: transform 2.5s linear, opacity 0.5s ease !important;
-        }}
-        </style>
         <script src="/static/js/train_map.js"></script>
         <script>
         document.addEventListener('DOMContentLoaded', function() {{
-            initTrainMap({{
-                fromStation: '{from_station}',
-                toStation: '{to_station}',
-                fallbackTime: '{fallback_time}'
-            }});
+            initTrainMap({safe_config});
         }});
         </script>
         """
